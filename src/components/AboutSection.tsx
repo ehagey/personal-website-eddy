@@ -9,15 +9,15 @@ const AboutSection = () => {
     },
     {
       name: 'Guitar',
-      details: 'For the guitar geeks, I play a PRS Silver Sky for electric, Princeton Reverb for amp, and an Art & Lutherie Acoustic. For genres, mainly into Blues (John Mayer, Eric Clapton, and you know the rest...)'
+      details: 'PRS Silver Sky (Electric) | Princeton Reverb (Amp) | Art & Lutherie (Acoustic)'
     },
     {
       name: 'AI',
-      details: 'Exploring cutting-edge AI technologies and applications.'
+      details: 'Exploring cutting-edge AI technologies and applications'
     },
     {
       name: 'Reading',
-      details: 'Books on philosophy, technology, and science fiction.'
+      details: 'Philosophy | Technology | Science Fiction'
     }
   ];
   const quotes = [{
@@ -108,10 +108,10 @@ const AboutSection = () => {
               {hobbies.map(hobby => (
                 <div 
                   key={hobby.name} 
-                  className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow text-sm"
+                  className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div className="font-medium mb-2">{hobby.name}</div>
-                  <p className="text-xs text-gray-600">{hobby.details}</p>
+                  <div className="font-semibold text-base mb-2 text-gray-800">{hobby.name}</div>
+                  <p className="text-xs text-gray-600 leading-relaxed">{hobby.details}</p>
                 </div>
               ))}
             </div>
