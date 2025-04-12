@@ -26,7 +26,14 @@ const AboutSection = () => {
         '1. Man\'s Search for Meaning (Victor Frankl)',
         '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)'
       ]
-    }
+    },
+      {
+    name: 'Blogging',
+    details: [
+      'New to this!',
+      'Posts coming soon...'
+    ]
+  }
   ];
   const quotes = [{
     text: "I'm a great believer in luck, and I find the harder I work, the more I have of it.",
