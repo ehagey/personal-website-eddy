@@ -1,7 +1,5 @@
-
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const HeroSection = () => {
   return <section id="home" className="min-h-screen flex items-center pt-20 section-padding">
       <div className="container max-w-7xl mx-auto container-padding">
@@ -11,7 +9,7 @@ const HeroSection = () => {
         }}>
             <p className="text-sm font-medium text-gray-500 mb-3">Hello:) My name is</p>
             <h1 className="heading-xl mb-4">
-              <span className="block text-xl md:text-2xl">Eddy Hage Youssef</span>
+              <span className="block text-xl md:text-2xl">Eddy Hage-Youssef</span>
             </h1>
             <p className="subtitle mb-4">
               I'm passionate about building software that improves people's lives.
