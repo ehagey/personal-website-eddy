@@ -36,7 +36,7 @@ const AboutSection = () => {
               <div className="space-y-3 text-gray-600">
                 <p>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University.</p>
                 
-                <p>My experience and interests lie in AI and data analytics. I have previously built RAG and Ontology frameworks for a domain-specific Large Language Model. Currently, my interest and focus is on researching and building AI agents and developing robust evaluation and benchmarking criteria for LLMs.</p>
+                <p>My experience and interests lie in AI and data analytics. I have previously built RAG and Ontology frameworks for a domain-specific Large Language Model. Currently, my interest and focus is on AI agents. Additionally, I have been working on developing robust benchmarking criteria for LLMs in medical and clinical settings at the AI Health Institute.</p>
                 
                 <p>Outside of academics, I enjoy hitting the gym, playing guitar, practicing Judo, and spending time with family and friends.</p>
               </div>
