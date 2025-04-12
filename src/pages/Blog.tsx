@@ -9,7 +9,7 @@ const Blog = () => {
           <p className="subtitle mx-auto mb-8">Thoughts, insights, and perspectives on technology, AI research, and more.</p>
           
           <div className="bg-gray-100 p-8 rounded-lg max-w-2xl mx-auto">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">Blog Posts Coming Soon!</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-800">Blog Posts Coming Soon</h2>
             <p className="text-gray-600">I'm currently working on creating compelling content. Please stay tuned for the coming blog posts!</p>
           </div>
         </section>
