@@ -22,7 +22,7 @@ const AboutSection = () => {
     },
     {
       name: 'Reading',
-      details: 'Philosophy | Technology | Science Fiction'
+      details: 'Really everything, but I\'m mainly interested in\n\n- Economics\n- Geopolitics\n- Warfare'
     }
   ];
   const quotes = [{
