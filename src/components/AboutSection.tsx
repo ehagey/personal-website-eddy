@@ -1,3 +1,4 @@
+
 import { Check } from 'lucide-react';
 
 const AboutSection = () => {
@@ -22,7 +23,13 @@ const AboutSection = () => {
     },
     {
       name: 'Reading',
-      details: 'Really everything, but I\'m mainly interested in\n\n- Economics\n- Geopolitics\n- Warfare'
+      details: [
+        'Really everything',
+        'Mainly interested in:',
+        'Economics',
+        'Geopolitics', 
+        'Warfare'
+      ]
     }
   ];
   const quotes = [{
