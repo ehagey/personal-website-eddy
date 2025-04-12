@@ -1,5 +1,5 @@
 
-import { Github, Instagram, Linkedin } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,8 +32,15 @@ const Footer = () => {
               <a href="https://www.instagram.com/eddy.g.hage/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
+              <a href="mailto:eddy.hage1@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                <Mail size={20} />
+              </a>
             </div>
-            <p><a href="mailto:eddy.hage1@gmail.com" className="hover:text-white transition-colors">eddy.hage1@gmail.com</a></p>
+            <p className="opacity-0 md:opacity-100">
+              <a href="mailto:eddy.hage1@gmail.com" className="hover:text-white transition-colors">
+                eddy.hage1@gmail.com
+              </a>
+            </p>
           </div>
         </div>
         
