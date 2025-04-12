@@ -14,11 +14,11 @@ const AboutSection = () => {
     {
       name: 'Guitar',
       details: [
-        '(for the geeks)',
         'PRS Silver Sky (Electric)',
         'Princeton Reverb (Amp)', 
         'Art & Lutherie (Acoustic)'
-      ]
+      ],
+      context: '(for the geeks)'
     },
     {
       name: 'Reading',
@@ -115,7 +115,10 @@ const AboutSection = () => {
                   key={hobby.name} 
                   className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div className="font-semibold text-base mb-2 text-gray-800">{hobby.name}</div>
+                  <div className="font-semibold text-base mb-2 text-gray-800">
+                    {hobby.name} 
+                    {hobby.context && <span className="text-xs text-gray-500 ml-2">{hobby.context}</span>}
+                  </div>
                   {Array.isArray(hobby.details) ? (
                     <ul className="text-xs text-gray-600 leading-relaxed list-disc pl-4">
                       {hobby.details.map((detail, index) => (
