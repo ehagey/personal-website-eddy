@@ -1,4 +1,3 @@
-
 import { Check } from 'lucide-react';
 
 const AboutSection = () => {
@@ -24,10 +23,7 @@ const AboutSection = () => {
     {
       name: 'Reading',
       details: [
-        'Really everything, but I\'m mainly interested in:',
-        'Economics',
-        'Geopolitics', 
-        'Warfare',
+        'Really everything, but I\'m mainly interested in Economics, Geopolitics, and Warfare.',
         '',
         'Currently reading:',
         '1. Man\'s Search for Meaning (Victor Frankl)',
