@@ -15,12 +15,12 @@ const AboutSection = () => {
   }];
   return <section id="about" className="section-padding bg-gray-50">
       <div className="container max-w-7xl mx-auto container-padding">
-        <div className="flex flex-col gap-12">
-          <div className="flex flex-col lg:flex-row gap-12 items-start">
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
             <div className="flex-1 animate-slideUp opacity-0" style={{
             animationDelay: '0.2s'
           }}>
-              <h2 className="heading-lg mb-6">About Me</h2>
+              <h2 className="heading-lg mb-4">About Me</h2>
               <div className="space-y-4 text-gray-600">
                 <p>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University.</p>
                 
@@ -33,7 +33,7 @@ const AboutSection = () => {
             <div className="flex-1 animate-slideUp opacity-0" style={{
             animationDelay: '0.4s'
           }}>
-              <h3 className="heading-md mb-6">My Skills</h3>
+              <h3 className="heading-md mb-4">My Skills</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {skills.map(skill => <div key={skill} className="flex items-center space-x-2">
                     <Check size={16} className="text-primary" />
@@ -43,18 +43,16 @@ const AboutSection = () => {
             </div>
           </div>
           
-          {/* Projects Section */}
           <div className="animate-slideUp opacity-0" style={{
           animationDelay: '0.6s'
         }}>
-            <div className="mb-8">
+            <div className="mb-6">
               <h3 className="heading-md mb-4">My Projects</h3>
               <p className="text-gray-600">Here are some of the projects I have been working on lately. I would love to collaborate if you find anything interesting!</p>
             </div>
             <ProjectsSection />
           </div>
           
-          {/* Interests & Hobbies Section */}
           <div className="animate-slideUp opacity-0" style={{
           animationDelay: '0.8s'
         }}>
@@ -66,7 +64,6 @@ const AboutSection = () => {
             </div>
           </div>
           
-          {/* Favorite Quotes Section */}
           <div className="animate-slideUp opacity-0" style={{
           animationDelay: '1s'
         }}>
