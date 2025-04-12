@@ -15,9 +15,9 @@ const AboutSection = () => {
       name: 'Guitar',
       details: [
         '(for the geeks)',
-        'PRS Silver Sky (Electric Guitar)',
-        'Princeton Reverb (Amplifier)', 
-        'Art & Lutherie (Acoustic Guitar)'
+        'PRS Silver Sky (Electric)',
+        'Princeton Reverb (Amp)', 
+        'Art & Lutherie (Acoustic)'
       ]
     },
     {
