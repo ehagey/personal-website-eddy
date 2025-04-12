@@ -16,10 +16,6 @@ const AboutSection = () => {
       details: 'PRS Silver Sky (Electric) | Princeton Reverb (Amp) | Art & Lutherie (Acoustic)'
     },
     {
-      name: 'AI',
-      details: 'Exploring cutting-edge AI technologies and applications'
-    },
-    {
       name: 'Reading',
       details: 'Philosophy | Technology | Science Fiction'
     }
