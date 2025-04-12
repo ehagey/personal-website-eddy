@@ -5,7 +5,11 @@ const AboutSection = () => {
   const hobbies = [
     {
       name: 'Judo',
-      details: 'Black Belt | 7× Lebanese National Champion | Arab Championship Gold (2017)'
+      details: [
+        'Black Belt',
+        '7× Lebanese National Champion', 
+        'Arab Championship First Place (2017)'
+      ]
     },
     {
       name: 'Guitar',
@@ -111,7 +115,15 @@ const AboutSection = () => {
                   className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="font-semibold text-base mb-2 text-gray-800">{hobby.name}</div>
-                  <p className="text-xs text-gray-600 leading-relaxed">{hobby.details}</p>
+                  {Array.isArray(hobby.details) ? (
+                    <ul className="text-xs text-gray-600 leading-relaxed list-disc pl-4">
+                      {hobby.details.map((detail, index) => (
+                        <li key={index}>{detail}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-xs text-gray-600 leading-relaxed">{hobby.details}</p>
+                  )}
                 </div>
               ))}
             </div>
