@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { InlineWidget } from 'react-calendly';
 import { Mail, MapPin } from 'lucide-react';
@@ -31,7 +32,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-1">Email</h3>
-                <a href="mailto:hello@example.com" className="text-gray-600 hover:text-primary transition-colors">eddy.hage1@gmail.com</a>
+                <a href="mailto:eddy.hage1@gmail.com" className="text-gray-600 hover:text-primary transition-colors">eddy.hage1@gmail.com</a>
               </div>
             </div>
           </div>
