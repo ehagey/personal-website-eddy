@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -172,17 +171,6 @@ const Resume = () => {
                     <li>Arabic (native)</li>
                     <li>French (basic skills)</li>
                   </ul>
-                </div>
-                
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">Interests and Hobbies</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {['Judo', 'Guitar', 'Brazilian Jiu-Jitsu', 'Reading', 'Hiking'].map(hobby => (
-                      <span key={hobby} className="bg-gray-100 px-3 py-1 rounded-full text-sm">
-                        {hobby}
-                      </span>
-                    ))}
-                  </div>
                 </div>
               </div>
             </div>
