@@ -11,7 +11,7 @@ const HeroSection = () => {
         }}>
             <p className="text-sm font-medium text-gray-500 mb-3">Hello:) My name is</p>
             <h1 className="heading-xl mb-4">
-              <span className="block text-xl md:text-2xl">Eddy Hage-Youssef</span>
+              <span className="block text-xl md:text-2xl">Eddy Hage Youssef</span>
             </h1>
             <p className="subtitle mb-4">
               I'm passionate about building software that improves people's lives.
@@ -43,7 +43,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-r from-primary to-gray-600 opacity-75 blur"></div>
               <div className="relative overflow-hidden rounded-xl bg-white shadow-xl">
-                <img alt="Profile" src="/lovable-uploads/e3682f1c-f543-43d2-8b64-8b6d2732dc0e.jpg" className="w-full h-auto aspect-[4/3] object-contain" />
+                <img alt="Profile" src="/lovable-uploads/e223e9a5-8da0-4699-81b5-a41032f24b8a.png" className="w-full h-auto aspect-[4/3] object-contain" />
               </div>
             </div>
           </div>
