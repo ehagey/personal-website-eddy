@@ -1,15 +1,10 @@
-import { Github, Instagram, Linkedin, Twitter } from 'lucide-react';
+
+import { Github, Instagram, Linkedin } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="container max-w-7xl mx-auto container-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Eddy Hage-Youssef</h3>
-            <p className="mb-4 max-w-md">
-          </p>
-          </div>
-          
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -32,9 +27,6 @@ const Footer = () => {
               </a>
               <a href="https://www.linkedin.com/in/eddy-hage-youssef-29b6b618b/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <Twitter size={20} />
               </a>
               <a href="#" className="hover:text-white transition-colors">
                 <Instagram size={20} />
