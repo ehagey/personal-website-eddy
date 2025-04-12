@@ -1,8 +1,7 @@
-
 import { Check } from 'lucide-react';
 import ProjectsSection from './ProjectsSection';
 const AboutSection = () => {
-  const skills = ['Programming', 'Machine Learning', 'Data Analytics', 'Artificial Intelligence', 'Research', 'Statistical Analysis', 'Large Language Model Engineering', 'Prompt Design', 'Problem Structuring'];
+  const skills = ['Programming', 'Machine Learning', 'Data Analytics', 'Artificial Intelligence', 'Research', 'Statistical Analysis', 'LLM Engineering', 'Prompt Design and Engineering', 'Problem Structuring'];
   const interests = ['AI', 'Judo (Black Belt)', 'Guitar', 'Reading'];
   const quotes = [{
     text: "The best way to predict the future is to invent it.",
