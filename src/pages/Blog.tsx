@@ -1,30 +1,20 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
 const Blog = () => {
-  return (
-    <>
+  return <>
       <Header />
       <main className="pt-24 pb-16">
         <section className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="heading-lg mb-4">Blog</h1>
-          <p className="subtitle mx-auto mb-8">
-            Thoughts, insights, and perspectives on healthcare technology, AI research, and more.
-          </p>
+          <p className="subtitle mx-auto mb-8">Thoughts, insights, and perspectives on technology, AI research, and more.</p>
           
           <div className="bg-gray-100 p-8 rounded-lg max-w-2xl mx-auto">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800">Blog Posts Coming Soon!</h2>
-            <p className="text-gray-600">
-              I'm currently working on creating compelling content about healthcare technology, AI research, and innovative insights. 
-              Stay tuned for thoughtful and informative blog posts that explore the intersection of technology and healthcare.
-            </p>
+            <p className="text-gray-600">I'm currently working on creating compelling content. Please stay tuned for thoughtful and informative blog posts that explore the intersection of technology and healthcare.</p>
           </div>
         </section>
       </main>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default Blog;
