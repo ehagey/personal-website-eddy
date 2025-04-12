@@ -13,7 +13,11 @@ const AboutSection = () => {
     },
     {
       name: 'Guitar',
-      details: 'PRS Silver Sky (Electric) | Princeton Reverb (Amp) | Art & Lutherie (Acoustic)'
+      details: [
+        'PRS Silver Sky (Electric Guitar)',
+        'Princeton Reverb (Amplifier)', 
+        'Art & Lutherie (Acoustic Guitar)'
+      ]
     },
     {
       name: 'Reading',
