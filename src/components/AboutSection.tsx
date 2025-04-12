@@ -1,9 +1,28 @@
 
 import { Check } from 'lucide-react';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 const AboutSection = () => {
   const skills = ['Programming', 'Machine Learning', 'Data Analytics', 'Artificial Intelligence', 'Research', 'Statistical Analysis', 'LLM Engineering', 'Prompt Design and Engineering', 'Problem Structuring'];
-  const interests = ['AI', 'Judo (Black Belt)', 'Guitar', 'Reading'];
+  const hobbies = [
+    {
+      name: 'Judo',
+      details: 'Black Belt, 7x Lebanese national Champion, Arab Championship first place in 2017.'
+    },
+    {
+      name: 'Guitar',
+      details: 'For the guitar geeks, I play a PRS Silver Sky for electric, Princeton Reverb for amp, and an Art & Lutherie Acoustic. For genres, mainly into Blues (John Mayer, Eric Clapton, and you know the rest...)'
+    },
+    {
+      name: 'AI',
+      details: 'Exploring cutting-edge AI technologies and applications.'
+    },
+    {
+      name: 'Reading',
+      details: 'Books on philosophy, technology, and science fiction.'
+    }
+  ];
   const quotes = [{
     text: "The best way to predict the future is to invent it.",
     author: "Alan Kay"
@@ -16,7 +35,7 @@ const AboutSection = () => {
   }];
   return <section id="about" className="section-padding bg-gray-50">
       <div className="container max-w-7xl mx-auto container-padding">
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-16">
           <div className="flex flex-col lg:flex-row gap-6 items-start">
             <div className="flex-1 animate-slideUp opacity-0" style={{
             animationDelay: '0.2s'
@@ -87,11 +106,23 @@ const AboutSection = () => {
           <div className="animate-slideUp opacity-0" style={{
           animationDelay: '0.8s'
         }}>
-            <h3 className="heading-md mb-2">Interests & Hobbies</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {interests.map(interest => <div key={interest} className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow text-sm">
-                  <span className="font-medium">{interest}</span>
-                </div>)}
+            <h3 className="heading-md mb-2">Hobbies</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {hobbies.map(hobby => (
+                <HoverCard key={hobby.name}>
+                  <HoverCardTrigger>
+                    <div className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow text-sm cursor-pointer">
+                      <span className="font-medium">{hobby.name}</span>
+                    </div>
+                  </HoverCardTrigger>
+                  <HoverCardContent className="w-80 p-4">
+                    <div className="space-y-2">
+                      <h4 className="font-semibold">{hobby.name}</h4>
+                      <p className="text-sm text-gray-600">{hobby.details}</p>
+                    </div>
+                  </HoverCardContent>
+                </HoverCard>
+              ))}
             </div>
           </div>
           
