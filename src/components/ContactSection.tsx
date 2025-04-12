@@ -12,7 +12,7 @@ const ContactSection = () => {
         }}>
           <h2 className="heading-lg mb-4">Get In Touch</h2>
           <p className="subtitle mx-auto">
-            Have a project in mind or just want to say hello? Schedule a meeting using the calendar below.
+            Having a project in mind or just want to say hello? Please feel free to schedule a meeting using the calendar below.
           </p>
         </div>
         
