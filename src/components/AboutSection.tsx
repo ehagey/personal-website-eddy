@@ -1,4 +1,3 @@
-
 import { Check } from 'lucide-react';
 
 const AboutSection = () => {
@@ -24,8 +23,7 @@ const AboutSection = () => {
     {
       name: 'Reading',
       details: [
-        'Really everything',
-        'Mainly interested in:',
+        'Really everything, but I\'m mainly interested in:',
         'Economics',
         'Geopolitics', 
         'Warfare'
