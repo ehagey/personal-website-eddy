@@ -33,7 +33,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
             </div>
-            <p>eddy.hage-youssef@mail.mcgill.ca</p>
+            <p><a href="mailto:eddy.hage1@gmail.com" className="hover:text-white transition-colors">eddy.hage1@gmail.com</a></p>
           </div>
         </div>
         
