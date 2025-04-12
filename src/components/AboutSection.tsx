@@ -25,8 +25,8 @@ const AboutSection = () => {
                 <p>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University.
 
 
-My experience and interest lies in AI and data analytics. 
-I have previously built RAG and Ontology frameworks for a domain-specific Large Language Model. Currently, my interest and focus is on researching and building AI agents and developing robust evaluation and benchmarking criteria for LLMs (Please check our work at the AI Health Institute to learn more!).</p>
+ My experience and interest lies in AI and data analytics. 
+ I have previously built RAG and Ontology frameworks for a domain-specific Large Language Model. Currently, my interest and focus is on researching and building AI agents and developing robust evaluation and benchmarking criteria for LLMs (Please check our work at the AI Health Institute to learn more!).</p>
                 <p>
                   Outside of academics, I enjoy hitting the gym, playing guitar, practicing Judo, and spending time with family and friends.
                 </p>
