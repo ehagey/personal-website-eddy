@@ -10,53 +10,102 @@ interface Project {
   description: string;
   tags: string[];
   image: string;
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl: string;
+  featured?: boolean;
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "A personal portfolio website built with React and Tailwind CSS.",
-    tags: ["React", "TypeScript", "Tailwind"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-    githubUrl: "#",
-    liveUrl: "#",
+    title: "AI Health Institute",
+    description: "Advancing rigorous evaluation and performance assessment of large language models (LLMs) to ensure they deliver accurate, reliable, and clinically relevant outputs that improve patient care and support clinicians.",
+    tags: ["Healthcare", "AI", "Research", "LLMs"],
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    liveUrl: "https://aihealthinstitute.org/",
+    featured: true
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A task management application with drag-and-drop functionality.",
-    tags: ["React", "Redux", "Node.js"],
+    title: "Healthcare Analytics Platform",
+    description: "A platform for analyzing healthcare data to improve patient outcomes and clinical decision-making.",
+    tags: ["React", "TypeScript", "Data Analytics", "Healthcare"],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
     githubUrl: "#",
-    liveUrl: "#",
+    liveUrl: "#"
   },
   {
     id: 3,
-    title: "E-commerce Platform",
-    description: "A full-featured e-commerce platform with payment integration.",
-    tags: ["Next.js", "MongoDB", "Stripe"],
+    title: "AI Ethics Framework",
+    description: "A comprehensive framework for ensuring ethical use of AI in healthcare settings.",
+    tags: ["AI Ethics", "Research", "Healthcare"],
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
     githubUrl: "#",
-    liveUrl: "#",
+    liveUrl: "#"
   },
 ];
 
 const ProjectsSection = () => {
+  const featuredProject = projects.find(project => project.featured);
+  const regularProjects = projects.filter(project => !project.featured);
+
   return (
     <section id="projects" className="section-padding">
       <div className="container max-w-7xl mx-auto container-padding">
         <div className="text-center mb-16 animate-slideUp opacity-0" style={{ animationDelay: '0.2s' }}>
           <h2 className="heading-lg mb-4">My Projects</h2>
           <p className="subtitle mx-auto">
-            Here are some of my recent projects. Each project is a unique piece of development.
+            Here are some of my notable projects. Each represents an opportunity to make a positive impact through technology.
           </p>
         </div>
         
+        {featuredProject && (
+          <div className="mb-16 animate-slideUp opacity-0" style={{ animationDelay: '0.3s' }}>
+            <h3 className="text-xl font-medium mb-6 border-l-4 border-primary pl-3">Featured Project</h3>
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="flex flex-col lg:flex-row">
+                <div className="lg:w-1/2">
+                  <img 
+                    src={featuredProject.image} 
+                    alt={featuredProject.title} 
+                    className="w-full h-full object-cover object-center"
+                    style={{ maxHeight: '400px' }}
+                  />
+                </div>
+                <div className="lg:w-1/2 p-8 flex flex-col justify-between">
+                  <div>
+                    <h4 className="heading-md mb-2">{featuredProject.title}</h4>
+                    <p className="text-gray-700 mb-6">{featuredProject.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {featuredProject.tags.map(tag => (
+                        <Badge key={tag} variant="secondary">{tag}</Badge>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex justify-start gap-4">
+                    {featuredProject.githubUrl && (
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={featuredProject.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="mr-2 h-4 w-4" />
+                          Code
+                        </a>
+                      </Button>
+                    )}
+                    <Button size="sm" asChild>
+                      <a href={featuredProject.liveUrl} target="_blank" rel="noopener noreferrer">
+                        Live Site
+                        <ArrowUpRight className="ml-2 h-4 w-4" />
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {regularProjects.map((project, index) => (
             <Card key={project.id} className="overflow-hidden group h-full flex flex-col animate-slideUp opacity-0" style={{ animationDelay: `${0.2 + (index * 0.1)}s` }}>
               <div className="relative overflow-hidden aspect-video">
                 <img
@@ -75,12 +124,14 @@ const ProjectsSection = () => {
                 ))}
               </CardContent>
               <CardFooter className="flex justify-between mt-auto">
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </a>
-                </Button>
+                {project.githubUrl && (
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </a>
+                  </Button>
+                )}
                 <Button size="sm" asChild>
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                     Live Demo

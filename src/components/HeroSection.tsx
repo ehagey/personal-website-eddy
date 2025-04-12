@@ -1,3 +1,4 @@
+
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -9,17 +10,25 @@ const HeroSection = () => {
           <div className="flex-1 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
             <p className="text-sm font-medium text-gray-500 mb-3">Hi, my name is</p>
             <h1 className="heading-xl mb-4">
-              <span className="block">John Doe</span>
-              <span className="block text-muted-foreground">I build things for the web</span>
+              <span className="block">Eddy Hage-Youssef</span>
+              <span className="block text-muted-foreground">I build meaningful digital experiences</span>
             </h1>
             <p className="subtitle mb-8">
-              I'm a software developer specializing in building exceptional digital experiences. 
-              Currently, I'm focused on building accessible, human-centered products.
+              I'm passionate about creating technologies that improve people's lives. 
+              With expertise in AI and healthcare, I focus on developing solutions that make a real difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="group">
-                View My Work 
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <Button className="group" asChild>
+                <a href="#projects">
+                  View My Work 
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </Button>
+              <Button variant="outline" className="group" asChild>
+                <a href="/resume">
+                  Resume
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
               <div className="flex space-x-4 mt-4 sm:mt-0 sm:ml-4">
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
@@ -40,7 +49,7 @@ const HeroSection = () => {
               <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-r from-primary to-gray-600 opacity-75 blur"></div>
               <div className="relative overflow-hidden rounded-xl bg-white shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" 
                   alt="Profile" 
                   className="w-full h-auto object-cover aspect-[4/3]"
                 />

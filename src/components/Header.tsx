@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,6 +20,13 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navItems = [
+    { name: 'About', path: '/#about' },
+    { name: 'Projects', path: '/#projects' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'Contact', path: '/#contact' },
+  ];
+
   return (
     <header 
       className={cn(
@@ -29,21 +37,23 @@ const Header = () => {
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <a href="#" className="text-xl font-semibold">
-            Portfolio
+            Eddy Hage-Youssef
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
+            {navItems.map((item) => (
               <a 
-                key={item}
-                href={`#${item.toLowerCase()}`} 
+                key={item.name}
+                href={item.path} 
                 className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
               >
-                {item}
+                {item.name}
               </a>
             ))}
-            <Button size="sm">Resume</Button>
+            <Button size="sm" asChild>
+              <Link to="/resume">Resume</Link>
+            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -65,17 +75,19 @@ const Header = () => {
         )}
       >
         <div className="flex flex-col h-full justify-center items-center space-y-8 p-8">
-          {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
+          {navItems.map((item) => (
             <a 
-              key={item}
-              href={`#${item.toLowerCase()}`} 
+              key={item.name}
+              href={item.path}
               className="text-2xl font-medium text-gray-800 hover:text-gray-600 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              {item}
+              {item.name}
             </a>
           ))}
-          <Button size="lg" className="mt-4">Resume</Button>
+          <Button size="lg" className="mt-4" asChild>
+            <Link to="/resume" onClick={() => setIsMenuOpen(false)}>Resume</Link>
+          </Button>
         </div>
       </div>
     </header>

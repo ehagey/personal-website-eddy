@@ -9,25 +9,28 @@ const Footer = () => {
       <div className="container max-w-7xl mx-auto container-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">John Doe</h3>
+            <h3 className="text-xl font-semibold text-white mb-4">Eddy Hage-Youssef</h3>
             <p className="mb-4 max-w-md">
-              A passionate web developer focused on creating beautiful, functional, and user-friendly websites and applications.
+              A passionate technologist focused on creating innovative solutions at the intersection of AI and healthcare.
             </p>
           </div>
           
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {['Home', 'About', 'Projects', 'Blog', 'Contact'].map((item) => (
                 <li key={item}>
                   <a 
-                    href={`#${item.toLowerCase()}`}
+                    href={item === 'Blog' ? '/blog' : `#${item.toLowerCase()}`}
                     className="hover:text-white transition-colors"
                   >
                     {item}
                   </a>
                 </li>
               ))}
+              <li>
+                <a href="/resume" className="hover:text-white transition-colors">Resume</a>
+              </li>
             </ul>
           </div>
           
@@ -52,7 +55,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p>© {currentYear} John Doe. All rights reserved.</p>
+          <p>© {currentYear} Eddy Hage-Youssef. All rights reserved.</p>
         </div>
       </div>
     </footer>
