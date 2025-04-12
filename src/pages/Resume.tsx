@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -36,7 +37,7 @@ const Resume = () => {
                 <div className="border-l-2 border-gray-200 pl-5 relative">
                   <div className="absolute w-3 h-3 bg-primary rounded-full -left-[7px] top-1"></div>
                   <h3 className="text-xl font-semibold">McGill University</h3>
-                  <p className="text-muted-foreground mb-1">Bachelor of Arts, Computer Science and Statistics | Sep 2021 - (Expected May 2026)</p>
+                  <p className="text-muted-foreground mb-1">Bachelor's Degree, Computer Science and Statistics | Sep 2021 - (Expected May 2026)</p>
                   <p className="text-muted-foreground mb-2">Montreal, QC</p>
                 </div>
                 
@@ -48,7 +49,6 @@ const Resume = () => {
                 </div>
                 
                 <div className="pl-5">
-                  <p className="font-semibold">CGPA: 3.90/4.00</p>
                   <p className="mt-2"><span className="font-semibold">Relevant Coursework:</span> Machine Learning (Theory and Application), Reinforcement Learning, Stochastic Processes, Statistics, Probability, Corporate Finance</p>
                 </div>
               </div>
@@ -183,3 +183,4 @@ const Resume = () => {
 };
 
 export default Resume;
+
