@@ -21,12 +21,11 @@ const AboutSection = () => {
       context: '(for the geeks)'
     },
     {
-      name: 'Reading',
+      name: 'Currently Reading',
       details: [
         '1. Man\'s Search for Meaning (Victor Frankl)',
         '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)'
-      ],
-      context: '(Currently reading)'
+      ]
     }
   ];
   const quotes = [{
