@@ -1,33 +1,23 @@
-
 import { Github, Instagram, Linkedin, Twitter } from 'lucide-react';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
-  return (
-    <footer className="bg-gray-900 text-gray-300 py-12">
+  return <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="container max-w-7xl mx-auto container-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Eddy Hage-Youssef</h3>
             <p className="mb-4 max-w-md">
-              A passionate technologist focused on creating innovative solutions at the intersection of AI and healthcare.
-            </p>
+          </p>
           </div>
           
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'About', 'Blog', 'Contact'].map((item) => (
-                <li key={item}>
-                  <a 
-                    href={item === 'Blog' ? '/blog' : `#${item.toLowerCase()}`}
-                    className="hover:text-white transition-colors"
-                  >
+              {['Home', 'About', 'Blog', 'Contact'].map(item => <li key={item}>
+                  <a href={item === 'Blog' ? '/blog' : `#${item.toLowerCase()}`} className="hover:text-white transition-colors">
                     {item}
                   </a>
-                </li>
-              ))}
+                </li>)}
               <li>
                 <a href="/resume" className="hover:text-white transition-colors">Resume</a>
               </li>
@@ -58,8 +48,6 @@ const Footer = () => {
           <p>© {currentYear} Eddy Hage-Youssef. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
