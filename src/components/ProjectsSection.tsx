@@ -51,16 +51,9 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="section-padding">
-      <div className="container max-w-7xl mx-auto container-padding">
-        <div className="text-center mb-16 animate-slideUp opacity-0" style={{ animationDelay: '0.2s' }}>
-          <h2 className="heading-lg mb-4">My Projects</h2>
-          <p className="subtitle mx-auto">
-            Here are some of my notable projects. Each represents an opportunity to make a positive impact through technology.
-          </p>
-        </div>
-        
+      <div className="container max-w-7xl mx-auto">
         {featuredProject && (
-          <div className="mb-16 animate-slideUp opacity-0" style={{ animationDelay: '0.3s' }}>
+          <div className="mb-16">
             <h3 className="text-xl font-medium mb-6 border-l-4 border-primary pl-3">Featured Project</h3>
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="flex flex-col lg:flex-row">
@@ -106,7 +99,7 @@ const ProjectsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {regularProjects.map((project, index) => (
-            <Card key={project.id} className="overflow-hidden group h-full flex flex-col animate-slideUp opacity-0" style={{ animationDelay: `${0.2 + (index * 0.1)}s` }}>
+            <Card key={project.id} className="overflow-hidden group h-full flex flex-col">
               <div className="relative overflow-hidden aspect-video">
                 <img
                   src={project.image}

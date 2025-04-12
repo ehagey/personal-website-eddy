@@ -12,10 +12,11 @@ const HeroSection = () => {
             <h1 className="heading-xl mb-4">
               <span className="block text-2xl md:text-3xl">Eddy Hage-Youssef</span>
             </h1>
+            <p className="subtitle mb-4">
+              I'm passionate about building software that improves people's lives.
+            </p>
             <p className="subtitle mb-8">
-              I'm passionate about creating technologies that improve people's lives. 
-              With strong interest and skills in AI and analytics, I focus on developing 
-              solutions that make a real difference.
+              I am currently working and conducting research on LLM benchmarking and AI Agents, and I have a strong interest in data analytics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="group" asChild>
