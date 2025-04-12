@@ -10,12 +10,12 @@ const HeroSection = () => {
           <div className="flex-1 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
             <p className="text-sm font-medium text-gray-500 mb-3">Hi, my name is</p>
             <h1 className="heading-xl mb-4">
-              <span className="block">Eddy Hage-Youssef</span>
-              <span className="block text-muted-foreground">I build meaningful digital experiences</span>
+              <span className="block text-2xl md:text-3xl">Eddy Hage-Youssef</span>
             </h1>
             <p className="subtitle mb-8">
               I'm passionate about creating technologies that improve people's lives. 
-              With expertise in AI and healthcare, I focus on developing solutions that make a real difference.
+              With strong interest and skills in AI and analytics, I focus on developing 
+              solutions that make a real difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="group" asChild>

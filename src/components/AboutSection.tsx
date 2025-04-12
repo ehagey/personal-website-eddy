@@ -1,5 +1,6 @@
 
 import { Check } from 'lucide-react';
+import ProjectsSection from './ProjectsSection';
 
 const AboutSection = () => {
   const skills = [
@@ -50,7 +51,12 @@ const AboutSection = () => {
             </div>
           </div>
           
+          {/* Include ProjectsSection in the About Page */}
           <div className="animate-slideUp opacity-0" style={{ animationDelay: '0.6s' }}>
+            <ProjectsSection />
+          </div>
+          
+          <div className="animate-slideUp opacity-0" style={{ animationDelay: '0.8s' }}>
             <h3 className="heading-md mb-6">Interests & Hobbies</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               {interests.map((interest) => (
