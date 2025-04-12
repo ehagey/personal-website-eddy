@@ -46,7 +46,7 @@ const ContactSection = () => {
           }}>
             <div className="bg-white rounded-lg p-6 shadow-sm" style={{ height: '650px' }}>
               <InlineWidget 
-                url="https://calendly.com/your-calendly-username" 
+                url="https://calendly.com/eddy-hage1" 
                 styles={{ 
                   height: '100%',
                   width: '100%',
