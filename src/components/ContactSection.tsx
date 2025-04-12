@@ -1,31 +1,9 @@
+
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, Send } from 'lucide-react';
-import { useToast } from '@/components/ui/use-toast';
+import { InlineWidget } from 'react-calendly';
+import { Mail, MapPin } from 'lucide-react';
 
 const ContactSection = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon."
-      });
-
-      // Reset form
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
-  };
-
   return (
     <section id="contact" className="section-padding bg-gray-50">
       <div className="container max-w-7xl mx-auto container-padding">
@@ -34,7 +12,7 @@ const ContactSection = () => {
         }}>
           <h2 className="heading-lg mb-4">Get In Touch</h2>
           <p className="subtitle mx-auto">
-            Have a project in mind or just want to say hello? Feel free to reach out.
+            Have a project in mind or just want to say hello? Schedule a meeting using the calendar below.
           </p>
         </div>
         
@@ -66,35 +44,15 @@ const ContactSection = () => {
           <div className="animate-slideUp opacity-0" style={{
             animationDelay: '0.4s'
           }}>
-            <form onSubmit={handleSubmit} className="bg-white rounded-lg p-6 shadow-sm">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                  <Input id="name" placeholder="Your name" required />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                  <Input id="email" type="email" placeholder="Your email" required />
-                </div>
-              </div>
-              
-              <div className="mb-4">
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                <Input id="subject" placeholder="Subject" required />
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <Textarea id="message" placeholder="Your message" rows={5} required />
-              </div>
-              
-              <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? <>Sending...</> : <>
-                    Send Message
-                    <Send className="ml-2 h-4 w-4" />
-                  </>}
-              </Button>
-            </form>
+            <div className="bg-white rounded-lg p-6 shadow-sm" style={{ height: '650px' }}>
+              <InlineWidget 
+                url="https://calendly.com/your-calendly-username" 
+                styles={{ 
+                  height: '100%',
+                  width: '100%',
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
