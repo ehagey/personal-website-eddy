@@ -1,3 +1,4 @@
+
 import { Check } from 'lucide-react';
 
 const AboutSection = () => {
@@ -26,7 +27,11 @@ const AboutSection = () => {
         'Really everything, but I\'m mainly interested in:',
         'Economics',
         'Geopolitics', 
-        'Warfare'
+        'Warfare',
+        '',
+        'Currently reading:',
+        '1. Man\'s Search for Meaning (Victor Frankl)',
+        '2. Algorithms To Live By (Christian & Griffiths)'
       ]
     }
   ];
