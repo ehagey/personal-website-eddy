@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
@@ -22,7 +21,6 @@ const Header = () => {
 
   const navItems = [
     { name: 'About', path: '/#about' },
-    { name: 'Projects', path: '/#projects' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/#contact' },
   ];
