@@ -37,10 +37,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Connect</h3>
             <div className="flex space-x-4 mb-4">
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://github.com/ehagey" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Github size={20} />
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/eddy-hage-youssef-29b6b618b/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
               <a href="#" className="hover:text-white transition-colors">
@@ -50,7 +50,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
             </div>
-            <p>hello@example.com</p>
+            <p>eddy.hage-youssef@mail.mcgill.ca</p>
           </div>
         </div>
         

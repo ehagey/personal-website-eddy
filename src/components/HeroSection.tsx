@@ -1,3 +1,4 @@
+
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const HeroSection = () => {
@@ -28,13 +29,13 @@ const HeroSection = () => {
                 </a>
               </Button>
               <div className="flex space-x-4 mt-4 sm:mt-0 sm:ml-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="https://github.com/ehagey" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
                   <Github size={20} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="https://www.linkedin.com/in/eddy-hage-youssef-29b6b618b/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
                   <Linkedin size={20} />
                 </a>
-                <a href="mailto:email@example.com" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="mailto:eddy.hage-youssef@mail.mcgill.ca" className="text-gray-600 hover:text-gray-900 transition-colors">
                   <Mail size={20} />
                 </a>
               </div>
