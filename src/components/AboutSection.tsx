@@ -23,11 +23,9 @@ const AboutSection = () => {
     {
       name: 'Reading',
       details: [
-        'Really everything, but I\'m mainly interested in Economics, Geopolitics, and Warfare.',
-        '',
         'Currently reading:',
         '1. Man\'s Search for Meaning (Victor Frankl)',
-        '2. Algorithms To Live By (Christian & Griffiths)'
+        '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)'
       ]
     }
   ];
