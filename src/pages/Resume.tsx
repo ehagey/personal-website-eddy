@@ -1,8 +1,7 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Briefcase, GraduationCap, Download, HeartHandshake } from 'lucide-react';
+import { Briefcase, GraduationCap, HeartHandshake } from 'lucide-react';
 
 const Resume = () => {
   return (
@@ -17,12 +16,9 @@ const Resume = () => {
                 My professional background and experience
               </p>
             </div>
-            <Button className="flex items-center" asChild>
-              <a href="#" download>
-                <Download className="mr-2 h-4 w-4" />
-                Download PDF
-              </a>
-            </Button>
+            <p className="text-sm text-muted-foreground italic">
+              PDF version available upon request
+            </p>
           </div>
 
           <div className="space-y-12">
@@ -183,4 +179,3 @@ const Resume = () => {
 };
 
 export default Resume;
-
