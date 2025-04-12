@@ -24,14 +24,14 @@ const AboutSection = () => {
     }
   ];
   const quotes = [{
-    text: "The best way to predict the future is to invent it.",
-    author: "Alan Kay"
+    text: "I'm a great believer in luck, and I find the harder I work, the more I have of it.",
+    author: "Thomas Jefferson"
   }, {
-    text: "It is not the strongest of the species that survives, nor the most intelligent. It is the one most adaptable to change.",
-    author: "Charles Darwin"
+    text: "It's not what happens to you, but how you react to it that matters.",
+    author: "Epictetus"
   }, {
-    text: "The journey of a thousand miles begins with one step.",
-    author: "Lao Tzu"
+    text: "Be the change you wish to see in the world.",
+    author: "Mahatma Gandhi"
   }];
   return <section id="about" className="section-padding bg-gray-50">
       <div className="container max-w-7xl mx-auto container-padding">
