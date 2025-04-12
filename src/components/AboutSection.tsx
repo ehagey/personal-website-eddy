@@ -23,10 +23,10 @@ const AboutSection = () => {
     {
       name: 'Reading',
       details: [
-        'Currently reading:',
         '1. Man\'s Search for Meaning (Victor Frankl)',
         '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)'
-      ]
+      ],
+      context: '(Currently reading)'
     }
   ];
   const quotes = [{
