@@ -1,25 +1,20 @@
-
 import { useState } from 'react';
 import { InlineWidget } from 'react-calendly';
 import { Mail, MapPin } from 'lucide-react';
-
 const ContactSection = () => {
-  return (
-    <section id="contact" className="section-padding bg-gray-50">
+  return <section id="contact" className="section-padding bg-gray-50">
       <div className="container max-w-7xl mx-auto container-padding">
         <div className="text-center mb-16 animate-slideUp opacity-0" style={{
-          animationDelay: '0.2s'
-        }}>
+        animationDelay: '0.2s'
+      }}>
           <h2 className="heading-lg mb-4">Get In Touch</h2>
-          <p className="subtitle mx-auto">
-            Having a project in mind or just want to say hello? Please feel free to schedule a meeting using the calendar below.
-          </p>
+          <p className="subtitle mx-auto">Have a project in mind or just want to say hello? Please feel free to schedule a meeting using the calendar below.</p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-8 animate-slideUp opacity-0" style={{
-            animationDelay: '0.3s'
-          }}>
+          animationDelay: '0.3s'
+        }}>
             <div className="flex items-start space-x-4">
               <div className="bg-white p-3 rounded-full shadow-sm">
                 <MapPin className="h-6 w-6 text-primary" />
@@ -42,22 +37,19 @@ const ContactSection = () => {
           </div>
           
           <div className="animate-slideUp opacity-0" style={{
-            animationDelay: '0.4s'
+          animationDelay: '0.4s'
+        }}>
+            <div className="bg-white rounded-lg p-6 shadow-sm" style={{
+            height: '650px'
           }}>
-            <div className="bg-white rounded-lg p-6 shadow-sm" style={{ height: '650px' }}>
-              <InlineWidget 
-                url="https://calendly.com/eddy-hage1" 
-                styles={{ 
-                  height: '100%',
-                  width: '100%',
-                }}
-              />
+              <InlineWidget url="https://calendly.com/eddy-hage1" styles={{
+              height: '100%',
+              width: '100%'
+            }} />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
