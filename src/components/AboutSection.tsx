@@ -1,14 +1,11 @@
-
 import { Check } from 'lucide-react';
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 const AboutSection = () => {
   const skills = ['Programming', 'Machine Learning', 'Data Analytics', 'Artificial Intelligence', 'Research', 'Statistical Analysis', 'LLM Engineering', 'Prompt Design and Engineering', 'Problem Structuring'];
   const hobbies = [
     {
       name: 'Judo',
-      details: 'Black Belt, 7x Lebanese national Champion, Arab Championship first place in 2017.'
+      details: 'Black Belt | 7× Lebanese National Champion | Arab Championship Gold (2017)'
     },
     {
       name: 'Guitar',
@@ -109,19 +106,13 @@ const AboutSection = () => {
             <h3 className="heading-md mb-2">Hobbies</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {hobbies.map(hobby => (
-                <HoverCard key={hobby.name}>
-                  <HoverCardTrigger>
-                    <div className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow text-sm cursor-pointer">
-                      <span className="font-medium">{hobby.name}</span>
-                    </div>
-                  </HoverCardTrigger>
-                  <HoverCardContent className="w-80 p-4">
-                    <div className="space-y-2">
-                      <h4 className="font-semibold">{hobby.name}</h4>
-                      <p className="text-sm text-gray-600">{hobby.details}</p>
-                    </div>
-                  </HoverCardContent>
-                </HoverCard>
+                <div 
+                  key={hobby.name} 
+                  className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow text-sm"
+                >
+                  <div className="font-medium mb-2">{hobby.name}</div>
+                  <p className="text-xs text-gray-600">{hobby.details}</p>
+                </div>
               ))}
             </div>
           </div>
