@@ -1,12 +1,12 @@
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const HeroSection = () => {
-  return (
-    <section id="home" className="min-h-screen flex items-center pt-20 section-padding">
+  return <section id="home" className="min-h-screen flex items-center pt-20 section-padding">
       <div className="container max-w-7xl mx-auto container-padding">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="flex-1 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
+          <div className="flex-1 animate-fadeIn" style={{
+          animationDelay: '0.2s'
+        }}>
             <p className="text-sm font-medium text-gray-500 mb-3">Hi, my name is</p>
             <h1 className="heading-xl mb-4">
               <span className="block text-xl md:text-2xl">Eddy Hage-Youssef</span>
@@ -41,22 +41,18 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="flex-1 max-w-md order-first lg:order-last animate-fadeIn" style={{ animationDelay: '0.4s' }}>
+          <div className="flex-1 max-w-md order-first lg:order-last animate-fadeIn" style={{
+          animationDelay: '0.4s'
+        }}>
             <div className="relative">
               <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-r from-primary to-gray-600 opacity-75 blur"></div>
               <div className="relative overflow-hidden rounded-xl bg-white shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" 
-                  alt="Profile" 
-                  className="w-full h-auto object-cover aspect-[4/3]"
-                />
+                <img alt="Profile" src="/lovable-uploads/e3682f1c-f543-43d2-8b64-8b6d2732dc0e.jpg" className="w-full h-auto aspect-[4/3] object-scale-down" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
