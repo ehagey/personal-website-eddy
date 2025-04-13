@@ -13,7 +13,13 @@ const Blog = () => {
           <p className="subtitle mx-auto mb-12 text-center">Thoughts, insights, and reflections on life, career, research, AI—and pretty much anything else.</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <BlogPost title="Become Someone People can Depend on" date="April 13, 2025" slug="become-someone-people-can-depend-on" content="There's something deeply fulfilling about stepping up and taking ownership of your path and decisions. It's not always easy, but it's worth it. Because when you choose to carry the weight of responsibility, you grow into someone you—and others—can depend on." isPreview={true} />
+            <BlogPost 
+              title="Become Someone People can Depend on" 
+              date="April 13, 2025" 
+              slug="become-someone-people-can-depend-on" 
+              content="There's something deeply fulfilling about stepping up and taking ownership of your path and decisions. It's not always easy, but it's worth it. Because when you choose to carry the weight of responsibility, you grow into someone you—and others—can depend on." 
+              isPreview={true} 
+            />
           </div>
         </section>
       </main>
@@ -21,4 +27,3 @@ const Blog = () => {
     </>;
 };
 export default Blog;
-

@@ -32,4 +32,3 @@ const DependableBlogPost = () => {
 };
 
 export default DependableBlogPost;
-
