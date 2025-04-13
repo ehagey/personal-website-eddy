@@ -1,14 +1,6 @@
-
 import BlogPost from '@/components/BlogPost';
-
 const DependableBlogPost = () => {
-  return (
-    <BlogPost
-      title="Become Someone People can Depend on"
-      date="April 13, 2025"
-      slug="become-someone-people-can-depend-on"
-      content={
-        <div>
+  return <BlogPost title="Become Someone People can Depend on" date="April 13, 2025" slug="become-someone-people-can-depend-on" content={<div>
           <p className="mb-4">There's something deeply fulfilling about stepping up and taking ownership of your path and decisions. It's not always easy, but it's worth it. Because when you choose to carry the weight of responsibility, you grow into someone you—and others—can depend on.</p>
           
           <p className="mb-4">The world doesn't owe us ease. But it offers something better: the opportunity to grow through effort. Go the extra mile—in your work, in your studies, in how you treat others. Be deliberate. Be dependable. Build a life you respect.</p>
@@ -19,16 +11,12 @@ const DependableBlogPost = () => {
           
           <p className="mb-4">Responsibility isn't a burden; it's a foundation. It turns potential into strength. And the more you carry, the more you grow. But never forget: success is hollow without character. Go far, but go with integrity. Win, but win honestly. Work hard, but never compromise the connections you cherish.</p>
           
-          <p className="mb-4">So don't just do what's expected. Do more. Live like it matters—because it does.</p>
+          <p className="mb-4">So, don't just do what's expected. Do more. Live like it matters. Because it does.</p>
           
           <blockquote className="italic border-l-4 border-gray-300 pl-4 my-6">
             <p>"The world liked you as a child but needs you as an adult."</p>
             <footer className="text-right">— John Mayer</footer>
           </blockquote>
-        </div>
-      }
-    />
-  );
+        </div>} />;
 };
-
 export default DependableBlogPost;
