@@ -14,8 +14,8 @@ const DependableBlogPost = () => {
           <p className="mb-4">So, don't just do what's expected from you. Do more. Go the extra mile. Live like it matters because it does.</p>
           
           <blockquote className="italic border-l-4 border-gray-300 pl-4 my-6">
-            <p>"Maturity doesn't come with age; it comes with acceptance of responsibility"</p>
-            <footer className="text-right">— Ed Cole</footer>
+            <p>"The world liked you as a child but needs you as an adult"</p>
+            <footer className="text-right">- John Mayer</footer>
           </blockquote>
         </div>} />;
 };
