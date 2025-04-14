@@ -7,7 +7,7 @@ const DependableBlogPost = () => {
           
           <p className="mb-4">Ray Dalio reminds us: pain plus reflection equals progress. Every setback contains instruction. But only if you're willing to face it. Don't run from discomfort. Let it sharpen you. Let it show you where you're not yet who you want to be.</p>
           
-          <p className="mb-4">Discipline is not about rigidity. It's about how you protect what matters - your goals, your relationships, your word. When you work hard, show up early, stay present, and when you do more than what's expected or required, you don't just get results. You become someone reliable. Someone who is capable. Someone people can depend on and trust.</p>
+          <p className="mb-4">Discipline is not about rigidity. It's how you protect what matters - your goals, your relationships, your word. When you work hard, show up early, are consistent, and when you do more than what's expected or required, you don't just get results. You become someone reliable. Someone who is capable. Someone people can depend on and trust.</p>
           
           <p className="mb-4">Responsibility isn't a burden. It's a foundation to turn potential into strength. And the more you carry, the more you grow. But never forget: success is hollow without character. Go far, but go with integrity. Win, but win honestly. Work hard, but never compromise the connections you cherish.</p>
           
