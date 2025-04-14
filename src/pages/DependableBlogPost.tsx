@@ -1,3 +1,4 @@
+
 import BlogPost from '@/components/BlogPost';
 const DependableBlogPost = () => {
   return <BlogPost title="Become Someone People can Depend on" date="April 12, 2025" slug="become-someone-people-can-depend-on" content={<div>
@@ -15,7 +16,7 @@ const DependableBlogPost = () => {
           
           <blockquote className="italic border-l-4 border-gray-300 pl-4 my-6">
             <p>"The world liked you as a child but needs you as an adult"</p>
-            <footer className="text-right">- John Mayer</footer>
+            <footer className="text-left">- John Mayer</footer>
           </blockquote>
         </div>} />;
 };
