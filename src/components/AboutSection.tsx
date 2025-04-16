@@ -16,7 +16,7 @@ const AboutSection = () => {
   }, {
     name: 'Blogging',
     details: [
-      <>Published my first blog <Link to="/blog" className="text-primary hover:underline">on April 12</Link>.</>,
+      <>Published <Link to="/blog" className="text-primary hover:underline">first blog</Link> on April 12!</>,
       'Will be posting weekly... Stay tuned'
     ]
   }];
@@ -122,4 +122,5 @@ const AboutSection = () => {
       </div>
     </section>;
 };
+
 export default AboutSection;
