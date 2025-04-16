@@ -1,4 +1,6 @@
 import { Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 const AboutSection = () => {
   const skills = ['Programming', 'Machine Learning', 'Data Analytics', 'Artificial Intelligence', 'Research', 'Statistical Analysis', 'LLM Engineering', 'Prompt Design and Engineering', 'Problem Structuring'];
   const hobbies = [{
@@ -14,7 +16,7 @@ const AboutSection = () => {
   }, {
     name: 'Blogging',
     details: [
-      'Published my first blog <a href="/blog" className="text-primary hover:underline">on April 12</a>.',
+      <>Published my first blog <Link to="/blog" className="text-primary hover:underline">on April 12</Link>.</>,
       'Will be posting weekly... Stay tuned'
     ]
   }];
