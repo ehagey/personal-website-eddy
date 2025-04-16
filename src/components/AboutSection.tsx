@@ -13,7 +13,10 @@ const AboutSection = () => {
     details: ['1. Man\'s Search for Meaning (Victor Frankl)', '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)']
   }, {
     name: 'Blogging',
-    details: ['New to this!', 'Posts coming soon...']
+    details: [
+      'Published my first blog <a href="/blog" className="text-primary hover:underline">on April 12</a>.',
+      'Will be posting weekly... Stay tuned'
+    ]
   }];
   const quotes = [{
     text: "I'm a great believer in luck, and I find the harder I work, the more I have of it.",
