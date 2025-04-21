@@ -17,8 +17,7 @@ const SelfAwarenessBlogPost = () => {
           <p>It's like having an inner critic who never learned the art of constructive feedback. Just ruthless commentary with perfect hindsight.</p>
 
           <p>That slightly odd pause in a conversation? Probably doesn't need a five-act mental play dedicated to it.</p>
-
-          <p>That feeling that you should have been more polite, funnier, or smarter? Probably no one is thinking that but you.</p>
+          That feeling that you should have been more polite, funnier, or smarter? Probably no one is thinking that but you.
 
           <p>It's like I'm at the point where I'm struggling to balance between caring enough to improve and caring so much that I can't move forward.</p>
 
