@@ -4,7 +4,7 @@ import BlogPost from '@/components/BlogPost';
 const SelfAwarenessBlogPost = () => {
   return (
     <BlogPost
-      title="Self-Awareness: a Double-Edged Sword"
+      title="Self-Awareness: A Double-Edged Sword"
       date="April 20, 2025"
       content={
         <div className="space-y-8">
