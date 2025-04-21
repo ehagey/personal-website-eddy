@@ -7,7 +7,7 @@ const SelfAwarenessBlogPost = () => {
       title="Self-Awareness: a Double-Edged Sword"
       date="April 20, 2025"
       content={
-        <>
+        <div className="space-y-8">
           <p>There's a lot of great things that come from knowing yourself too well. But, sometimes you just can't let yourself off the hook.</p>
 
           <p>Self-awareness is supposed to be this golden ticket to becoming better. And it is, mostly. It's how I've caught my worst habits before they became permanent addresses.</p>
@@ -25,7 +25,7 @@ const SelfAwarenessBlogPost = () => {
           <p>What I've learned is that not everything that crosses your mind deserves to be pondered on. Some thoughts are just passing through, and it's okay to let them go.</p>
 
           <p>Your best energy belongs to the people you love and the work that matters. Not to endless loops of social playback that no one else is watching.</p>
-        </>
+        </div>
       }
       slug="self-awareness-double-edged-sword"
     />
