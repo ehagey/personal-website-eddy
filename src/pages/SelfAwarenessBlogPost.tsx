@@ -12,9 +12,9 @@ const SelfAwarenessBlogPost = () => {
 
           <p>Self-awareness is supposed to be this golden ticket to becoming better. And it is, mostly. It's how I've caught my worst habits before they became permanent addresses.</p>
 
-          <p>But then there's that other side. Laying in bed at night and wondering if you talked too much or not enough when meeting someone new. Or if you could have been more courteous in your interaction with your friend. I find myself doing this almost daily. Dissecting every conversation and analyzing each pause, joke, and reaction until it's unrecognizable.</p>
+          <p>But then there's that other side. Laying in bed at night and wondering if you talked too much or not enough when meeting someone new. Or if you could have been more courteous in your interaction with someone you met. I find myself doing this almost daily. Dissecting every conversation and analyzing each pause, joke, and reaction until it's unrecognizable.</p>
 
-          <p>It's like having an inner critic who never learned the art of constructive feedback. Just ruthless commentary with perfect hindsight.</p>
+          <p>It's like having an inner critic who never learned about constructive feedback. Just ruthless commentary with perfect hindsight.</p>
 
           <p>That slightly odd pause in a conversation? Probably doesn't need a five-act mental play dedicated to it. That feeling that you should have been more polite, acted smarter, or just should have known better? Probably no one is thinking that but you. It's like I'm at the point where I'm struggling to balance between caring enough to improve and caring so much that I can't move forward.</p>
           <p>What I've learned is that not everything that crosses your mind deserves to be pondered on. Some thoughts are just passing through, and it's okay to let them go.</p>
