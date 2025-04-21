@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,7 +9,6 @@ import Blog from "./pages/Blog";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import DependableBlogPost from "./pages/DependableBlogPost";
-import SelfAwarenessBlogPost from "./pages/SelfAwarenessBlogPost";
 
 const queryClient = new QueryClient();
 
@@ -22,7 +22,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/become-someone-people-can-depend-on" element={<DependableBlogPost />} />
-          <Route path="/blog/self-awareness-double-edged-sword" element={<SelfAwarenessBlogPost />} />
           <Route path="/resume" element={<Resume />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

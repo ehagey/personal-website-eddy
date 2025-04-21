@@ -14,14 +14,6 @@ const Blog = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <BlogPost 
-              title="Self-Awareness: a Double-Edged Sword" 
-              date="April 20, 2025" 
-              slug="self-awareness-double-edged-sword"
-              content="There's a lot of great things that come from knowing yourself too well. But, sometimes you just can't let yourself off the hook. Self-awareness is supposed to be this golden ticket to becoming better. And it is, mostly. It's how I've caught my worst habits before they became permanent addresses..."
-              isPreview={true}
-            />
-
-            <BlogPost 
               title="Become Someone People can Depend on" 
               date="April 12, 2025" 
               slug="become-someone-people-can-depend-on" 
