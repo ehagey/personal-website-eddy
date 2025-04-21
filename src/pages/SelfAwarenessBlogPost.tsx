@@ -16,10 +16,7 @@ const SelfAwarenessBlogPost = () => {
 
           <p>It's like having an inner critic who never learned the art of constructive feedback. Just ruthless commentary with perfect hindsight.</p>
 
-          <p>That slightly odd pause in a conversation? Probably doesn't need a five-act mental play dedicated to it. That feeling that you should have been more polite, funnier, or smarter? Probably no one is thinking that but you. </p>
-
-          <p>It's like I'm at the point where I'm struggling to balance between caring enough to improve and caring so much that I can't move forward.</p>
-
+          <p>That slightly odd pause in a conversation? Probably doesn't need a five-act mental play dedicated to it. That feeling that you should have been more polite, funnier, or smarter? Probably no one is thinking that but you. It's like I'm at the point where I'm struggling to balance between caring enough to improve and caring so much that I can't move forward.</p>
           <p>What I've learned is that not everything that crosses your mind deserves to be pondered on. Some thoughts are just passing through, and it's okay to let them go.</p>
 
           <p>Your best energy belongs to the people you love and the work that matters. Not to endless loops of social playback that no one else is watching.</p>
