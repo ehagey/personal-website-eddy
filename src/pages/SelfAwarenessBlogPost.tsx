@@ -12,7 +12,7 @@ const SelfAwarenessBlogPost = () => {
 
           <p>Self-awareness is supposed to be this golden ticket to becoming better. And it is, mostly. It's how I've caught my worst habits before they became permanent addresses.</p>
 
-          <p>But then there's that other side. Laying in bed at night and wondering if you talked too much or not enough when meeting someone new. I find myself doing this almost daily. Dissecting every conversation and analyzing each pause, joke, and reaction with someone new until it's unrecognizable.</p>
+          <p>But then there's that other side. Laying in bed at night and wondering if you talked too much or not enough when meeting someone new. Or if you could have been more polite in your interaction with someone you met today. I find myself doing this almost daily. Dissecting every conversation and analyzing each pause, joke, and reaction with someone new until it's unrecognizable.</p>
 
           <p>It's like having an inner critic who never learned the art of constructive feedback. Just ruthless commentary with perfect hindsight.</p>
 
