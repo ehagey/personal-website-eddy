@@ -12,11 +12,21 @@ const PotentialBlogPost = () => {
           <p className="mb-4">
             We have this one wild, unrepeatable shot at building a life worth living, and the fear of not making the most out of it eclipses everything else.
           </p>
+          
           <p className="mb-4">
-            My biggest fear isn't failing a job interview or getting rejected from my dream graduate school. It's the possibility that ten or twenty years from now, I'll look back and realize I never reached my full potential. That I played it too safe when I had the freedom to take risks and that I settled when I could have done better. What is someone's "full potential" you ask? Is it academic, professional, social, physical, or something else?
+            My biggest fear isn't failing a job interview or getting rejected from my dream graduate school. It's the possibility that ten or twenty years from now, I'll look back and realize I never reached my full potential. That I played it too safe when I had the freedom to take risks and that I settled when I could have done better.
+            
+            <p className="mb-4">
+            What is someone's "full potential" you ask? Is it academic, professional, social, physical, or something else?
+            </p>
+            
           </p>
           <p className="mb-4">
-            For me, it encompasses all these dimensions, though with varying priorities. Life demands trade-offs, and sacrifices are inevitable. The question becomes not if we make these sacrifices, but when? Do we embrace delayed gratification or immediate fulfillment? Do I leave my family and friends to study abroad for better education and professional opportunities and accept present solitude for future advancement? Do I skip tonight's social outing to study for my exam? These choices aren't obvious; they reflect our deeper values and our willingness to postpone reward. It all lies in recognizing which sacrifices align with our long-term aspirations rather than merely responding to short-term desires.
+            For me, it encompasses all these dimensions, though with varying priorities. Life demands trade-offs, and sacrifices are inevitable. The question becomes not if we make these sacrifices, but when? Do we embrace delayed gratification or immediate fulfillment? Do I leave my family and friends to study abroad for better education and professional opportunities and accept present solitude for future advancement? Do I skip tonight's social outing to study for my exam?
+            </p>
+            
+            <p className="mb-4">
+            These choices aren't obvious; they reflect our deeper values and our willingness to postpone reward. It all lies in recognizing which sacrifices align with our long-term aspirations rather than merely responding to short-term desires.
           </p>
           <p className="mb-4">
             There's something strange about being told you have "so much potential" at this age. It's very exciting. But, it comes with pressure. It whispers, "Don't waste this." And that whisper can be paralyzing.
