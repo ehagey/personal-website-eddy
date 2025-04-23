@@ -34,7 +34,7 @@ const PotentialBlogPost = () => {
             I have fewer responsibilities now than I likely ever will again. No mortgage. No children depending on me. My health is good. My energy is high.
           </p>
           <p className="mb-4">
-            Going the extra mile now, pushing myself beyond comfortable limits, and taking calculated risks. This is, in my view, what this season of life is for.
+            Going the extra mile now, pushing myself beyond comfortable limits, working hard, and taking calculated risks. This is, in my view, what this season of life is for.
           </p>
           <p className="mb-4">
             I'm realizing that fulfilling my potential is in becoming someone who can carry responsibility well, works hard and with integrity, loves genuinely, and builds something meaningful in both professional and personal spheres.
