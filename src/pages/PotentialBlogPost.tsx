@@ -17,7 +17,7 @@ const PotentialBlogPost = () => {
             My biggest fear isn't failing a job interview or getting rejected from my dream graduate school. It's the possibility that ten or twenty years from now, I'll look back and realize I never reached my full potential. That I played it too safe when I had the freedom to take risks and that I settled when I could have done better.
           </p>
             <p className="mb-4">
-            What is someone's "full potential" you ask? Does it manifest in academic achievements, professional success, social connections, physical wellbeing, or something entirely different?
+            What is someone's "full potential" you ask? Does it manifest in academic achievements, professional success, raising a family, social connections, physical wellbeing, or something entirely different?
             </p>
             
           <p className="mb-4">
