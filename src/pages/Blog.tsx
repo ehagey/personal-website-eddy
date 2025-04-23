@@ -14,7 +14,7 @@ const Blog = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <BlogPost 
-              title="My Biggest Fear: Not Reaching my Full Potential"
+              title="Realize your Potential"
               date="April 20, 2025"
               slug="my-biggest-fear-not-reaching-my-full-potential"
               content="We have this one wild, unrepeatable shot at building a life worth living, and the fear of not making the most out of it eclipses everything else."
