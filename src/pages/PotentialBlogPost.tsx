@@ -4,7 +4,7 @@ import BlogPost from '@/components/BlogPost';
 const PotentialBlogPost = () => {
   return (
     <BlogPost
-      title="My Biggest Fear: Not Reaching my Full Potential"
+      title="Realize your Potential"
       date="April 20, 2025"
       slug="my-biggest-fear-not-reaching-my-full-potential"
       content={
