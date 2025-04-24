@@ -14,7 +14,7 @@ const PotentialBlogPost = () => {
           </p>
 
           <p className="mb-4">
-              The number one thing you have to do before you start any endeavor is to set your expectations. Everyone wants to make it in life, but what does it mean to make it?
+              The number one thing you have to do before you start any endeavor is to set your expectations. Otherwise, you will walk through life constantly unfulfilled. Define the goals that matter most to you and work towards them. 
           </p>
 
            
