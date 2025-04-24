@@ -25,7 +25,12 @@ const PotentialBlogPost = () => {
             There is something strange about being told you have "so much potential" at this age. It's very exciting. But, it comes with pressure. It whispers, "Don't waste this." And that whisper can be paralyzing.
           </p>
           <p className="mb-4">
-            I have fewer responsibilities now than I likely ever will again. No mortgage. No children depending on me. My health is good. My energy is high. I have a supportive family and friends. How can I make the most out of this to build the life I envision?
+            I have fewer responsibilities now than I likely ever will again. No mortgage. No children depending on me. My health is good. My energy is high. I have a supportive family and friends.
+
+          </p>
+
+          <p className="mb-4">
+            How can I make the most out of this to build the life I envision?
             This unique window of opportunity presents a very important choice: pursue immediate pleasures, or embrace delayed gratification.
             The ability to sacrifice present comfort for future rewards is perhaps the most powerful predictor of long-term success. 
           </p>
