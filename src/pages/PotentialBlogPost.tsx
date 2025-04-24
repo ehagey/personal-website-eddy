@@ -10,7 +10,7 @@ const PotentialBlogPost = () => {
       content={
         <div>
           <p className="mb-4">
-            We have this one wild, unrepeatable shot at building a life worth living, and the fear of not making the most out of it eclipses everything else.
+            We have this one wild, unrepeatable shot at building a life worth living, and the fear of not making the most out of it eclipses everything else. The number one thing you have to do before you start any endeavor is to set your expectations. Everyone wants to make it in life, but what does it mean to make it? Who do you want to be 10, 20, 30 years from now?
           </p>
           
           <p className="mb-4">
