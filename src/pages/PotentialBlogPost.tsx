@@ -10,8 +10,15 @@ const PotentialBlogPost = () => {
       content={
         <div>
           <p className="mb-4">
-            We have this one wild, unrepeatable shot at building a life worth living, and the fear of not making the most out of it eclipses everything else. The number one thing you have to do before you start any endeavor is to set your expectations. Everyone wants to make it in life, but what does it mean to make it? Who do you want to be 10, 20, 30 years from now?
+            We have this one wild, unrepeatable shot at building a life worth living, and the fear of not making the most out of it eclipses everything else.
           </p>
+
+          <p className="mb-4">
+              The number one thing you have to do before you start any endeavor is to set your expectations. Everyone wants to make it in life, but what does it mean to make it? Who do you want to be 10, 20, 30 years from now?
+          </p>
+
+           
+
           
           <p className="mb-4">
             My biggest fear isn't failing a job interview or getting rejected from my dream graduate school. It's the possibility that ten or twenty years from now, I'll look back and realize I never reached my full potential. That I played it too safe when I had the freedom to take risks and that I settled when I could have done better.
