@@ -32,14 +32,10 @@ const PotentialBlogPost = () => {
           <p className="mb-4">
             How can I make the most out of this to build the life I envision?
             This unique window of opportunity presents a very important choice: pursue immediate pleasures, or embrace delayed gratification.
-            Do we surrender to immediate satisfaction, chase dopamine, casual relationships and "just live our youth", or do we choose to work towards something more meaningful?
+            The ability to sacrifice present comfort for future rewards is perhaps the most powerful predictor of long-term success.
 
           </p>
 
-          
-            <p className="mb-4">  
-            The ability to sacrifice present comfort for future rewards is perhaps the most powerful predictor of long-term success. 
-          </p>
           <p className="mb-4">
             Going the extra mile now, pushing myself beyond comfortable limits, working hard, and taking calculated risks. This is, in my view, what this season of life is for.
           </p>
