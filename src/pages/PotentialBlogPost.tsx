@@ -25,7 +25,7 @@ const PotentialBlogPost = () => {
             There is something strange about being told you have "so much potential" at this age. It's very exciting. But, it comes with pressure. It whispers, "Don't waste this." And that whisper can be paralyzing.
           </p>
           <p className="mb-4">
-            I have fewer responsibilities now than I likely ever will again. No mortgage. No children depending on me. My health is good. My energy is high. How can I make the most out of this to build the life I envision?
+            I have fewer responsibilities now than I likely ever will again. No mortgage. No children depending on me. My health is good. My energy is high. I have a supportive family and friends. How can I make the most out of this to build the life I envision?
           </p>
           <p className="mb-4">
             Going the extra mile now, pushing myself beyond comfortable limits, working hard, and taking calculated risks. This is, in my view, what this season of life is for.
