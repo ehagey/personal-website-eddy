@@ -25,7 +25,7 @@ const PotentialBlogPost = () => {
             There is something strange about being told you have "so much potential" at this age. It's very exciting. But, it comes with pressure. It whispers, "Don't waste this." And that whisper can be paralyzing.
           </p>
           <p className="mb-4">
-            I have fewer responsibilities now than I likely ever will again. No mortgage. No children depending on me. My health is good. My energy is high. I have a supportive family and friends.
+            I have fewer responsibilities now than I likely ever will again. No mortgage. No children depending on me. My health is good. My energy is high. I have a very supportive family and friends.
 
           </p>
 
