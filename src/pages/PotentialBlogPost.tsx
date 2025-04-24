@@ -26,14 +26,12 @@ const PotentialBlogPost = () => {
           </p>
           <p className="mb-4">
             I have fewer responsibilities now than I likely ever will again. No mortgage. No children depending on me. My health is good. My energy is high. I have a very supportive family and friends.
-
           </p>
 
           <p className="mb-4">
             How can I make the most out of this to build the life I envision?
             This unique window of opportunity presents a very important choice: pursue immediate pleasures, or embrace delayed gratification.
             The ability to sacrifice present comfort for future rewards is perhaps the most powerful predictor of long-term success.
-
           </p>
 
           <p className="mb-4">

@@ -16,7 +16,7 @@ const Blog = () => {
             <BlogPost 
               title="Realize your Potential"
               date="April 20, 2025"
-              slug="my-biggest-fear-not-reaching-my-full-potential"
+              slug="realize-your-potential"
               content="We have this one wild, unrepeatable shot at building a life worth living, and the fear of not making the most out of it eclipses everything else."
               isPreview={true}
             />
