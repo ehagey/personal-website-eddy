@@ -20,10 +20,7 @@ const PotentialBlogPost = () => {
           <p className="mb-4">
             My biggest fear isn't failing a job interview or getting rejected from my dream graduate school. It's the possibility that ten or twenty years from now, I'll look back and realize I never reached my full potential. That I played it too safe when I had the freedom to take risks and that I settled when I could have done better.
           </p>
-
-          <p className="mb-4">
-            There is something strange about being told you have "so much potential" at this age. It's very exciting. But, it comes with pressure. It whispers, "Don't waste this." And that whisper can be paralyzing.
-          </p>
+          
           <p className="mb-4">
             I have fewer responsibilities now than I likely ever will again. No mortgage. No children depending on me. My health is good. My energy is high. I have a very supportive family and friends.
           </p>
