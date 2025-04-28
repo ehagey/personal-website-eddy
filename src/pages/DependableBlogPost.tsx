@@ -9,9 +9,9 @@ const DependableBlogPost = () => {
           
           <p className="mb-4">Discipline is not about rigidity. It's how you protect what matters - your goals, your relationships, your word. When you work hard, show up early, are consistent, and when you do more than what's expected or required from you, you don't just get results. You become someone reliable. Someone who is capable. Someone people can depend on and trust.</p>
           
-          <p className="mb-4">Responsibility isn't a burden. It's a foundation to turn potential into strength. And the more you carry, the more you grow. But never forget: success is hollow without character. Go far, but go with integrity. Win, but win honestly. Work hard, but never compromise the connections you cherish.</p>
+          <p className="mb-4">Responsibility isn't a burden. It's a foundation to turn potential into strength. And the more you carry, the more you grow. But never forget: success is hollow without character. Go far, but go with integrity. Win, but win honestly. Work hard and pursue excellence in everything you do, but never sacrifice the moments with those who matter most to you. </p>
           
-          <p className="mb-4">So, don't just do what's expected from you. Do more. Go the extra mile. Live like it matters because it does.</p>
+          <p className="mb-4">So, don't just do what's expected from you. Do more. Go the extra mile. Live like it matters. Because it does.</p>
           
           <blockquote className="italic border-l-4 border-gray-300 pl-4 my-6">
             <p>"The world liked you as a child but needs you as an adult"</p>
