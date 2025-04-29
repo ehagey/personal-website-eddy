@@ -11,7 +11,7 @@ const HeroSection = () => {
             <h1 className="heading-xl mb-4">
               <span className="block text-xl md:text-2xl">Eddy Hage-Youssef</span>
             </h1>
-            <p className="subtitle mb-4">I'm passionate about building products that improve people's lives.</p>
+            <p className="subtitle mb-4">I'm passionate about building products that improve people's lives. Interested in working at the intersection of AI, business, and strategy.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="outline" className="group" asChild>
                 <a href="/resume">
