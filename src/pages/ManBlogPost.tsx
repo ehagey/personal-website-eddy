@@ -7,7 +7,7 @@ const ManBlogPost = () => {
     date="April 28, 2025" 
     slug="what-is-a-man" 
     content={<div>
-      <p className="mb-4">A man protects and provides for those who depend on him. He uses his strength to keep others safe, works hard to put food on the table, and creates stability for those who depend on him. When necessary, men stand on the front lines in war to defend our freedoms and way of life.</p>
+      <p className="mb-4">Being a man means protecting and providing to those around you. A man uses his strength to keep others safe, works hard to put food on the table, and creates stability for those who depend on him. When necessary, men stand on the front lines in war to defend our freedoms and way of life.</p>
       
       <p className="mb-4">Protection takes many forms beyond the physical. A man protects others' dignity through respect and protects their potential through encouragement. He understands that providing isn't solely about financial support but also emotional availability, quality time, and genuine presence.</p>
       
