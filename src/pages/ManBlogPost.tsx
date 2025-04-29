@@ -7,13 +7,13 @@ const ManBlogPost = () => {
     date="April 28, 2025" 
     slug="what-is-a-man" 
     content={<div>
-      <p className="mb-4">Being a man means protecting and providing to those around you. A man uses his strength to keep others safe, works hard to put food on the table, and creates stability for those who depend on him. When necessary, men stand on the front lines in war to defend our freedoms and way of life.</p>
+      <p className="mb-4">A man finds purpose in protecting and providing for those he cares about. A man uses his strength to keep others safe, works hard to put food on the table, and creates stability for those who depend on him. When necessary, men stand on the front lines when duty calls to defend our freedoms and way of life.</p>
       
       <p className="mb-4">Protection takes many forms beyond the physical. A man protects others' dignity through respect and protects their potential through encouragement. He understands that providing isn't solely about financial support but also emotional availability, quality time, and genuine presence.</p>
       
       <p className="mb-4">A man develops himself completely. He builds physical strength to handle life's demands and stay healthy. He cultivates emotional strength to remain steady during life's challenges. He works toward financial strength to support his responsibilities without becoming a burden to others. He makes tough decisions when others can't or won't.</p>
       
-      <p className="mb-4">A man knows that true strength includes the ability to be gentle. He knows when to lead and when to follow based on what each situation calls for.</p>
+      <p className="mb-4">True strength includes the ability to be gentle. A man knows when to lead and when to follow based on what each situation calls for.</p>
       
       <p className="mb-4">Fancy cars and a lavish lifestyle don't make a man. Character does. A real man keeps his word. He takes responsibility for his actions and their consequences. He does what's right even when it's difficult or unpopular. He shows up consistently for the people who need him, especially when times are tough. His handshake means something.</p>
       
