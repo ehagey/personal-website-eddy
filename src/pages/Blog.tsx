@@ -1,5 +1,4 @@
 
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BlogPost from '@/components/BlogPost';
@@ -15,9 +14,9 @@ const Blog = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <BlogPost 
-              title="What is a Man?"
+              title="What it Means to be a Man"
               date="April 29, 2025"
-              slug="what-is-a-man"
+              slug="what-it-means-to-be-a-man"
               content="A man protects and provides for those who depend on him. He uses his strength to keep others safe, works hard to put food on the table, and creates stability for those who depend on him..."
               isPreview={true}
             />
@@ -44,4 +43,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
