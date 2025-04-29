@@ -14,6 +14,8 @@ const ManBlogPost = () => {
       <p className="mb-4">A man develops himself completely. He builds physical strength to handle life's demands and stay healthy. He cultivates emotional strength to remain steady during life's challenges. He works toward financial strength to support his responsibilities without becoming a burden to others. He makes tough decisions when others can't or won't.</p>
       
       <p className="mb-4">True strength includes the ability to be gentle. A man knows when to lead and when to follow based on what each situation calls for.</p>
+
+      <p className="mb-4">A man is honest, hard-working, and tries everyday to be decent person. He treats others with kindness, empathy, and respect.</p>
       
       <p className="mb-4">Fancy cars and a lavish lifestyle don't make a man. Character does. A real man keeps his word. He takes responsibility for his actions and their consequences. He does what's right even when it's difficult or unpopular. He shows up consistently for the people who need him, especially when times are tough. His handshake means something.</p>
       
