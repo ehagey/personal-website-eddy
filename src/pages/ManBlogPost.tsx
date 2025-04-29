@@ -4,7 +4,7 @@ import BlogPost from '@/components/BlogPost';
 const ManBlogPost = () => {
   return <BlogPost 
     title="What it Means to be a Man" 
-    date="April 28, 2025" 
+    date="April 29, 2025" 
     slug="what-it-means-to-be-a-man" 
     content={<div>
       <p className="mb-4">A man finds purpose in protecting and providing for those he cares about. He uses his strength to keep others safe and creates stability for those who depend on him. When necessary, men stand on the front lines when duty calls to defend our freedoms and way of life.</p>

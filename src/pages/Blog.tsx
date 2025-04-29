@@ -17,7 +17,7 @@ const Blog = () => {
               title="What it Means to be a Man"
               date="April 29, 2025"
               slug="what-it-means-to-be-a-man"
-              content="A man protects and provides for those who depend on him. He uses his strength to keep others safe, works hard to put food on the table, and creates stability for those who depend on him..."
+              content="A man finds purpose in protecting and providing for those he cares about. He uses his strength to keep others safe and creates stability for those who depend on him. When necessary, men stand on the front lines when duty calls to defend our freedoms and way of life..."
               isPreview={true}
             />
             <BlogPost 
