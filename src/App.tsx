@@ -1,4 +1,5 @@
 
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,6 +11,7 @@ import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import DependableBlogPost from "./pages/DependableBlogPost";
 import PotentialBlogPost from "./pages/PotentialBlogPost";
+import ManBlogPost from "./pages/ManBlogPost";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +26,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/become-someone-people-can-depend-on" element={<DependableBlogPost />} />
           <Route path="/blog/realize-your-potential" element={<PotentialBlogPost />} />
+          <Route path="/blog/what-is-a-man" element={<ManBlogPost />} />
           <Route path="/resume" element={<Resume />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
@@ -34,3 +37,4 @@ const App = () => (
 );
 
 export default App;
+

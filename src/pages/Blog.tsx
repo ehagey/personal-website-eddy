@@ -1,4 +1,5 @@
 
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BlogPost from '@/components/BlogPost';
@@ -13,6 +14,13 @@ const Blog = () => {
           <p className="subtitle mx-auto mb-12 text-center">Thoughts, insights, and reflections on life, career, research, AI, and pretty much anything else.</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <BlogPost 
+              title="What is a Man?"
+              date="April 29, 2025"
+              slug="what-is-a-man"
+              content="A man protects and provides for those who depend on him. He uses his strength to keep others safe, works hard to put food on the table, and creates stability for those who depend on him..."
+              isPreview={true}
+            />
             <BlogPost 
               title="Realize your Potential"
               date="April 20, 2025"
@@ -36,3 +44,4 @@ const Blog = () => {
 };
 
 export default Blog;
+
