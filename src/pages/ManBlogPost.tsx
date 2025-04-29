@@ -9,7 +9,7 @@ const ManBlogPost = () => {
     content={<div>
       <p className="mb-4">A man finds purpose in protecting and providing for those he cares about. He uses his strength to keep others safe and creates stability for those who depend on him. When necessary, men stand on the front lines when duty calls to defend our freedoms and way of life.</p>
       
-      <p className="mb-4">Protection takes many forms beyond the physical. A man protects others' dignities through respect and protects their potential through encouragement. He understands that providing isn't solely about financial support but also emotional availability, quality time, and genuine presence.</p>
+      <p className="mb-4">Protection also takes many forms beyond the physical. A man protects others' dignities through respect and protects their potential through encouragement. He understands that providing isn't solely about financial support but also emotional availability, quality time, and genuine presence.</p>
       
       <p className="mb-4">A man develops himself completely. He builds physical strength to handle life's demands and stay healthy. He cultivates emotional strength to remain steady during life's challenges. He works toward financial strength to support his responsibilities without becoming a burden to others. He makes tough decisions when others can't or won't.</p>
       
