@@ -21,7 +21,7 @@ const ManBlogPost = () => {
       
       <p className="mb-4">Most importantly, a man does what needs to be done regardless of how he feels. He shows up even when it's hard or he's tired. Even when he'd rather do something else.</p>
       
-      <p className="mb-4">The measure of a man is in the positive difference he makes in the lives of others.</p>
+      <p className="mb-4">The true measure of a man is in the positive difference he makes in the lives of others.</p>
     </div>} 
   />;
 };
