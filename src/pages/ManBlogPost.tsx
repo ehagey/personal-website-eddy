@@ -4,7 +4,7 @@ import BlogPost from '@/components/BlogPost';
 const ManBlogPost = () => {
   return <BlogPost 
     title="What is a Man?" 
-    date="April 29, 2025" 
+    date="April 28, 2025" 
     slug="what-is-a-man" 
     content={<div>
       <p className="mb-4">A man protects and provides for those who depend on him. He uses his strength to keep others safe, works hard to put food on the table, and creates stability for those who depend on him. When necessary, men stand on the front lines in war to defend our freedoms and way of life.</p>
