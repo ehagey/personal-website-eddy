@@ -1,5 +1,5 @@
 
-import { ArrowUpRight, Github } from 'lucide-react';
+import { ArrowUpRight, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -12,6 +12,7 @@ interface Project {
   image: string;
   githubUrl?: string;
   liveUrl: string;
+  linkedinUrl?: string;
   featured?: boolean;
 }
 
@@ -23,6 +24,7 @@ const projects: Project[] = [
     tags: ["Healthcare", "AI", "Research", "LLMs"],
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
     liveUrl: "https://aihealthinstitute.org/",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7311005835336306689/",
     featured: true
   },
   {
@@ -75,7 +77,7 @@ const ProjectsSection = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="flex justify-start gap-4">
+                  <div className="flex flex-wrap justify-start gap-4">
                     {featuredProject.githubUrl && (
                       <Button variant="outline" size="sm" asChild>
                         <a href={featuredProject.githubUrl} target="_blank" rel="noopener noreferrer">
@@ -90,6 +92,14 @@ const ProjectsSection = () => {
                         <ArrowUpRight className="ml-2 h-4 w-4" />
                       </a>
                     </Button>
+                    {featuredProject.linkedinUrl && (
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={featuredProject.linkedinUrl} target="_blank" rel="noopener noreferrer">
+                          <Linkedin className="mr-2 h-4 w-4" />
+                          LinkedIn Announcement
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>
