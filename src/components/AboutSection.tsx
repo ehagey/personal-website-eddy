@@ -62,40 +62,6 @@ const AboutSection = () => {
           </div>
           
           <div className="animate-slideUp opacity-0" style={{
-          animationDelay: '0.6s'
-        }}>
-            <h2 className="heading-lg mb-4">Featured Project</h2>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="flex flex-col lg:flex-row">
-                <div className="lg:w-1/2">
-                  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" alt="AI Health Institute" className="w-full h-full object-cover object-center" style={{
-                  maxHeight: '300px'
-                }} />
-                </div>
-                <div className="lg:w-1/2 p-6 flex flex-col justify-between">
-                  <div>
-                    <h4 className="text-xl font-bold mb-2">AI Health Institute</h4>
-                    <p className="text-gray-700 mb-4 text-sm">Advancing rigorous evaluation and performance assessment of large language models (LLMs) to ensure they deliver accurate, reliable, and clinically relevant outputs that improve patient care and support clinicians.</p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {['Healthcare', 'AI', 'Research', 'LLMs'].map(tag => <span key={tag} className="bg-gray-100 px-2 py-1 rounded-full text-xs font-medium">{tag}</span>)}
-                    </div>
-                  </div>
-                  <div className="flex flex-wrap justify-start gap-2">
-                    <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors h-9 px-3 py-2">
-                      Visit Site
-                      <ArrowUpRight className="ml-2 h-4 w-4" />
-                    </a>
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7311005835336306689/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors h-9 px-3 py-2">
-                      <Linkedin className="mr-2 h-4 w-4" />
-                      LinkedIn Announcement
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="animate-slideUp opacity-0" style={{
           animationDelay: '0.8s'
         }}>
             <h3 className="heading-md mb-2">Hobbies</h3>
@@ -129,4 +95,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-
