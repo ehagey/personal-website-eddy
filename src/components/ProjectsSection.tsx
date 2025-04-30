@@ -26,25 +26,7 @@ const projects: Project[] = [
     liveUrl: "https://aihealthinstitute.org/",
     linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7311005835336306689/",
     featured: true
-  },
-  {
-    id: 2,
-    title: "Healthcare Analytics Platform",
-    description: "A platform for analyzing healthcare data to improve patient outcomes and clinical decision-making.",
-    tags: ["React", "TypeScript", "Data Analytics", "Healthcare"],
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    id: 3,
-    title: "AI Ethics Framework",
-    description: "A comprehensive framework for ensuring ethical use of AI in healthcare settings.",
-    tags: ["AI Ethics", "Research", "Healthcare"],
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-    githubUrl: "#",
-    liveUrl: "#"
-  },
+  }
 ];
 
 const ProjectsSection = () => {
@@ -107,44 +89,46 @@ const ProjectsSection = () => {
           </div>
         )}
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {regularProjects.map((project, index) => (
-            <Card key={project.id} className="overflow-hidden group h-full flex flex-col">
-              <div className="relative overflow-hidden aspect-video">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="flex flex-wrap gap-2">
-                {project.tags.map(tag => (
-                  <Badge key={tag} variant="outline">{tag}</Badge>
-                ))}
-              </CardContent>
-              <CardFooter className="flex justify-between mt-auto">
-                {project.githubUrl && (
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
+        {regularProjects.length > 0 && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {regularProjects.map((project, index) => (
+              <Card key={project.id} className="overflow-hidden group h-full flex flex-col">
+                <div className="relative overflow-hidden aspect-video">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle>{project.title}</CardTitle>
+                  <CardDescription>{project.description}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex flex-wrap gap-2">
+                  {project.tags.map(tag => (
+                    <Badge key={tag} variant="outline">{tag}</Badge>
+                  ))}
+                </CardContent>
+                <CardFooter className="flex justify-between mt-auto">
+                  {project.githubUrl && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
+                  <Button size="sm" asChild>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      Live Demo
+                      <ArrowUpRight className="ml-2 h-4 w-4" />
                     </a>
                   </Button>
-                )}
-                <Button size="sm" asChild>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    Live Demo
-                    <ArrowUpRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
