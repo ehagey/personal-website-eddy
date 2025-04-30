@@ -1,4 +1,5 @@
-import { Check } from 'lucide-react';
+
+import { Check, ArrowUpRight, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
@@ -79,10 +80,14 @@ const AboutSection = () => {
                       {['Healthcare', 'AI', 'Research', 'LLMs'].map(tag => <span key={tag} className="bg-gray-100 px-2 py-1 rounded-full text-xs font-medium">{tag}</span>)}
                     </div>
                   </div>
-                  <div className="flex justify-start">
+                  <div className="flex flex-wrap justify-start gap-2">
                     <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors h-9 px-3 py-2">
                       Visit Site
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-up-right"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+                      <ArrowUpRight className="ml-2 h-4 w-4" />
+                    </a>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7311005835336306689/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors h-9 px-3 py-2">
+                      <Linkedin className="mr-2 h-4 w-4" />
+                      LinkedIn Announcement
                     </a>
                   </div>
                 </div>
@@ -124,3 +129,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
