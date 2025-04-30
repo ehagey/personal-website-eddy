@@ -30,66 +30,19 @@ const projects: Project[] = [
 ];
 
 const ProjectsSection = () => {
-  const featuredProject = projects.find(project => project.featured);
+  // Since we've moved the featured project to AboutSection, we'll only show regular projects here
+  // If there are no regular projects, we'll show a placeholder message
   const regularProjects = projects.filter(project => !project.featured);
 
   return (
     <section id="projects" className="section-padding">
       <div className="container max-w-7xl mx-auto">
-        {featuredProject && (
-          <div className="mb-16">
-            <h3 className="text-xl font-medium mb-6 border-l-4 border-primary pl-3">Featured Project</h3>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="flex flex-col lg:flex-row">
-                <div className="lg:w-1/2">
-                  <img 
-                    src={featuredProject.image} 
-                    alt={featuredProject.title} 
-                    className="w-full h-full object-cover object-center"
-                    style={{ maxHeight: '400px' }}
-                  />
-                </div>
-                <div className="lg:w-1/2 p-8 flex flex-col justify-between">
-                  <div>
-                    <h4 className="heading-md mb-2">{featuredProject.title}</h4>
-                    <p className="text-gray-700 mb-6">{featuredProject.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {featuredProject.tags.map(tag => (
-                        <Badge key={tag} variant="secondary">{tag}</Badge>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex flex-wrap justify-start gap-4">
-                    {featuredProject.githubUrl && (
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={featuredProject.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="mr-2 h-4 w-4" />
-                          Code
-                        </a>
-                      </Button>
-                    )}
-                    <Button size="sm" asChild>
-                      <a href={featuredProject.liveUrl} target="_blank" rel="noopener noreferrer">
-                        Live Site
-                        <ArrowUpRight className="ml-2 h-4 w-4" />
-                      </a>
-                    </Button>
-                    {featuredProject.linkedinUrl && (
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={featuredProject.linkedinUrl} target="_blank" rel="noopener noreferrer">
-                          <Linkedin className="mr-2 h-4 w-4" />
-                          LinkedIn Announcement
-                        </a>
-                      </Button>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        <div className="text-center mb-12">
+          <h2 className="heading-lg mb-4">Projects</h2>
+          <p className="subtitle mx-auto">A selection of my work and contributions</p>
+        </div>
         
-        {regularProjects.length > 0 && (
+        {regularProjects.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {regularProjects.map((project, index) => (
               <Card key={project.id} className="overflow-hidden group h-full flex flex-col">
@@ -127,6 +80,10 @@ const ProjectsSection = () => {
                 </CardFooter>
               </Card>
             ))}
+          </div>
+        ) : (
+          <div className="text-center py-12 text-gray-500">
+            <p>More projects coming soon!</p>
           </div>
         )}
       </div>
