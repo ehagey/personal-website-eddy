@@ -13,7 +13,7 @@ const AboutSection = () => {
     context: '(for the geeks)'
   }, {
     name: 'Currently Reading',
-    details: ['1. Man\'s Search for Meaning (Victor Frankl)', '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)']
+    details: ['1. The Seven Storey Mountain by Thomas Merton', '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)']
   }, {
     name: 'Blogging',
     details: [
