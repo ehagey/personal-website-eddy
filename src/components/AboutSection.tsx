@@ -10,10 +10,10 @@ const AboutSection = () => {
   }, {
     name: 'Guitar',
     details: ['PRS Silver Sky (Electric)', 'Princeton Reverb (Amp)', 'Art & Lutherie (Acoustic)'],
-    context: '(Gear listed for the geeks)'
+    context: '(for the geeks)'
   }, {
     name: 'Currently Reading',
-    details: ['1. The Seven Storey Mountain by Thomas Merton', '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)']
+    details: ['1. The Seven Storey Mountain (Thomas Merton)', '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)']
   }, {
     name: 'Blogging',
     details: [
