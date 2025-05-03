@@ -9,7 +9,7 @@ const PartnerBlogPost = () => {
     content={<div>
       <p className="mb-4">Finding the right person to share your life with is perhaps the most important decision you'll ever make. Your partner can make you or break you. The key to finding lasting and happy relationships is by trying to become someone people actually want to be with. Instead of looking for the “right person”, it's probably more productive to ask yourself what kind of partner would be drawn to the person you are today. </p>
       
-      <p className="mb-4">The uncomfortable truth is that the quality of partner you can attract often reflects who you are. If you want an exceptional partner, you need to be an exceptional person. Are you willing to do what it takes to become more disciplined, skilled, compassionate, and purposeful?</p>
+      <p className="mb-4">The uncomfortable truth is that the quality of the partner you can attract often reflects who you are. If you want an exceptional partner, you need to be an exceptional person. Are you willing to do what it takes to become more disciplined, skilled, compassionate, and purposeful?</p>
       
       <p className="mb-4">If you aren't doing everything in your power to improve yourself first, you shouldn't be criticizing what's around you or the other side. Before pointing fingers at external circumstances, look inward and ask yourself how you can be a more desirable person.</p>
       
