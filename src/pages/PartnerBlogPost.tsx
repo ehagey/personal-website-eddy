@@ -15,7 +15,7 @@ const PartnerBlogPost = () => {
       
       <p className="mb-4">Your future relationship depends far more on who you are than on where you look. The right person doesn't just appear in your life. You become worthy of meeting them through the person you choose to become everyday.</p>
       
-      <p className="mb-4">Don't waste your time or other people's time. If you're young, focus on yourself and maximise your potential. The right person will meet you on this path. Short-term relationships and temporary pleasure, no matter how intense, aren't worth sacrificing long-term fulfillment.</p>
+      <p className="mb-4">Don't waste your time or other people's time. If you're young, focus on yourself and maximise your potential. The right person will meet you on this path. Short-term relationships and temporary pleasures, no matter how intense, aren't worth sacrificing long-term fulfillment.</p>
       
       <p className="mb-4">Have high standards. But start by holding yourself to them first.</p>
       
