@@ -7,7 +7,7 @@ const PartnerBlogPost = () => {
     date="May 3, 2025" 
     slug="become-the-right-person" 
     content={<div>
-      <p className="mb-4">Finding the right person to share your life with is perhaps the most important decision you'll ever make. Your partner can make you or break. But, I think many of us approach this decision with the wrong perspective. Instead of looking for the "right person", it's probably more productive to ask yourself what kind of partner would be drawn to the person you are today.</p>
+      <p className="mb-4">Finding the right person to share your life with is perhaps the most important decision you'll ever make. Your partner can make you or break you. But, I think many of us approach this decision with the wrong perspective. Instead of looking for the "right person", it's probably more productive to ask yourself what kind of partner would be drawn to the person you are today.</p>
       
       <p className="mb-4">The key to finding lasting and happy relationships is by trying to become someone people actually want to be with. The uncomfortable truth is that the quality of partner you can attract often reflects who you are. If you want an exceptional partner, you need to be an exceptional person. Are you willing to do what it takes to become more disciplined, skilled, compassionate, and purposeful?</p>
       
