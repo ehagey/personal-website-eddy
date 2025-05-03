@@ -14,6 +14,13 @@ const Blog = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <BlogPost 
+              title="Become the Right Person before Looking for the Right Partner"
+              date="May 3, 2025"
+              slug="become-the-right-person"
+              content="Finding the right person to share your life with is perhaps the most important decision you'll ever make. But, I think many of us approach this decision with the wrong perspective. Instead of looking for the 'right person', it's probably more productive to ask yourself what kind of partner would be drawn to the person you are today..."
+              isPreview={true}
+            />
+            <BlogPost 
               title="What it Means to be a Man"
               date="April 28, 2025"
               slug="what-it-means-to-be-a-man"
