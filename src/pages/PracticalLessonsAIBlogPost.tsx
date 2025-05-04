@@ -7,7 +7,6 @@ const PracticalLessonsAIBlogPost = () => {
     date="May 1, 2025" 
     slug="practical-lessons-ai-agents" 
     content={<div>
-      <p className="mb-4">My Journey So Far</p>
       <p className="mb-4">I'm still learning and making plenty of mistakes, but I've discovered some practical approaches that have helped me not just start projects, but actually finish them. As a student diving into AI development and research, I've managed to build agents that automated workflows with 90+% accuracy and cut processing times from days to minutes. Here's what's worked (and failed) for me.</p>
       
       <p className="mb-4"><strong>Ship Fast and Iterate Faster</strong></p>
