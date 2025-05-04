@@ -3,7 +3,7 @@ import BlogPost from '@/components/BlogPost';
 
 const PartnerBlogPost = () => {
   return <BlogPost 
-    title="Become the Right Person before Looking for Them" 
+    title="Become the Right Person before Looking for the Right Person" 
     date="May 1, 2025" 
     slug="become-the-right-person" 
     content={<div>
