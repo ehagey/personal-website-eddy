@@ -28,10 +28,10 @@ const PracticalLessonsAIBlogPost = () => {
       <p className="mb-4"><strong>Go the Extra Mile</strong></p>
       <p className="mb-4">This is the difference between good and exceptional work. Doing the extra effort, especially early on in your career, helps you build your reputation and opens a lot of doors for the future.</p>
       
-      <p className="mb-4"><strong>Taking Complete Ownership</strong></p>
+      <p className="mb-4"><strong>Take Ownership of your Work</strong></p>
       <p className="mb-4">Instead of waiting for tasks to be assigned to you and completing them, take the initiative and do it yourself, without anyone asking. Instead of thinking "someone should fix that" or "someone will ask me to fix that", try to fix it before anyone asks. Try to anticipate problems before they arise and address them proactively. People who do this are usually the most valuable team members.</p>
       
-      <p className="mb-4"><strong>Build genuine relationships with your collaborators</strong></p>
+      <p className="mb-4"><strong>Build Genuine Relationships</strong></p>
       <p className="mb-4">Technical skills alone aren't enough. It is important that you are personable and try to build genuine connections with your collaborators. Clear and honest communication is crucial to any project's success. The strongest teams aren't just the most technically competent. They're also emotionally intelligent. Invest in these soft skills as seriously as you do in technical ones.</p>
       <p className="mb-8"></p>
       <p className="mb-8"></p>
