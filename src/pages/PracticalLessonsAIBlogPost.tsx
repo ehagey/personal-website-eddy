@@ -7,7 +7,7 @@ const PracticalLessonsAIBlogPost = () => {
     date="May 3, 2025" 
     slug="practical-lessons-ai-agents" 
     content={<div>
-      <p className="mb-4">I'm still learning and making plenty of mistakes. But, I've discovered some practical approaches that have helped me not just start projects but actually finish them. </p>
+      <p className="mb-4">I'm still learning and making mistakes. But, I've discovered some practical approaches that have helped me not just start projects but actually finish them. </p>
         
       <p className="mb-4"> As a student diving into AI development and research, I'm very grateful to have had the chance to work on very exciting projects alongside exceptional collaborators and mentors. They have presented me with so many opportunities and shared with me a wealth of knowledge.</p>
         
