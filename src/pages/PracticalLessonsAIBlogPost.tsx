@@ -19,7 +19,7 @@ const PracticalLessonsAIBlogPost = () => {
       <p className="mb-4">This helps discover the shortest path to a working solution. Implementation often reveals insights that no amount of planning can uncover.</p>
       
       <p className="mb-4"><strong>Start With What You Know</strong></p>
-      <p className="mb-4">Don't wait till you understand everything. Start building with whatever knowledge I have right now. You will discover that insights emerge during implementation that no amount of planning would have revealed.</p>
+      <p className="mb-4">Don't wait till you understand everything. Start building with whatever knowledge you have right now. You will discover that insights emerge during implementation that no amount of planning would have revealed.</p>
       
       <p className="mb-4"><strong>Seek Help When Stuck</strong></p>
       <p className="mb-4"> Seeking help when needed is very important but always make a genuine attempt to solve problems independently first.</p>
