@@ -9,7 +9,7 @@ const PracticalLessonsAIBlogPost = () => {
     content={<div>
       <p className="mb-4">I'm still learning and making plenty of mistakes, but I've discovered some practical approaches that have helped me not just start projects, but actually finish them. </p>
         
-      <p className="mb-4"> As a student diving into AI development and research, I'm very grateful to have had the chance to work on very exciting projects alongside fantastic collaborators and mentors who have presented me with so many opportunities and shared with me a wealth of knowledge.</p>
+      <p className="mb-4"> As a student diving into AI development and research, I'm very grateful to have had the chance to work on very exciting projects alongside exceptional collaborators and mentors who have presented me with so many opportunities and shared with me a wealth of knowledge.</p>
         
       <p className="mb-4"> Together, we've built agents that automated workflows with 90+% accuracy and cut processing times from days to minutes. Launched the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer">AI Health Institute</a> and worked on so many other exciting projects. Here's what's worked (and failed) for me.</p>
       
