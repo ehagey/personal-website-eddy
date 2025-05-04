@@ -17,7 +17,7 @@ const AboutSection = () => {
   }, {
     name: 'Blogging',
     details: [
-      <>Published <Link to="/blog" className="text-primary hover:underline">first blog</Link> on April 12!</>,
+      <>Published my <Link to="/blog" className="text-primary hover:underline">first blog</Link> on April 12!</>,
       'Will be posting weekly... Stay tuned'
     ]
   }];
