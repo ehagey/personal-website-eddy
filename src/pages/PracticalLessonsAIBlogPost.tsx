@@ -34,7 +34,7 @@ const PracticalLessonsAIBlogPost = () => {
       <p className="mb-4"><strong>Build genuine relationships with your collaborators</strong></p>
       <p className="mb-4">Technical skills alone aren't enough. It is important that you are personable and try to build genuine connections with your collaborators. Clear and honest communication is crucial to any project's success. The strongest teams aren't just the most technically competent. They're also emotionally intelligent. Invest in these soft skills as seriously as you do in technical ones.</p>
 
-      <p className="mb-4 italic">I am very grateful for all the opportunities I have. I am at the point in my career where I want to be learning as much as possible, and I'm very fortunate to have incredible mentors to accompany me and guide me through this journey. Keep dreaming big, working hard, and never stop learning.</p>
+      <p className="mb-4">I am very grateful for all the opportunities I have. I am at the point in my career where I want to be learning as much as possible, and I'm very fortunate to have incredible mentors to accompany me and guide me through this journey. Keep dreaming big, work hard, and never stop learning.</p>
 
     </div>} 
   />;
