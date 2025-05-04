@@ -19,10 +19,10 @@ const PracticalLessonsAIBlogPost = () => {
       <p className="mb-4">This helps discover the shortest path to a working solution. Implementation often reveals insights that no amount of planning can uncover.</p>
       
       <p className="mb-4"><strong>Start With What You Know</strong></p>
-      <p className="mb-4">Don't wait till you understand everything. Start building with whatever knowledge you have right now. You will discover that insights emerge during implementation that no amount of planning would have revealed.</p>
+      <p className="mb-4">Don't wait till you understand everything. Start building with whatever knowledge I have right now. You will discover that insights emerge during implementation that no amount of planning would have revealed.</p>
       
       <p className="mb-4"><strong>Seek Help When Stuck</strong></p>
-      <p className="mb-4"> Seeking help when needed is very important but always make a genuine attempt to solve problems independently first.</p>
+      <p className="mb-4"> Seeking help when needed is very important, but always make a genuine attempt to solve problems independently first.</p>
       
       <p className="mb-4">So, put your ego aside and seek help when needed. It is often the most productive thing you can do when you are stuck. Seek other people's perspective on how you are approaching the problem and take their feedback into consideration. We often discover there are better ways to approach a problem from our approach. Keep learning, and, eventually, you will become the person who helps unblock people :)</p>
       
