@@ -15,14 +15,14 @@ const Blog = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <BlogPost 
               title="Become the Right Person before Looking for the Right Partner"
-              date="May 3, 2025"
+              date="May 1, 2025"
               slug="become-the-right-person"
               content="Finding the right person to share your life with is perhaps the most important decision you'll ever make. But, I think many of us approach this decision with the wrong perspective. Instead of looking for the 'right person', it's probably more productive to ask yourself what kind of partner would be drawn to the person you are today..."
               isPreview={true}
             />
             <BlogPost 
               title="Practical Lessons from a Student Building AI Agents"
-              date="May 1, 2025"
+              date="May 3, 2025"
               slug="practical-lessons-ai-agents"
               content="I'm still learning and making plenty of mistakes, but I've discovered some practical approaches that have helped me not just start projects, but actually finish them. As a student diving into AI development and research, I'm very grateful to have had the chance to work on very exciting projects alongside exceptional collaborators and mentors..."
               isPreview={true}

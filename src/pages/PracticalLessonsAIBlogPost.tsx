@@ -4,7 +4,7 @@ import BlogPost from '@/components/BlogPost';
 const PracticalLessonsAIBlogPost = () => {
   return <BlogPost 
     title="Practical Lessons from a Student Building AI Agents" 
-    date="May 1, 2025" 
+    date="May 3, 2025" 
     slug="practical-lessons-ai-agents" 
     content={<div>
       <p className="mb-4">I'm still learning and making plenty of mistakes, but I've discovered some practical approaches that have helped me not just start projects, but actually finish them. </p>
