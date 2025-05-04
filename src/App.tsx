@@ -12,6 +12,7 @@ import DependableBlogPost from "./pages/DependableBlogPost";
 import PotentialBlogPost from "./pages/PotentialBlogPost";
 import ManBlogPost from "./pages/ManBlogPost";
 import PartnerBlogPost from "./pages/PartnerBlogPost";
+import PracticalLessonsAIBlogPost from "./pages/PracticalLessonsAIBlogPost";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/blog/realize-your-potential" element={<PotentialBlogPost />} />
           <Route path="/blog/what-it-means-to-be-a-man" element={<ManBlogPost />} />
           <Route path="/blog/become-the-right-person" element={<PartnerBlogPost />} />
+          <Route path="/blog/practical-lessons-ai-agents" element={<PracticalLessonsAIBlogPost />} />
           <Route path="/resume" element={<Resume />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

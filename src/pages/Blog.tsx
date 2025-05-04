@@ -21,6 +21,13 @@ const Blog = () => {
               isPreview={true}
             />
             <BlogPost 
+              title="Practical Lessons from a Student Building AI Agents"
+              date="May 1, 2025"
+              slug="practical-lessons-ai-agents"
+              content="My Journey So Far. I'm still learning and making plenty of mistakes, but I've discovered some practical approaches that have helped me not just start projects, but actually finish them. As a student diving into AI development and research, I've managed to build agents that automated workflows with 90+% accuracy..."
+              isPreview={true}
+            />
+            <BlogPost 
               title="What it Means to be a Man"
               date="April 28, 2025"
               slug="what-it-means-to-be-a-man"
