@@ -134,7 +134,7 @@ const AboutSection = () => {
           animationDelay: '1s'
         }}>
             <h3 className="heading-md mb-2">Favorite Quotes</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {quotes.map((quote, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                   <blockquote className="text-gray-700 italic mb-2 text-sm">"{quote.text}"</blockquote>
                   <p className="text-right text-xs font-medium text-gray-500">— {quote.author}</p>
