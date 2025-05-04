@@ -24,7 +24,7 @@ const Blog = () => {
               title="Practical Lessons from a Student Building AI Agents"
               date="May 1, 2025"
               slug="practical-lessons-ai-agents"
-              content="My Journey So Far. I'm still learning and making plenty of mistakes, but I've discovered some practical approaches that have helped me not just start projects, but actually finish them. As a student diving into AI development and research, I've managed to build agents that automated workflows with 90+% accuracy..."
+              content="I'm still learning and making plenty of mistakes, but I've discovered some practical approaches that have helped me not just start projects, but actually finish them. As a student diving into AI development and research, I'm very grateful to have had the chance to work on very exciting projects alongside exceptional collaborators and mentors..."
               isPreview={true}
             />
             <BlogPost 
