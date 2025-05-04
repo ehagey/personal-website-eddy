@@ -22,12 +22,12 @@ const PracticalLessonsAIBlogPost = () => {
       <p className="mb-4">Don't wait till you understand everything. Start building with whatever knowledge I have right now. You will discover that insights emerge during implementation that no amount of planning would have revealed.</p>
       
       <p className="mb-4"><strong>Seek Help When Stuck</strong></p>
-      <p className="mb-4"> Seeking help when needed is very important, but always make a genuine attempt to solve problems independently first.</p>
+      <p className="mb-4"> Seeking help when needed is very important but always make a genuine attempt to solve problems independently first.</p>
       
       <p className="mb-4">So, put your ego aside and seek help when needed. It is often the most productive thing you can do when you are stuck. Seek other people's perspective on how you are approaching the problem and take their feedback into consideration. We often discover there are better ways to approach a problem from our approach. Keep learning, and, eventually, you will become the person who helps unblock people :)</p>
       
       <p className="mb-4"><strong>Evals, Evals, Evals</strong></p>
-      <p className="mb-4">Progress is not always quantifiable. But, when possible, rely on concrete numeric measures rather than subjective assessments. This is not to say that human judgement is not helpful sometimes. But, having evals will help iterate much faster and have data-driven justification for any changes we need to do. Figure out what you are trying to optimize for: accuracy, precision, recall, or something else. And build comprehensive tests that objectively measure performance.</p>
+      <p className="mb-4">Progress is not always quantifiable. But, when possible, rely on concrete numeric measures rather than subjective assessments. This is not to say that human judgement is not helpful sometimes. But, having evals will help iterate much faster. Figure out what you are trying to optimize for: accuracy, precision, recall, or something else. And build comprehensive tests that objectively measure performance.</p>
       
       <p className="mb-4"><strong>Go the Extra Mile</strong></p>
       <p className="mb-4">This is the difference between good and exceptional work. Doing the extra effort, especially early on in your career, helps you build your reputation and opens a lot of doors for the future.</p>
