@@ -11,7 +11,7 @@ const PracticalLessonsAIBlogPost = () => {
         
       <p className="mb-4"> As a student diving into AI development and research, I'm very grateful to have had the chance to work on very exciting projects alongside exceptional collaborators and mentors. They have presented me with so many opportunities and shared with me a wealth of knowledge.</p>
         
-      <p className="mb-4"> Together, we've built AI agents that automated workflows with 90+% accuracy and cut processing times from days to minutes. We launched the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">AI Health Institute</a> and worked on so many other exciting projects. Here's what's worked (and failed) for me.</p>
+      <p className="mb-4"> Together, we've built AI agents that automated workflows with +90% accuracy and cut processing times from days to minutes. We launched the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">AI Health Institute</a> and worked on so many other exciting projects. Here's what's worked (and failed) for me.</p>
       
       <p className="mb-4"><strong>Ship Fast and Iterate Faster</strong></p>
       <p className="mb-4">This is probably the most valuable lesson I have learned. Don't spend weeks trying to perfect a design. Build something functional as quickly as possible, and then improve based on real feedback. For any project or research problem I am working on, I give myself 24 hours to have a functional MVP that assesses what is achievable, what is the easy part, what is the hard part, and so on.</p>
