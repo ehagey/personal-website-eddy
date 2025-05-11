@@ -13,7 +13,7 @@ const AboutSection = () => {
     context: '(for the geeks)'
   }, {
     name: 'Currently Reading',
-    details: ['1. The Seven Storey Mountain (Thomas Merton)', '2. Algorithms to Live By: The Computer Science of Human Decisions  (Christian & Griffiths)']
+    details: ['1. The Seven Storey Mountain (Thomas Merton)', '2. How Innovation Works and Why it Flourishes in Freedom (Matt Ridley)']
   }, {
     name: 'Blogging',
     details: [
