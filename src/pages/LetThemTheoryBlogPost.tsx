@@ -4,23 +4,20 @@ const LetThemTheoryBlogPost = () => {
   const content = (
     <div className="space-y-6">
       <p>
-        When I read Mell Robin's "The Let Them Theory" last month, it resonated a lot with me. The framework she proposes is something that I have been practicing intuitively in my relationships with the people I love and care about. My interpretation of it is to love people enough to "let them" be themselves, even when their choices disappoint us. And, instead of channeling our energy into an argument with them, channel it into what we can control: our response and commitment to them.
+        When I read Mell Robin's "The Let Them Theory" last month, it resonated a lot with me. The framework she proposes is something that I have been practicing intuitively in my relationships with the people I love and care about. My interpretation of it is to love people enough to "let them" be themselves, even when their choices disappoint us. And, instead of channeling our energy into an argument wit them, channel it into what we can control: our response and commitment to them.
       </p>
       
       <p>
-        The theory works because you can't control other people, but you can control your response to them. When someone disappoints or hurts you, instead of exhausting yourself trying to change them, you let them. You observe. And, you learn to not act this way with them or other people.
+        The theory works because you can't control other people, but you can control your response to them. When someone disappoints or hurts you, instead of exhausting yourself trying to change them, you let them show you who they are through their actions. This shift changes everything about how you experience relationships and conflict.
+      </p>
+      
+      
+      <p>
+        <strong>Keep treating people to the best of your ability anyway.</strong> Give your best effort in relationships, offer support, and maintain your values regardless of how others behave. Try to be kind, generous, and loving regardless. Do this not because you expect something back, but because that's who you choose to be.
       </p>
       
       <p>
-        Think about how much energy you waste trying to make someone see your point, change their mind, or behave differently. You replay conversations, plan what you'll say next time, and build resentment when they don't respond the way you hoped. The Let Them Theory says: stop. Let them think what they think. Let them choose what they choose. Focus on what you can actually control.
-      </p>
-      
-      <p>
-        <strong>Keep treating people well anyway.</strong> Give your best effort in relationships, offer support, and maintain your values regardless of how others behave. Do this not because you expect something back, but because that's who you choose to be. When you treat people well from authentic care rather than expectation, your relationships become more genuine and you stop keeping score.
-      </p>
-      
-      <p>
-        This doesn't mean being a doormat. It means showing up as your best self without the heavy burden of needing others to match your energy exactly. You can be generous without expecting generosity back. You can be thoughtful without demanding thoughtfulness in return. You maintain your standards for yourself while releasing others from meeting those same standards.
+        This doesn't at all mean being a doormat. It simply means to show up as your best self without the expectation that other will match your effort or energy. You can be generous without expecting generosity back. You can be thoughtful without demanding thoughtfulness in return. You maintain your standards for yourself while releasing others from meeting those same standards. Essentially, "Be tolerant with others and strict with yourself."
       </p>
       
       <p>
