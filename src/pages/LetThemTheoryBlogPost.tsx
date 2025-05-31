@@ -1,11 +1,11 @@
-
 import BlogPost from '@/components/BlogPost';
 
 const LetThemTheoryBlogPost = () => {
   const content = (
     <div className="space-y-6">
       <p>
-        When I read Mell Robin's "The Let Them Theory" last month, it resonated a lot with me. The framework she proposes is something that I have been practicing intuitively in my relationships with the people I love and care about. My interpretation of it is to love people enough to "let them" be themselves, even when their choices disappoint us. And, instead of channeling our energy into an argument wit them, channel it into what we can control: our response and commitment to them. 
+        When I read Mell Robin's "The Let Them Theory" last month, it resonated a lot with me. The framework she proposes is something that I have been practicing intuitively in my relationships with the people I love and care about. My interpretation of it is to love people enough to "let them" be themselves, even when their choices disappoint us. And, instead of channeling our energy into an argument wit them, channel it into what we can control: our response and commitment to them.
+      </p>
       
       <p>
         The theory works because you can't control other people, but you can control your response to them. When someone disappoints or hurts you, instead of exhausting yourself trying to change them, you let them show you who they are through their actions. This shift changes everything about how you experience relationships and conflict.
