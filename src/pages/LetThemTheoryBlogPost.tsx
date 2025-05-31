@@ -5,7 +5,7 @@ const LetThemTheoryBlogPost = () => {
   const content = (
     <div className="space-y-6">
       <p>
-        Mel Robbins' "Let Them Theory" is simple but powerful: stop trying to control other people's choices and behaviors. Instead of fighting or arguing with someone, just let them be who they are. It's not about becoming passive—it's about choosing where to invest your emotional energy.
+        When I read Mell Robin's "The Let Them Theory" last month, it resanoted how I have conducted my life for years now. Essentialy, it is about stopping trying to control other people's choices and behaviors. Instead of fighting or arguing with someone, just let them be who they are and investing your emotional energy somwhere more productive.
       </p>
       
       <p>
