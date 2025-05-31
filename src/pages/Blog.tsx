@@ -14,6 +14,13 @@ const Blog = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <BlogPost 
+              title="On the 'Let Them' Theory"
+              date="May 31, 2025"
+              slug="let-them-theory"
+              content="Mel Robbins' 'Let Them Theory' is simple but powerful: stop trying to control other people's choices and behaviors. Instead of fighting or arguing with someone, just let them be who they are. It's not about becoming passive—it's about choosing where to invest your emotional energy..."
+              isPreview={true}
+            />
+            <BlogPost 
               title="Practical Lessons from a Student Building AI Agents"
               date="May 3, 2025"
               slug="practical-lessons-ai-agents"
