@@ -15,8 +15,6 @@ const PartnerBlogPost = () => {
       
       <p className="mb-4">Your future relationship depends far more on who you are than on where you look. The right person doesn't just appear in your life. You become worthy of meeting them through the person you choose to become everyday.</p>
       
-      <p className="mb-4">Don't waste your time or other people's time. If you're young, focus on yourself and maximise your potential. The right person will meet you on this path. Short-term relationships and temporary pleasures, no matter how intense, aren't worth sacrificing long-term fulfillment.</p>
-      
       <p className="mb-4">Have high standards. But start by holding yourself to them first.</p>
       
       <p className="mb-4">Any relationship worth pursuing should support your long-term vision and be built on the premise of long-term potential. If it distracts from your goals, your values, or your purpose, it's not worth it. No matter how "fun". You have a life to build, goals to pursue, and a future that deserves your full attention. The right relationship should strengthen that vision, not distract from it.</p>
