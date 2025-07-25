@@ -29,9 +29,6 @@ const AboutSection = () => {
   }, {
     text: "Be the change you wish to see in the world.",
     author: "Mahatma Gandhi"
-  }, {
-    text: "Ok",
-    author: "Dad"
   }];
   return <section id="about" className="section-padding bg-gray-50">
       <div className="container max-w-7xl mx-auto container-padding">
