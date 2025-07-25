@@ -14,13 +14,6 @@ const Blog = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <BlogPost 
-              title="Practical Lessons from a Student Building AI Agents"
-              date="May 3, 2025"
-              slug="practical-lessons-ai-agents"
-              content="I'm still learning and making mistakes. But, I've discovered some practical approaches that have helped me not just start projects but actually finish them. As a student diving into AI development and research, I'm very grateful to have had the chance to work on very exciting projects alongside exceptional collaborators and mentors."
-              isPreview={true}
-            />
-            <BlogPost 
               title="Become the Right Person before Looking for the Right Person"
               date="May 1, 2025"
               slug="become-the-right-person"
