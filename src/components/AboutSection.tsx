@@ -13,7 +13,7 @@ const AboutSection = () => {
     context: '(for the geeks)'
   }, {
     name: 'Currently Reading',
-    details: ['1. The Seven Storey Mountain (Thomas Merton)', '2. How Innovation Works and Why it Flourishes in Freedom (Matt Ridley)']
+    details: ['1. Man\'s Search for Meaning (Viktor Frankl)', '2. How Innovation Works and Why it Flourishes in Freedom (Matt Ridley)']
   }];
   const quotes = [{
     text: "I'm a great believer in luck, and I find the harder I work, the more I have of it.",
