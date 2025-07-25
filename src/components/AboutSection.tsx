@@ -14,11 +14,6 @@ const AboutSection = () => {
   }, {
     name: 'Currently Reading',
     details: ['1. The Seven Storey Mountain (Thomas Merton)', '2. How Innovation Works and Why it Flourishes in Freedom (Matt Ridley)']
-  }, {
-    name: 'Blogging',
-    details: [
-      <>Published my <Link to="/blog" className="text-primary hover:underline">first blog</Link> on April 12!</>,
-    ]
   }];
   const quotes = [{
     text: "I'm a great believer in luck, and I find the harder I work, the more I have of it.",
@@ -113,8 +108,8 @@ const AboutSection = () => {
           animationDelay: '0.8s'
         }}>
             <h3 className="heading-md mb-2">Hobbies</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {hobbies.map(hobby => <div key={hobby.name} className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {hobbies.map(hobby => <div key={hobby.name} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                   <div className="font-semibold text-base mb-2 text-gray-800">
                     {hobby.name} 
                     {hobby.context && <span className="text-xs text-gray-500 ml-2">{hobby.context}</span>}
@@ -130,7 +125,7 @@ const AboutSection = () => {
           animationDelay: '1s'
         }}>
             <h3 className="heading-md mb-2">Favorite Quotes</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {quotes.map((quote, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                   <blockquote className="text-gray-700 italic mb-2 text-sm">"{quote.text}"</blockquote>
                   <p className="text-right text-xs font-medium text-gray-500">— {quote.author}</p>
