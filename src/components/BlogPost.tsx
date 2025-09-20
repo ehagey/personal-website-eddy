@@ -33,22 +33,43 @@ const BlogPost = ({ title, date, content, slug, isPreview = false }: BlogPostPro
   }
   
   return (
-    <>
-      <Header />
-      <main className="pt-24 pb-16">
-        <article className="container max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <header className="mb-8 text-center">
-            <h1 className="heading-lg mb-2">{title}</h1>
-            <p className="text-gray-500">{date}</p>
-          </header>
-          
-          <div className="prose prose-lg mx-auto">
-            {content}
-          </div>
-        </article>
-      </main>
-      <Footer />
-    </>
+    <div style={{ 
+      maxWidth: '600px', 
+      margin: '0 auto', 
+      padding: '40px 20px',
+      fontFamily: 'system-ui, -apple-system, sans-serif'
+    }}>
+      <Link 
+        to="/" 
+        style={{ 
+          color: '#666', 
+          textDecoration: 'underline',
+          fontSize: '14px',
+          marginBottom: '30px',
+          display: 'inline-block'
+        }}
+      >
+        ← Back to Home
+      </Link>
+      
+      <h1 style={{ 
+        fontSize: '28px', 
+        fontWeight: '600', 
+        marginBottom: '30px',
+        color: '#333',
+        lineHeight: '1.3'
+      }}>
+        {title}
+      </h1>
+      
+      <div style={{ 
+        lineHeight: '1.7', 
+        fontSize: '16px',
+        color: '#333'
+      }}>
+        {content}
+      </div>
+    </div>
   );
 };
 
