@@ -21,16 +21,20 @@ const AboutSection = () => {
       }}>
           <p style={{
           marginBottom: '10px'
-        }}>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University.</p>
+        }}>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University, passionate about AI and data analytics.</p>
           
           <p style={{
           marginBottom: '10px'
-        }}>My experience and interests lie in AI and data analytics. I have previously built RAG and Ontology frameworks for a domain-specific Large Language Model. Currently, my interest and focus is on AI agents. Additionally, I have been working on developing robust benchmarking criteria for LLMs in medical and clinical settings at the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
+        }}>I'm currently exploring AI agents and working on benchmarking criteria for LLMs in medical settings at the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
             color: '#333',
             textDecoration: 'underline'
-          }}>AI Health Institute</a>. I am also involved in research on generative AI applications in pricing recommendations for retail and commercial settings.</p>
+          }}>AI Health Institute</a>. I'm also involved in research on generative AI for pricing recommendations in retail. Previously, I've worked on building RAG and Ontology frameworks for domain-specific language models.</p>
           
-          <p>Outside of academics, I enjoy hitting the gym, playing guitar, practicing Judo, and spending time with family and friends.</p>
+          <p style={{
+          marginBottom: '10px'
+        }}>I've been fortunate to compete in judo at a high level, earning my black belt and winning national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult problems, approach challenges with discipline, and trust that hard work pays off over time—mindsets that have shaped how I approach everything in life.</p>
+          
+          <p>In my free time, I enjoy spending time at the gym, playing guitar, reading, and hanging out with family and friends.</p>
         </div>
       </div>
 
