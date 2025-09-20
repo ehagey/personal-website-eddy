@@ -21,7 +21,7 @@ const Header = () => {
               Home
             </Link>
             <Link 
-              to="/blog" 
+              to="/blog/become-someone-people-can-depend-on" 
               className={`text-sm font-medium transition-colors hover:text-gray-700 ${
                 location.pathname.startsWith('/blog') ? 'text-gray-900' : 'text-gray-600'
               }`}
