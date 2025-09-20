@@ -7,7 +7,7 @@ const HeroSection = () => {
   }}>
       <h1 style={{
       margin: '0 0 5px 0',
-      fontSize: '36px',
+      fontSize: '24px',
       fontWeight: 'normal'
     }}>
       Hi! My name is Eddy Hage-Youssef
