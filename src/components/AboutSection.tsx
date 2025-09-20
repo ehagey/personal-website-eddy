@@ -21,7 +21,7 @@ const AboutSection = () => {
       }}>
           <p style={{
           marginBottom: '10px'
-        }}>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University, passionate about AI and data analytics.</p>
+        }}>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University.</p>
           
           <p style={{
           marginBottom: '10px'
