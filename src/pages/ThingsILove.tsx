@@ -43,17 +43,6 @@ const ThingsILove = () => {
             marginBottom: '20px',
             color: '#333'
           }}>
-            Inspiration
-          </h2>
-        </section>
-
-        <section style={{ marginBottom: '40px' }}>
-          <h2 style={{
-            fontSize: '22px',
-            fontWeight: '600',
-            marginBottom: '20px',
-            color: '#333'
-          }}>
             Books
           </h2>
           <ul style={{
