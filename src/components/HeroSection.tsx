@@ -34,7 +34,7 @@ const HeroSection = () => {
         <a href="mailto:eddy.hage-youssef@mail.mcgill.ca" style={{
         color: '#333',
         textDecoration: 'underline'
-      }}>Email</a>
+      }}></a>
       </div>
     </section>;
 };
