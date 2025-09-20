@@ -37,6 +37,11 @@ const PublicationsSection = () => {
             </h3>
             <p style={{
             fontSize: '13px',
+            color: '#666',
+            marginBottom: '5px'
+          }}>with M. C. Cohen</p>
+            <p style={{
+            fontSize: '13px',
             color: '#888',
             marginBottom: '5px'
           }}>INFORMS Journal on Data Science, Major Revision</p>
@@ -56,6 +61,11 @@ const PublicationsSection = () => {
                 When AI Sets Wages: Biases and Labor Discrimination in Generative Pricing
               </a>
             </h3>
+            <p style={{
+            fontSize: '13px',
+            color: '#666',
+            marginBottom: '5px'
+          }}>with M. C. Cohen and W. Khern-am-nuai</p>
             <p style={{
             fontSize: '13px',
             color: '#888'
