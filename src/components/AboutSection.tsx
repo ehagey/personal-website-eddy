@@ -32,7 +32,7 @@ const AboutSection = () => {
           
           <p style={{
           marginBottom: '10px'
-        }}>Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time - all mindsets that have shaped how I approach everything in life.</p>
+        }}>I've been fortunate to compete in Judo at a high level, earning my black belt and winning national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time - all mindsets that have shaped how I approach everything in life.</p>
           
           <p>In my free time, I enjoy spending time at the gym, playing guitar, reading, and hanging out with family and friends.</p>
         </div>
