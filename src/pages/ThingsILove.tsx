@@ -97,7 +97,7 @@ const ThingsILove = () => {
           }}>
             <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
               <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              John Mayer
+              John Mayer 🐐
             </li>
             <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
               <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
