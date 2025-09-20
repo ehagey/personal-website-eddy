@@ -21,8 +21,8 @@ const HeroSection = () => {
       </p>
       
       <img src="/lovable-uploads/e223e9a5-8da0-4699-81b5-a41032f24b8a.png" alt="Profile" style={{
-      width: '200px',
-      height: '150px',
+      width: '240px',
+      height: '180px',
       objectFit: 'contain',
       margin: '15px auto',
       display: 'block'
