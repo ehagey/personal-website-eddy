@@ -28,7 +28,7 @@ const AboutSection = () => {
         }}>I'm currently exploring AI agents and working on benchmarking criteria for LLMs in medical settings at the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
             color: '#333',
             textDecoration: 'underline'
-          }}>AI Health Institute</a>. I'm also involved in research on generative AI for pricing recommendations in retail. Previously, I've worked on building RAG and Ontology frameworks for domain-specific language models.</p>
+          }}>AI Health Institute</a>. I'm also involved in research on generative AI for pricing recommendations in retail. Additionally, I'm building a B2B startup that applies AI to financial solutions. Previously, I've worked on building RAG and Ontology frameworks for domain-specific language models.</p>
           
           <p style={{
           marginBottom: '10px'
