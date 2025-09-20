@@ -34,12 +34,11 @@ const PublicationsSection = () => {
             }}>
                 Generative AI for Data Scraping
               </a>
+              <span style={{
+                fontWeight: 'normal',
+                color: '#666'
+              }}> with M. C. Cohen</span>
             </h3>
-            <p style={{
-            fontSize: '13px',
-            color: '#666',
-            marginBottom: '5px'
-          }}>with M. C. Cohen</p>
             <p style={{
             fontSize: '13px',
             color: '#888',
@@ -60,12 +59,11 @@ const PublicationsSection = () => {
             }}>
                 When AI Sets Wages: Biases and Labor Discrimination in Generative Pricing
               </a>
+              <span style={{
+                fontWeight: 'normal',
+                color: '#666'
+              }}> with M. C. Cohen and W. Khern-am-nuai</span>
             </h3>
-            <p style={{
-            fontSize: '13px',
-            color: '#666',
-            marginBottom: '5px'
-          }}>with M. C. Cohen and W. Khern-am-nuai</p>
             <p style={{
             fontSize: '13px',
             color: '#888'
