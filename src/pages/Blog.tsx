@@ -14,7 +14,7 @@ const Blog = () => {
           
           <div className="max-w-2xl mx-auto">
             <BlogPost 
-              title="Become Someone People can Depend on" 
+              title="Become Someone People Can Depend on" 
               date="April 12, 2025" 
               slug="become-someone-people-can-depend-on" 
               content="There's something deeply fulfilling about taking ownership of your path and decisions. It's not always easy, but it's worth it. Because when you choose to carry the weight of responsibility, you grow into someone you and others can depend on..."

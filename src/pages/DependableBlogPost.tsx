@@ -2,7 +2,7 @@ import BlogPost from '@/components/BlogPost';
 
 const DependableBlogPost = () => {
   return <BlogPost 
-    title="Become Someone People can Depend on" 
+    title="Become Someone People Can Depend on" 
     date="April 12, 2025" 
     slug="become-someone-people-can-depend-on" 
     content={

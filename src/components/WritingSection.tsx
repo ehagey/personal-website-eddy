@@ -34,7 +34,7 @@ const WritingSection = () => {
                   textDecoration: 'underline'
                 }}
               >
-                Become Someone People can Depend on
+                Become Someone People Can Depend on
               </Link>
             </h3>
           </div>
