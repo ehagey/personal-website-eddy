@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const WritingSection = () => {
   return (
     <section id="writing" style={{
-      padding: '15px 20px 30px 20px',
+      padding: '10px 20px 15px 20px',
       maxWidth: '600px',
       margin: '0 auto'
     }}>
