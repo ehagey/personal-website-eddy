@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return <section id="about" style={{
-    padding: '30px 20px',
+    padding: '15px 20px 30px 20px',
     maxWidth: '600px',
     margin: '0 auto'
   }}>

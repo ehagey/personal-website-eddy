@@ -1,7 +1,7 @@
 import { InlineWidget } from 'react-calendly';
 const ContactSection = () => {
   return <section id="contact" style={{
-    padding: '30px 20px',
+    padding: '15px 20px 30px 20px',
     maxWidth: '600px',
     margin: '0 auto'
   }}>
