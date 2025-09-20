@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 const ReadingSection = () => {
   return <section id="reading" style={{
-    padding: '0px 20px 0px 20px',
+    padding: '5px 20px 5px 20px',
     maxWidth: '600px',
     margin: '0 auto'
   }}>
