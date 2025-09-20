@@ -31,21 +31,6 @@ const HeroSection = () => {
       <div style={{
       fontSize: '14px'
     }}>
-        <a href="/resume" style={{
-        color: '#333',
-        textDecoration: 'underline',
-        marginRight: '20px'
-      }}>Resume</a>
-        <a href="https://github.com/ehagey" target="_blank" rel="noopener noreferrer" style={{
-        color: '#333',
-        textDecoration: 'underline',
-        marginRight: '20px'
-      }}>GitHub</a>
-        <a href="https://www.linkedin.com/in/eddy-hage-youssef-29b6b618b/" target="_blank" rel="noopener noreferrer" style={{
-        color: '#333',
-        textDecoration: 'underline',
-        marginRight: '20px'
-      }}>LinkedIn</a>
         <a href="mailto:eddy.hage-youssef@mail.mcgill.ca" style={{
         color: '#333',
         textDecoration: 'underline'

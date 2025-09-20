@@ -6,17 +6,10 @@ const Footer = () => {
       <div style={{ marginBottom: '15px' }}>
         <a href="#home" style={{ color: '#666', textDecoration: 'none', marginRight: '15px' }}>Home</a>
         <a href="#about" style={{ color: '#666', textDecoration: 'none', marginRight: '15px' }}>About</a>
-        <a href="#contact" style={{ color: '#666', textDecoration: 'none', marginRight: '15px' }}>Contact</a>
-        <a href="/resume" style={{ color: '#666', textDecoration: 'none' }}>Resume</a>
+        <a href="#contact" style={{ color: '#666', textDecoration: 'none' }}>Contact</a>
       </div>
       
       <div style={{ marginBottom: '15px' }}>
-        <a href="https://github.com/ehagey" target="_blank" rel="noopener noreferrer" style={{ color: '#666', textDecoration: 'none', marginRight: '15px' }}>
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/eddy-hage-youssef-29b6b618b/" target="_blank" rel="noopener noreferrer" style={{ color: '#666', textDecoration: 'none', marginRight: '15px' }}>
-          LinkedIn
-        </a>
         <a href="https://www.instagram.com/eddy.g.hage/" target="_blank" rel="noopener noreferrer" style={{ color: '#666', textDecoration: 'none', marginRight: '15px' }}>
           Instagram
         </a>
