@@ -10,6 +10,7 @@ const HeroSection = () => {
       fontSize: '36px',
       fontWeight: 'normal'
     }}>
+      Hi! My name is Eddy Hage-Youssef
     </h1>
       <p style={{
       fontSize: '16px',
