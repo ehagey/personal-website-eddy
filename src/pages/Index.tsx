@@ -16,7 +16,6 @@ const Index = () => {
         <PublicationsSection />
         <ContactSection />
       </main>
-      <Footer />
     </>
   );
 };
