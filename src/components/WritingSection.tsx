@@ -2,19 +2,42 @@ import { Link } from 'react-router-dom';
 
 const WritingSection = () => {
   return (
-    <section id="writing" className="py-12 bg-gray-50">
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="heading-lg mb-8 text-center">Writing</h2>
-        
-        <div className="max-w-2xl mx-auto">
-          <Link 
-            to="/blog/become-someone-people-can-depend-on"
-            className="block text-gray-900 hover:text-blue-600 transition-colors"
-          >
-            <h3 className="text-lg font-medium">
-              Become Someone People can Depend on
+    <section id="writing" style={{
+      padding: '15px 20px 30px 20px',
+      maxWidth: '600px',
+      margin: '0 auto'
+    }}>
+      <div style={{
+        marginBottom: '25px'
+      }}>
+        <h2 style={{
+          fontSize: '24px',
+          marginBottom: '15px',
+          fontWeight: 'normal'
+        }}>Writing</h2>
+        <div style={{
+          fontSize: '14px',
+          lineHeight: '1.6',
+          color: '#666'
+        }}>
+          <div>
+            <h3 style={{
+              fontSize: '16px',
+              fontWeight: '500',
+              color: '#333',
+              marginBottom: '8px'
+            }}>
+              <Link 
+                to="/blog/become-someone-people-can-depend-on" 
+                style={{
+                  color: '#333',
+                  textDecoration: 'underline'
+                }}
+              >
+                Become Someone People can Depend on
+              </Link>
             </h3>
-          </Link>
+          </div>
         </div>
       </div>
     </section>

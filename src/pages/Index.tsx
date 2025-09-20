@@ -10,7 +10,6 @@ import Footer from '@/components/Footer';
 const Index = () => {
   return (
     <>
-      <Header />
       <main>
         <HeroSection />
         <AboutSection />
