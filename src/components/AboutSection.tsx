@@ -56,63 +56,6 @@ const AboutSection = () => {
         </div>
       </div>
 
-      {/* Skills */}
-      <div style={{
-      marginBottom: '40px'
-    }}>
-        <h3 style={{
-        fontSize: '18px',
-        marginBottom: '10px',
-        fontWeight: 'normal'
-      }}>
-      </h3>
-        <p style={{
-        fontSize: '14px',
-        color: '#666',
-        lineHeight: '1.4'
-      }}>
-          {skills.join(', ')}
-        </p>
-      </div>
-
-      {/* Featured Project */}
-      <div style={{
-      marginBottom: '40px'
-    }}>
-        <h3 style={{
-        fontSize: '18px',
-        marginBottom: '10px',
-        fontWeight: 'normal'
-      }}>Featured Project</h3>
-        <h4 style={{
-        fontSize: '16px',
-        marginBottom: '5px',
-        fontWeight: 'normal'
-      }}>AI Health Institute</h4>
-        <p style={{
-        color: '#666',
-        marginBottom: '10px',
-        fontSize: '14px',
-        lineHeight: '1.4'
-      }}>Advancing rigorous evaluation and performance assessment of large language models (LLMs) to ensure they deliver accurate, reliable, and clinically relevant outputs that improve patient care and support clinicians.</p>
-        <p style={{
-        fontSize: '14px'
-      }}>
-          <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
-          color: '#333',
-          textDecoration: 'underline',
-          marginRight: '15px'
-        }}>
-            Visit Site
-          </a>
-          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7311005835336306689/" target="_blank" rel="noopener noreferrer" style={{
-          color: '#333',
-          textDecoration: 'underline'
-        }}>
-            LinkedIn Announcement
-          </a>
-        </p>
-      </div>
 
       {/* Hobbies */}
       <div style={{
