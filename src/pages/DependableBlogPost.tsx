@@ -15,7 +15,7 @@ const DependableBlogPost = () => {
         
         <p className="mb-6">Setbacks and hurdles will inevitably happen. However, every setback contains instruction if you're willing to face it. Don't run from discomfort. Let it sharpen you and show you where you're not yet who you want to be.</p>
         
-        <p className="mb-6">Discipline is how you protect what matters to you: your goals, your relationships, your word. But never forget: <strong>success is hollow without character</strong>. Go far, but go with integrity. Win, but win honestly. The person you become in pursuit of your goals matters more than the goals themselves, because character is what remains when everything else is stripped away.</p>
+        <p className="mb-6">Discipline is how you protect what matters to you: your goals, your relationships, your word. But never forget: success is hollow without character. Go far, but go with integrity. Win, but win honestly. The person you become in pursuit of your goals matters more than the goals themselves, because character is what remains when everything else is stripped away.</p>
       </div>
     } 
   />;
