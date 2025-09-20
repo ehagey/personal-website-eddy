@@ -14,7 +14,7 @@ const ReadingSection = () => {
           fontSize: '24px',
           marginBottom: '15px',
           fontWeight: 'normal'
-        }}>Things I Love</h2>
+        }}>My Favorites</h2>
         <div style={{
           fontSize: '14px',
           lineHeight: '1.6',
