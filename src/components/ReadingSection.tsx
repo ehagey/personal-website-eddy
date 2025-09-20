@@ -34,7 +34,7 @@ const ReadingSection = () => {
                   textDecoration: 'underline'
                 }}
               >
-                Books, Music & Inspiration
+                My Favorites
               </Link>
             </h3>
           </div>
