@@ -1,6 +1,6 @@
 const PublicationsSection = () => {
   return <section id="publications" style={{
-    padding: '10px 20px 15px 20px',
+    padding: '5px 20px 5px 20px',
     maxWidth: '600px',
     margin: '0 auto'
   }}>
