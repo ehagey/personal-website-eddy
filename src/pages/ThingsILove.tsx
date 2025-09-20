@@ -78,10 +78,6 @@ const ThingsILove = () => {
               <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
               <em>Factfulness</em> by Hans Rosling
             </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              <em>Atomic Habits</em> by James Clear
-            </li>
           </ul>
         </section>
 
