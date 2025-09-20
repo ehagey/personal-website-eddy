@@ -1,50 +1,42 @@
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 const HeroSection = () => {
-  return <section id="home" className="min-h-screen flex items-center pt-20 section-padding">
-      <div className="container max-w-7xl mx-auto container-padding">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="flex-1 animate-fadeIn" style={{
-          animationDelay: '0.2s'
-        }}>
-            <p className="text-sm font-medium text-gray-500 mb-3">Hello:) My name is</p>
-            <h1 className="heading-xl mb-4">
-              <span className="block text-xl md:text-2xl">Eddy Hage-Youssef</span>
-            </h1>
-            <p className="subtitle mb-4">I'm passionate about building products that improve people's lives. Interested in working at the intersection of AI, business, and strategy.</p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="outline" className="group" asChild>
-                <a href="/resume">
-                  Resume
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
-              <div className="flex space-x-4 mt-4 sm:mt-0 sm:ml-4">
-                <a href="https://github.com/ehagey" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  <Github size={20} />
-                </a>
-                <a href="https://www.linkedin.com/in/eddy-hage-youssef-29b6b618b/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  <Linkedin size={20} />
-                </a>
-                <a href="mailto:eddy.hage-youssef@mail.mcgill.ca" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  <Mail size={20} />
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div className="flex-1 max-w-md order-first lg:order-last animate-fadeIn" style={{
-          animationDelay: '0.4s'
-        }}>
-            <div className="relative">
-              <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-r from-primary to-gray-600 opacity-75 blur"></div>
-              <div className="relative overflow-hidden rounded-xl bg-white shadow-xl">
-                <img alt="Profile" src="/lovable-uploads/e223e9a5-8da0-4699-81b5-a41032f24b8a.png" className="w-full h-auto aspect-[4/3] object-contain" />
-              </div>
-            </div>
+  return (
+    <section id="home" style={{ padding: '80px 20px', textAlign: 'center' }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <p style={{ margin: '0 0 10px 0', color: '#666' }}>Hello! My name is</p>
+        <h1 style={{ margin: '0 0 20px 0', fontSize: '48px', fontWeight: 'bold' }}>
+          Eddy Hage-Youssef
+        </h1>
+        <p style={{ fontSize: '18px', color: '#666', marginBottom: '30px', maxWidth: '600px', margin: '0 auto 30px auto' }}>
+          I'm passionate about building products that improve people's lives. Interested in working at the intersection of AI, business, and strategy.
+        </p>
+        
+        <div style={{ marginBottom: '30px' }}>
+          <img 
+            src="/lovable-uploads/e223e9a5-8da0-4699-81b5-a41032f24b8a.png" 
+            alt="Profile" 
+            style={{ width: '200px', height: '150px', objectFit: 'contain', border: '1px solid #ddd' }}
+          />
+        </div>
+        
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+          <a href="/resume" style={{ color: '#333', textDecoration: 'none', padding: '10px 20px', border: '1px solid #333' }}>
+            Resume
+          </a>
+          <div style={{ display: 'flex', gap: '15px' }}>
+            <a href="https://github.com/ehagey" target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'none' }}>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/eddy-hage-youssef-29b6b618b/" target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'none' }}>
+              LinkedIn
+            </a>
+            <a href="mailto:eddy.hage-youssef@mail.mcgill.ca" style={{ color: '#333', textDecoration: 'none' }}>
+              Email
+            </a>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;

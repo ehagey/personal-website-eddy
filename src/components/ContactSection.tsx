@@ -1,56 +1,41 @@
-
-import { useState } from 'react';
 import { InlineWidget } from 'react-calendly';
-import { Mail, MapPin } from 'lucide-react';
+
 const ContactSection = () => {
-  return <section id="contact" className="section-padding bg-gray-50">
-      <div className="container max-w-7xl mx-auto container-padding">
-        <div className="text-center mb-16 animate-slideUp opacity-0" style={{
-        animationDelay: '0.2s'
-      }}>
-          <h2 className="heading-lg mb-4">Get In Touch</h2>
-          <p className="subtitle mx-auto">Have a project in mind or just want to say hello? Please feel free to schedule a meeting using the calendar below.</p>
+  return (
+    <section id="contact" style={{ padding: '80px 20px' }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+          <h2 style={{ fontSize: '32px', marginBottom: '15px' }}>Get In Touch</h2>
+          <p style={{ fontSize: '16px', color: '#666', maxWidth: '600px', margin: '0 auto' }}>
+            Have a project in mind or just want to say hello? Please feel free to schedule a meeting using the calendar below.
+          </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="space-y-8 animate-slideUp opacity-0" style={{
-          animationDelay: '0.3s'
-        }}>
-            <div className="flex items-start space-x-4">
-              <div className="bg-white p-3 rounded-full shadow-sm">
-                <MapPin className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Location</h3>
-                <p className="text-gray-600">Montreal, QC</p>
-              </div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', alignItems: 'start' }}>
+          <div>
+            <div style={{ marginBottom: '30px' }}>
+              <h3 style={{ fontSize: '18px', marginBottom: '5px' }}>Location</h3>
+              <p style={{ color: '#666' }}>Montreal, QC</p>
             </div>
             
-            <div className="flex items-start space-x-4">
-              <div className="bg-white p-3 rounded-full shadow-sm">
-                <Mail className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Email</h3>
-                <a href="mailto:eddy.hage1@gmail.com" className="text-gray-600 hover:text-primary transition-colors">eddy.hage1@gmail.com</a>
-              </div>
+            <div>
+              <h3 style={{ fontSize: '18px', marginBottom: '5px' }}>Email</h3>
+              <a href="mailto:eddy.hage1@gmail.com" style={{ color: '#333', textDecoration: 'underline' }}>
+                eddy.hage1@gmail.com
+              </a>
             </div>
           </div>
           
-          <div className="animate-slideUp opacity-0" style={{
-          animationDelay: '0.4s'
-        }}>
-            <div className="bg-white rounded-lg p-6 shadow-sm" style={{
-            height: '650px'
-          }}>
-              <InlineWidget url="https://calendly.com/eddy-hage1" styles={{
-              height: '100%',
-              width: '100%'
-            }} />
-            </div>
+          <div style={{ border: '1px solid #ddd', height: '500px' }}>
+            <InlineWidget 
+              url="https://calendly.com/eddy-hage1" 
+              styles={{ height: '100%', width: '100%' }} 
+            />
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ContactSection;

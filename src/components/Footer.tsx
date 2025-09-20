@@ -1,53 +1,58 @@
-
-import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  return <footer className="bg-gray-900 text-gray-300 py-12">
-      <div className="container max-w-7xl mx-auto container-padding">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+  
+  return (
+    <footer style={{ backgroundColor: '#333', color: '#ccc', padding: '40px 20px' }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', marginBottom: '30px' }}>
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {['Home', 'About', 'Blog', 'Contact'].map(item => <li key={item}>
-                  <a href={item === 'Blog' ? '/blog' : `#${item.toLowerCase()}`} className="hover:text-white transition-colors">
-                    {item}
-                  </a>
-                </li>)}
+            <h3 style={{ color: 'white', marginBottom: '15px' }}>Quick Links</h3>
+            <ul style={{ listStyle: 'none', padding: 0 }}>
+              <li style={{ marginBottom: '8px' }}>
+                <a href="#home" style={{ color: '#ccc', textDecoration: 'none' }}>Home</a>
+              </li>
+              <li style={{ marginBottom: '8px' }}>
+                <a href="#about" style={{ color: '#ccc', textDecoration: 'none' }}>About</a>
+              </li>
+              <li style={{ marginBottom: '8px' }}>
+                <a href="#contact" style={{ color: '#ccc', textDecoration: 'none' }}>Contact</a>
+              </li>
               <li>
-                <a href="/resume" className="hover:text-white transition-colors">Resume</a>
+                <a href="/resume" style={{ color: '#ccc', textDecoration: 'none' }}>Resume</a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Connect</h3>
-            <div className="flex space-x-4 mb-4">
-              <a href="https://github.com/ehagey" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                <Github size={20} />
+            <h3 style={{ color: 'white', marginBottom: '15px' }}>Connect</h3>
+            <div style={{ display: 'flex', gap: '15px', marginBottom: '15px' }}>
+              <a href="https://github.com/ehagey" target="_blank" rel="noopener noreferrer" style={{ color: '#ccc', textDecoration: 'none' }}>
+                GitHub
               </a>
-              <a href="https://www.linkedin.com/in/eddy-hage-youssef-29b6b618b/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                <Linkedin size={20} />
+              <a href="https://www.linkedin.com/in/eddy-hage-youssef-29b6b618b/" target="_blank" rel="noopener noreferrer" style={{ color: '#ccc', textDecoration: 'none' }}>
+                LinkedIn
               </a>
-              <a href="https://www.instagram.com/eddy.g.hage/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                <Instagram size={20} />
+              <a href="https://www.instagram.com/eddy.g.hage/" target="_blank" rel="noopener noreferrer" style={{ color: '#ccc', textDecoration: 'none' }}>
+                Instagram
               </a>
-              <a href="mailto:eddy.hage1@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                <Mail size={20} />
+              <a href="mailto:eddy.hage1@gmail.com" style={{ color: '#ccc', textDecoration: 'none' }}>
+                Email
               </a>
             </div>
-            <p className="opacity-0 md:opacity-100">
-              <a href="mailto:eddy.hage1@gmail.com" className="hover:text-white transition-colors">
+            <p>
+              <a href="mailto:eddy.hage1@gmail.com" style={{ color: '#ccc', textDecoration: 'none' }}>
                 eddy.hage1@gmail.com
               </a>
             </p>
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+        <div style={{ borderTop: '1px solid #555', paddingTop: '20px', textAlign: 'center' }}>
           <p>© {currentYear} Eddy Hage-Youssef. All rights reserved.</p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
