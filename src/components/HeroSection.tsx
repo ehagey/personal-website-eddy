@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return <section id="home" style={{
-    padding: '60px 20px',
+    padding: '40px 20px 30px 20px',
     textAlign: 'center',
     maxWidth: '600px',
     margin: '0 auto'
@@ -14,7 +14,7 @@ const HeroSection = () => {
       <p style={{
       fontSize: '16px',
       color: '#666',
-      marginBottom: '20px',
+      marginBottom: '15px',
       lineHeight: '1.5'
     }}>
         I'm passionate about building products that improve people's lives. Interested in working at the intersection of AI, business, and strategy.
@@ -24,7 +24,7 @@ const HeroSection = () => {
       width: '200px',
       height: '150px',
       objectFit: 'contain',
-      margin: '20px auto',
+      margin: '15px auto',
       display: 'block'
     }} />
       

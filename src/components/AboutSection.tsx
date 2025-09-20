@@ -1,13 +1,13 @@
 const AboutSection = () => {
   return <section id="about" style={{
-    padding: '60px 20px',
+    padding: '30px 20px',
     maxWidth: '600px',
     margin: '0 auto'
   }}>
       
       {/* About Me */}
       <div style={{
-      marginBottom: '40px'
+      marginBottom: '25px'
     }}>
         <h2 style={{
         fontSize: '24px',
