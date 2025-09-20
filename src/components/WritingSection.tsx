@@ -9,12 +9,11 @@ const WritingSection = () => {
         <div className="max-w-2xl mx-auto">
           <Link 
             to="/blog/become-someone-people-can-depend-on"
-            className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100 hover:border-gray-200"
+            className="block text-gray-900 hover:text-blue-600 transition-colors"
           >
-            <h3 className="text-xl font-semibold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
+            <h3 className="text-lg font-medium">
               Become Someone People can Depend on
             </h3>
-            <p className="text-gray-500 text-sm">April 12, 2025</p>
           </Link>
         </div>
       </div>
