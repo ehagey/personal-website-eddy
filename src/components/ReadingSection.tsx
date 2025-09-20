@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const ReadingSection = () => {
   return (
     <section id="reading" style={{
@@ -12,17 +14,29 @@ const ReadingSection = () => {
           fontSize: '24px',
           marginBottom: '15px',
           fontWeight: 'normal'
-        }}>Reading</h2>
+        }}>Things I Love</h2>
         <div style={{
           fontSize: '14px',
           lineHeight: '1.6',
           color: '#666'
         }}>
-          {/* Placeholder for favorite books - you can add them later */}
           <div>
-            <p style={{ fontSize: '16px', color: '#333' }}>
-              Favorite books coming soon...
-            </p>
+            <h3 style={{
+              fontSize: '16px',
+              fontWeight: '500',
+              color: '#333',
+              marginBottom: '8px'
+            }}>
+              <Link 
+                to="/things-i-love" 
+                style={{
+                  color: '#333',
+                  textDecoration: 'underline'
+                }}
+              >
+                Books, Music & Inspiration
+              </Link>
+            </h3>
           </div>
         </div>
       </div>
