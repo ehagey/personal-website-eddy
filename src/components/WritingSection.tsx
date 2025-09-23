@@ -20,6 +20,24 @@ const WritingSection = () => {
           lineHeight: '1.6',
           color: '#666'
         }}>
+          <div style={{ marginBottom: '12px' }}>
+            <h3 style={{
+              fontSize: '16px',
+              fontWeight: '500',
+              color: '#333',
+              marginBottom: '8px'
+            }}>
+              <Link 
+                to="/blog/on-mental-models" 
+                style={{
+                  color: '#333',
+                  textDecoration: 'underline'
+                }}
+              >
+                On Mental Models
+              </Link>
+            </h3>
+          </div>
           <div>
             <h3 style={{
               fontSize: '16px',

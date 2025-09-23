@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import DependableBlogPost from "./pages/DependableBlogPost";
+import MentalModelsBlogPost from "./pages/MentalModelsBlogPost";
 import ThingsILove from "./pages/ThingsILove";
 
 
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog/become-someone-people-can-depend-on" element={<DependableBlogPost />} />
+          <Route path="/blog/on-mental-models" element={<MentalModelsBlogPost />} />
           <Route path="/things-i-love" element={<ThingsILove />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

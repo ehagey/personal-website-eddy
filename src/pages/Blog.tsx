@@ -12,7 +12,14 @@ const Blog = () => {
           <h1 className="heading-lg mb-4 text-center">Blog</h1>
           <p className="subtitle mx-auto mb-12 text-center">Thoughts, insights, and reflections on life, career, research, AI, and pretty much anything else.</p>
           
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto space-y-6">
+            <BlogPost 
+              title="On Mental Models" 
+              date="April 15, 2025" 
+              slug="on-mental-models" 
+              content="A person's quality of thinking largely determines the quality of life. Life unfolds as a series of interconnected decisions, where each choice shapes future possibilities and outcomes. The most effective thinkers construct a toolbox of different analytical tools..."
+              isPreview={true}
+            />
             <BlogPost 
               title="Become Someone People Can Depend on" 
               date="April 12, 2025" 
