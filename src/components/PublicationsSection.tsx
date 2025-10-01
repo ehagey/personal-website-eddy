@@ -46,7 +46,11 @@ const PublicationsSection = () => {
           }}>INFORMS Journal on Data Science, Major Revision</p>
           </div>
           
-          <div>
+          <div style={{
+          marginBottom: '15px',
+          paddingBottom: '15px',
+          borderBottom: '1px solid #eee'
+        }}>
             <h3 style={{
             fontSize: '16px',
             fontWeight: '500',
@@ -68,6 +72,30 @@ const PublicationsSection = () => {
             fontSize: '13px',
             color: '#888'
           }}>Submitted</p>
+          </div>
+          
+          <div>
+            <h3 style={{
+            fontSize: '16px',
+            fontWeight: '500',
+            color: '#333',
+            marginBottom: '8px'
+          }}>
+              <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
+              color: '#333',
+              textDecoration: 'underline'
+            }}>
+                What Happens When AI Sets Wages
+              </a>
+              <span style={{
+                fontWeight: 'normal',
+                color: '#666'
+              }}> with M. C. Cohen and W. Khern-am-nuai</span>
+            </h3>
+            <p style={{
+            fontSize: '13px',
+            color: '#888'
+          }}>Harvard Business Review, Digital Article, October 1, 2025</p>
           </div>
         </div>
       </div>
