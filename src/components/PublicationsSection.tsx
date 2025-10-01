@@ -28,22 +28,21 @@ const PublicationsSection = () => {
             color: '#333',
             marginBottom: '8px'
           }}>
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353923" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
               color: '#333',
               textDecoration: 'underline'
             }}>
-                Generative AI for Data Scraping
+                What Happens When AI Sets Wages
               </a>
               <span style={{
                 fontWeight: 'normal',
                 color: '#666'
-              }}> with M. C. Cohen</span>
+              }}> with M. C. Cohen and W. Khern-am-nuai</span>
             </h3>
             <p style={{
             fontSize: '13px',
-            color: '#888',
-            marginBottom: '5px'
-          }}>INFORMS Journal on Data Science, Major Revision</p>
+            color: '#888'
+          }}>Harvard Business Review, Digital Article, October 1, 2025</p>
           </div>
           
           <div style={{
@@ -81,21 +80,22 @@ const PublicationsSection = () => {
             color: '#333',
             marginBottom: '8px'
           }}>
-              <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353923" target="_blank" rel="noopener noreferrer" style={{
               color: '#333',
               textDecoration: 'underline'
             }}>
-                What Happens When AI Sets Wages
+                Generative AI for Data Scraping
               </a>
               <span style={{
                 fontWeight: 'normal',
                 color: '#666'
-              }}> with M. C. Cohen and W. Khern-am-nuai</span>
+              }}> with M. C. Cohen</span>
             </h3>
             <p style={{
             fontSize: '13px',
-            color: '#888'
-          }}>Harvard Business Review, Digital Article, October 1, 2025</p>
+            color: '#888',
+            marginBottom: '5px'
+          }}>INFORMS Journal on Data Science, Major Revision</p>
           </div>
         </div>
       </div>
