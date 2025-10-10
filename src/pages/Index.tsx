@@ -1,4 +1,5 @@
 
+import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import PublicationsSection from '@/components/PublicationsSection';
@@ -18,7 +19,6 @@ const Index = () => {
         <ReadingSection />
         <ContactSection />
       </main>
-      <Footer />
     </>
   );
 };
