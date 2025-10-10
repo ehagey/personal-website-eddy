@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom';
 const WritingSection = () => {
   return (
     <section id="writing" style={{
-      padding: '5px 20px 5px 20px',
+      padding: '20px',
       maxWidth: '600px',
       margin: '0 auto'
     }}>
-      <div style={{
-        marginBottom: '25px'
-      }}>
+      <div>
         <h2 style={{
-          fontSize: '24px',
-          marginBottom: '15px',
+          fontSize: '16px',
+          marginBottom: '10px',
           fontWeight: 'normal'
         }}>Writing</h2>
         <div style={{
@@ -20,41 +18,27 @@ const WritingSection = () => {
           lineHeight: '1.6',
           color: '#666'
         }}>
-          <div style={{ marginBottom: '12px' }}>
-            <h3 style={{
-              fontSize: '16px',
-              fontWeight: '500',
-              color: '#333',
-              marginBottom: '8px'
-            }}>
-              <Link 
-                to="/blog/on-mental-models" 
-                style={{
-                  color: '#333',
-                  textDecoration: 'underline'
-                }}
-              >
-                On Mental Models
-              </Link>
-            </h3>
+          <div style={{ marginBottom: '5px' }}>
+            <Link 
+              to="/blog/on-mental-models" 
+              style={{
+                color: '#333',
+                textDecoration: 'underline'
+              }}
+            >
+              On Mental Models
+            </Link>
           </div>
           <div>
-            <h3 style={{
-              fontSize: '16px',
-              fontWeight: '500',
-              color: '#333',
-              marginBottom: '8px'
-            }}>
-              <Link 
-                to="/blog/become-someone-people-can-depend-on" 
-                style={{
-                  color: '#333',
-                  textDecoration: 'underline'
-                }}
-              >
-                Become Someone People Can Depend on
-              </Link>
-            </h3>
+            <Link 
+              to="/blog/become-someone-people-can-depend-on" 
+              style={{
+                color: '#333',
+                textDecoration: 'underline'
+              }}
+            >
+              Become Someone People Can Depend on
+            </Link>
           </div>
         </div>
       </div>

@@ -1,17 +1,13 @@
 const AboutSection = () => {
   return <section id="about" style={{
-    padding: '5px 20px 5px 20px',
+    padding: '20px',
     maxWidth: '600px',
     margin: '0 auto'
   }}>
-      
-      {/* About Me */}
-      <div style={{
-      marginBottom: '25px'
-    }}>
+      <div>
         <h2 style={{
-        fontSize: '24px',
-        marginBottom: '15px',
+        fontSize: '16px',
+        marginBottom: '10px',
         fontWeight: 'normal'
       }}>About</h2>
         <div style={{
@@ -37,7 +33,6 @@ const AboutSection = () => {
           <p>In my free time, I enjoy spending time at the gym, playing guitar, reading, and hanging out with family and friends.</p>
         </div>
       </div>
-
     </section>;
 };
 export default AboutSection;

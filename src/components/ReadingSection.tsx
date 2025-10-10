@@ -1,16 +1,14 @@
 import { Link } from 'react-router-dom';
 const ReadingSection = () => {
   return <section id="reading" style={{
-    padding: '5px 20px 5px 20px',
+    padding: '20px',
     maxWidth: '600px',
     margin: '0 auto'
   }}>
-      <div style={{
-      marginBottom: '25px'
-    }}>
+      <div>
         <h2 style={{
-        fontSize: '24px',
-        marginBottom: '15px',
+        fontSize: '16px',
+        marginBottom: '10px',
         fontWeight: 'normal'
       }}>Things I Love</h2>
         <div style={{
@@ -18,21 +16,12 @@ const ReadingSection = () => {
         lineHeight: '1.6',
         color: '#666'
       }}>
-          <div>
-            <h3 style={{
-            fontSize: '16px',
-            fontWeight: '500',
+          <Link to="/things-i-love" style={{
             color: '#333',
-            marginBottom: '8px'
+            textDecoration: 'underline'
           }}>
-              <Link to="/things-i-love" style={{
-              color: '#333',
-              textDecoration: 'underline'
-            }}>
-                My Favorites
-              </Link>
-            </h3>
-          </div>
+            My Favorites
+          </Link>
         </div>
       </div>
     </section>;
