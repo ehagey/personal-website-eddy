@@ -28,6 +28,34 @@ const PublicationsSection = () => {
             color: '#333',
             marginBottom: '8px'
           }}>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6331258" target="_blank" rel="noopener noreferrer" style={{
+              color: '#333',
+              textDecoration: 'underline'
+            }}>
+                Three Strategic Bets on AI's Future
+              </a>
+              <span style={{
+                fontWeight: 'normal',
+                color: '#666'
+              }}> with M. C. Cohen, D. McCarthy, and D. D. Sokol</span>
+            </h3>
+            <p style={{
+            fontSize: '13px',
+            color: '#888'
+          }}>Working Paper</p>
+          </div>
+          
+          <div style={{
+          marginBottom: '15px',
+          paddingBottom: '15px',
+          borderBottom: '1px solid #eee'
+        }}>
+            <h3 style={{
+            fontSize: '16px',
+            fontWeight: '500',
+            color: '#333',
+            marginBottom: '8px'
+          }}>
               <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
               color: '#333',
               textDecoration: 'underline'
