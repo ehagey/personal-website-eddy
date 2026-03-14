@@ -42,7 +42,7 @@ const PublicationsSection = () => {
             <p style={{
             fontSize: '13px',
             color: '#888'
-          }}>Working Paper</p>
+          }}>Submitted</p>
           </div>
           
           <div style={{
