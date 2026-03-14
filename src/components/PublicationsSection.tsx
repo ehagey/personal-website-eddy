@@ -75,7 +75,7 @@ const PublicationsSection = () => {
             fontSize: '13px',
             color: '#888',
             marginTop: '4px'
-          }}>Cited in <a href="https://www.ilo.org/resource/other/ai-manufacturing" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline' }}>ILO: AI in Manufacturing (2026)</a></p>
+          }}>Cited in <a href="https://www.ilo.org/sites/default/files/2026-03/TMDWAI-2026-EN_.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline' }}>ILO: AI in Manufacturing (2026)</a></p>
           </div>
           
           <div style={{
