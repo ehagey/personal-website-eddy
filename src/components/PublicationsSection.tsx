@@ -132,53 +132,8 @@ const PublicationsSection = () => {
           </div>
         </div>
 
-        <h2 style={{
-          fontSize: '24px',
-          marginBottom: '15px',
-          fontWeight: 'normal',
-          marginTop: '30px'
-        }}>Editing</h2>
-        <div style={{
-          fontSize: '14px',
-          lineHeight: '1.6',
-          color: '#666'
-        }}>
-          <div>
-            <h3 style={{
-              fontSize: '16px',
-              fontWeight: '500',
-              color: '#333',
-              marginBottom: '8px'
-            }}>
-              <a href="https://maxccohen.github.io/State-of-AI-in-Canada.pdf" target="_blank" rel="noopener noreferrer" style={{
-                color: '#333',
-                textDecoration: 'underline'
-              }}>
-                The State of AI in Canada: Challenges, Opportunities, and Calls to Action
-              </a>
-              <span style={{
-                fontWeight: 'normal',
-                color: '#666'
-              }}> by M. C. Cohen</span>
-            </h3>
-            <p style={{
-              fontSize: '13px',
-              color: '#888'
-            }}>The State of AI in Canada White Paper, January 2026</p>
-          </div>
-        </div>
-
-        <h2 style={{
-          fontSize: '24px',
-          marginBottom: '15px',
-          fontWeight: 'normal',
-          marginTop: '30px'
-        }}>Academic Collaborators</h2>
-        <div style={{
-          fontSize: '14px',
-          lineHeight: '1.6',
-          color: '#666'
-        }}>
+        <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px' }}>Academic Collaborators</h2>
+        <div style={{ fontSize: '14px', lineHeight: '1.6', color: '#666' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
             {[
               { name: 'Maxime C. Cohen', affiliation: 'Desautels Faculty of Management, McGill University', url: 'https://maxccohen.github.io/' },
@@ -187,12 +142,23 @@ const PublicationsSection = () => {
               { name: 'D. Daniel Sokol', affiliation: 'USC Gould School of Law; USC Marshall School of Business', url: 'https://gould.usc.edu/faculty/profile/d-daniel-sokol/' },
             ].map((c) => (
               <div key={c.name}>
-                <a href={c.url} target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'underline', fontSize: '15px' }}>
-                  {c.name}
-                </a>
+                <a href={c.url} target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'underline', fontSize: '15px' }}>{c.name}</a>
                 <p style={{ fontSize: '13px', color: '#888', marginTop: '2px' }}>{c.affiliation}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px' }}>Editing</h2>
+        <div style={{ fontSize: '14px', lineHeight: '1.6', color: '#666' }}>
+          <div>
+            <h3 style={{ fontSize: '16px', fontWeight: '500', color: '#333', marginBottom: '8px' }}>
+              <a href="https://maxccohen.github.io/State-of-AI-in-Canada.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'underline' }}>
+                The State of AI in Canada: Challenges, Opportunities, and Calls to Action
+              </a>
+              <span style={{ fontWeight: 'normal', color: '#666' }}> by M. C. Cohen</span>
+            </h3>
+            <p style={{ fontSize: '13px', color: '#888' }}>The State of AI in Canada White Paper, January 2026</p>
           </div>
         </div>
       </div>
