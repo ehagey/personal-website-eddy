@@ -12,12 +12,8 @@ const HeroSection = () => {
     }}>
       Hi! My name is Eddy Hage-Youssef
     </h1>
-      <p style={{
-      fontSize: '16px',
-      color: '#666',
-      marginBottom: '10px',
-      lineHeight: '1.5'
-    }}> I'm passionate about AI research and building products that improve people's lives. I'm particularly interested in working at the intersection of AI, business, and strategy.</p>
+      
+
       
       <img src="/lovable-uploads/e223e9a5-8da0-4699-81b5-a41032f24b8a.png" alt="Profile" style={{
       width: '240px',
