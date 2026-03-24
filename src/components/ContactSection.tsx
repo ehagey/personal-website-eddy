@@ -29,6 +29,7 @@ const ContactSection = () => {
       }}>
           eddy.hage1@gmail.com
         </a>
+        <p style={{ marginTop: '10px', fontSize: '14px', color: '#666' }}>CV available upon request.</p>
       </div>
     </section>;
 };
