@@ -12,8 +12,8 @@ const AboutSection = () => {
         <h2 style={{
         fontSize: '24px',
         marginBottom: '15px',
-        fontWeight: 'normal'
-      }}>About <span style={{ fontWeight: 'normal' }}>Eddy Hage-Youssef</span></h2>
+        fontWeight: '400'
+      }}>About <span style={{ fontWeight: '400' }}>Eddy Hage-Youssef</span></h2>
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',
