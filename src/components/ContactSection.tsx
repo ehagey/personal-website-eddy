@@ -1,4 +1,3 @@
-import { InlineWidget } from 'react-calendly';
 const ContactSection = () => {
   return <section id="contact" style={{
     padding: '5px 20px 20px 20px',
@@ -30,22 +29,6 @@ const ContactSection = () => {
       }}>
           eddy.hage1@gmail.com
         </a>
-      </div>
-      
-      <p style={{
-      fontSize: '12px',
-      color: '#666',
-      marginBottom: '15px'
-    }}>Or schedule a meeting:</p>
-      
-      <div style={{
-      height: '400px',
-      width: '100%'
-    }}>
-        <InlineWidget url="https://calendly.com/eddy-hage1" styles={{
-        height: '100%',
-        width: '100%'
-      }} />
       </div>
     </section>;
 };
