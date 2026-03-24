@@ -21,18 +21,21 @@ const AboutSection = () => {
       }}>
           <p style={{
           marginBottom: '10px'
-        }}>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University.</p>
-          
-          <p style={{
-          marginBottom: '10px'
-        }}>I'm currently exploring AI agents and working on benchmarking criteria for LLMs in medical settings at the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
+        }}>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University. I am very fortunate and grateful to work under Professor Maxime Cohen, where our research focuses on Artificial Intelligence. A major part of our work involves extensive industry collaborations to build and deploy practical AI agents. Since September 2025, I have also been working with <a href="https://www.crai.com/" target="_blank" rel="noopener noreferrer" style={{
             color: '#333',
             textDecoration: 'underline'
-          }}>AI Health Institute</a>. I'm also involved in AI research. Previously, I've worked on building RAG and Ontology frameworks for domain-specific language models.</p>
+          }}>Charles River Associates</a> as a consultant advising on AI.</p>
           
           <p style={{
           marginBottom: '10px'
-        }}>I've been fortunate to compete in Judo at a high level, earning my black belt and winning national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time - all mindsets that have shaped how I approach everything in life.</p>
+        }}>I'm also currently exploring AI agents and working on benchmarking criteria for LLMs in medical settings at the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
+            color: '#333',
+            textDecoration: 'underline'
+          }}>AI Health Institute</a>. Previously, I've worked on building RAG and Ontology frameworks for domain-specific language models.</p>
+          
+          <p style={{
+          marginBottom: '10px'
+        }}>Outside of research, I've been fortunate to compete in Judo at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time—all mindsets that have shaped how I approach everything in life.</p>
           
           <p>In my free time, I enjoy spending time at the gym, playing guitar, reading, and hanging out with family and friends.</p>
         </div>
