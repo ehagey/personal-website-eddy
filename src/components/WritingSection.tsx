@@ -38,24 +38,6 @@ const WritingSection = () => {
               </Link>
             </h3>
           </div>
-          <div>
-            <h3 style={{
-              fontSize: '16px',
-              fontWeight: '500',
-              color: '#333',
-              marginBottom: '8px'
-            }}>
-              <Link 
-                to="/blog/become-someone-people-can-depend-on" 
-                style={{
-                  color: '#333',
-                  textDecoration: 'underline'
-                }}
-              >
-                Become Someone People Can Depend on
-              </Link>
-            </h3>
-          </div>
         </div>
       </div>
     </section>
