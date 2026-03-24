@@ -13,7 +13,7 @@ const AboutSection = () => {
         fontSize: '24px',
         marginBottom: '15px',
         fontWeight: 'normal'
-      }}>About</h2>
+      }}>About Eddy Hage-Youssef</h2>
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',
