@@ -4,7 +4,7 @@ const HeroSection = () => {
     maxWidth: '600px',
     margin: '0 auto'
   }}>
-      <h1 style={{ fontSize: '24px', fontWeight: 'normal', marginBottom: '0' }}>Eddy Hage-Youssef</h1>
+      <h1 style={{ fontSize: '16px', fontWeight: '500', color: '#333', marginBottom: '0' }}>Eddy Hage-Youssef</h1>
     </section>;
 };
 export default HeroSection;
