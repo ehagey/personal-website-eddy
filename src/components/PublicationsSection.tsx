@@ -156,6 +156,10 @@ const PublicationsSection = () => {
               }}>
                 The State of AI in Canada: Challenges, Opportunities, and Calls to Action
               </a>
+              <span style={{
+                fontWeight: 'normal',
+                color: '#666'
+              }}> by M. C. Cohen</span>
             </h3>
             <p style={{
               fontSize: '13px',
