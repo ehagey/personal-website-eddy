@@ -13,7 +13,7 @@ const AboutSection = () => {
         fontSize: '24px',
         marginBottom: '15px',
         fontWeight: 'normal'
-      }}>About <span style={{ fontSize: '14px', fontWeight: 'normal', color: '#666' }}>Eddy Hage-Youssef</span></h2>
+      }}>About <span style={{ fontWeight: 'normal' }}>Eddy Hage-Youssef</span></h2>
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',
