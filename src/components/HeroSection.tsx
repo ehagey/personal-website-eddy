@@ -10,7 +10,7 @@ const HeroSection = () => {
       fontSize: '24px',
       fontWeight: 'normal'
     }}>
-      Hi! My name is Eddy Hage-Youssef
+      Eddy Hage-Youssef
     </h1>
       
 
