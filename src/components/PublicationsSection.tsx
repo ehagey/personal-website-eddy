@@ -133,6 +133,20 @@ const PublicationsSection = () => {
         </div>
 
         <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px' }}>Academic Collaborators</h2>
+        <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#666', marginBottom: '15px' }}>
+          I feel very fortunate and grateful to have worked and published academic work with{' '}
+          {[
+            { name: 'Maxime C. Cohen', url: 'https://maxccohen.github.io/' },
+            { name: 'Warut Khern-am-nuai', url: 'https://www.warut.info/' },
+            { name: 'Daniel McCarthy', url: 'https://www.rhsmith.umd.edu/directory/daniel-mccarthy' },
+            { name: 'D. Daniel Sokol', url: 'https://gould.usc.edu/faculty/profile/d-daniel-sokol/' },
+          ].map((c, i, arr) => (
+            <span key={c.name}>
+              <a href={c.url} target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'underline' }}>{c.name}</a>
+              {i < arr.length - 2 ? ', ' : i === arr.length - 2 ? ', and ' : ''}
+            </span>
+          ))}.
+        </p>
         <div style={{ fontSize: '14px', lineHeight: '1.6', color: '#666' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
             {[
