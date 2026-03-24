@@ -133,21 +133,20 @@ const PublicationsSection = () => {
         </div>
 
         <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px' }}>Academic Collaborators</h2>
-        <div style={{ fontSize: '14px', lineHeight: '1.6', color: '#666' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-            {[
-              { name: 'Maxime C. Cohen', affiliation: 'Desautels Faculty of Management, McGill University', url: 'https://maxccohen.github.io/' },
-              { name: 'Warut Khern-am-nuai', affiliation: 'Desautels Faculty of Management, McGill University', url: 'https://www.warut.info/' },
-              { name: 'Daniel McCarthy', affiliation: 'University of Maryland - Robert H. Smith School of Business', url: 'https://www.rhsmith.umd.edu/directory/daniel-mccarthy' },
-              { name: 'D. Daniel Sokol', affiliation: 'USC Gould School of Law; USC Marshall School of Business', url: 'https://gould.usc.edu/faculty/profile/d-daniel-sokol/' },
-            ].map((c) => (
-              <div key={c.name}>
-                <a href={c.url} target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'underline', fontSize: '15px' }}>{c.name}</a>
-                <p style={{ fontSize: '13px', color: '#888', marginTop: '2px' }}>{c.affiliation}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#666', marginBottom: '15px' }}>
+          I feel very fortunate and grateful to have worked and published academic work with{' '}
+          {[
+            { name: 'Maxime C. Cohen', url: 'https://maxccohen.github.io/' },
+            { name: 'Warut Khern-am-nuai', url: 'https://www.warut.info/' },
+            { name: 'Daniel McCarthy', url: 'https://www.rhsmith.umd.edu/directory/daniel-mccarthy' },
+            { name: 'D. Daniel Sokol', url: 'https://gould.usc.edu/faculty/profile/d-daniel-sokol/' },
+          ].map((c, i, arr) => (
+            <span key={c.name}>
+              <a href={c.url} target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'underline' }}>{c.name}</a>
+              {i < arr.length - 2 ? ', ' : i === arr.length - 2 ? ', and ' : ''}
+            </span>
+          ))}.
+        </p>
 
         <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px' }}>Editing</h2>
         <div style={{ fontSize: '14px', lineHeight: '1.6', color: '#666' }}>
