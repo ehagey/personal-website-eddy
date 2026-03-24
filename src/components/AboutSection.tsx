@@ -24,7 +24,7 @@ const AboutSection = () => {
         }}>I'm Eddy, a fourth-year Computer Science and Statistics student at McGill University. I am very fortunate and grateful to work under <a href="https://maxccohen.github.io/" target="_blank" rel="noopener noreferrer" style={{
             color: '#333',
             textDecoration: 'underline'
-          }}>Professor Maxime Cohen</a>, where our research focuses on Artificial Intelligence. A major part of our work involves extensive industry collaborations to build and deploy practical AI agents. Since September 2025, I have also been working with Charles River Associates as a consultant advising on AI.</p>
+          }}>Professor Maxime Cohen</a>, where our research focuses on AI. A major part of our work involves extensive industry collaborations to build and deploy practical AI agents. Since September 2025, I have also been working with Charles River Associates as a consultant advising on AI.</p>
           
           <p style={{
           marginBottom: '10px'
