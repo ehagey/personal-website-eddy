@@ -136,10 +136,10 @@ const PublicationsSection = () => {
         <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#666', marginBottom: '15px' }}>
           I feel very fortunate and grateful to have worked and published academic work with{' '}
           {[
-            { name: 'Maxime C. Cohen', affiliation: 'McGill University', url: 'https://maxccohen.github.io/' },
-            { name: 'Warut Khern-am-nuai', affiliation: 'McGill University', url: 'https://www.warut.info/' },
-            { name: 'Daniel McCarthy', affiliation: 'University of Maryland', url: 'https://www.rhsmith.umd.edu/directory/daniel-mccarthy' },
-            { name: 'D. Daniel Sokol', affiliation: 'USC', url: 'https://gould.usc.edu/faculty/profile/d-daniel-sokol/' },
+            { name: 'Maxime C. Cohen', affiliation: 'Desautels Faculty of Management, McGill University', url: 'https://maxccohen.github.io/' },
+            { name: 'Warut Khern-am-nuai', affiliation: 'Desautels Faculty of Management, McGill University', url: 'https://www.warut.info/' },
+            { name: 'Daniel McCarthy', affiliation: 'University of Maryland - Robert H. Smith School of Business', url: 'https://www.rhsmith.umd.edu/directory/daniel-mccarthy' },
+            { name: 'D. Daniel Sokol', affiliation: 'USC Gould School of Law; USC Marshall School of Business', url: 'https://gould.usc.edu/faculty/profile/d-daniel-sokol/' },
           ].map((c, i, arr) => (
             <span key={c.name}>
               <a href={c.url} target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'underline' }}>{c.name}</a>
