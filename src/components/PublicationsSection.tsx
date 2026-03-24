@@ -131,6 +131,38 @@ const PublicationsSection = () => {
           }}>INFORMS Journal on Data Science, Major Revision</p>
           </div>
         </div>
+
+        <h2 style={{
+          fontSize: '24px',
+          marginBottom: '15px',
+          fontWeight: 'normal',
+          marginTop: '30px'
+        }}>Editing</h2>
+        <div style={{
+          fontSize: '14px',
+          lineHeight: '1.6',
+          color: '#666'
+        }}>
+          <div>
+            <h3 style={{
+              fontSize: '16px',
+              fontWeight: '500',
+              color: '#333',
+              marginBottom: '8px'
+            }}>
+              <a href="https://maxccohen.github.io/State-of-AI-in-Canada.pdf" target="_blank" rel="noopener noreferrer" style={{
+                color: '#333',
+                textDecoration: 'underline'
+              }}>
+                The State of AI in Canada: Challenges, Opportunities, and Calls to Action
+              </a>
+            </h3>
+            <p style={{
+              fontSize: '13px',
+              color: '#888'
+            }}>The State of AI in Canada White Paper, January 2026</p>
+          </div>
+        </div>
       </div>
     </section>;
 };
