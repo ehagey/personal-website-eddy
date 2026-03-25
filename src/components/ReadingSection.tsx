@@ -13,7 +13,7 @@ const ReadingSection = () => {
         marginBottom: '15px',
         fontWeight: 'normal',
         color: 'var(--site-text)'
-      }}>Things I Love</h2>
+      }}>My Favorites</h2>
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',
