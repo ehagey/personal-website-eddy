@@ -7,11 +7,12 @@ const ContactSection = () => {
       <h2 style={{
       fontSize: '24px',
       marginBottom: '10px',
-      fontWeight: 'normal'
+      fontWeight: 'normal',
+      color: 'var(--site-text)'
     }}>Contact</h2>
       <p style={{
       fontSize: '14px',
-      color: '#666',
+      color: 'var(--site-text-muted)',
       marginBottom: '20px',
       lineHeight: '1.4'
     }}>Have a project in mind or just want to say hello? Please feel free to reach out.</p>
@@ -21,15 +22,16 @@ const ContactSection = () => {
       fontSize: '14px'
     }}>
         <p style={{
-        marginBottom: '5px'
+        marginBottom: '5px',
+        color: 'var(--site-text)'
       }}>Montreal, QC</p>
         <a href="mailto:eddy.hage1@gmail.com" style={{
-        color: '#333',
+        color: 'var(--site-link)',
         textDecoration: 'underline'
       }}>
           eddy.hage1@gmail.com
         </a>
-        <p style={{ marginTop: '10px', fontSize: '14px', color: '#666' }}>CV available upon request.</p>
+        <p style={{ marginTop: '10px', fontSize: '14px', color: 'var(--site-text-muted)' }}>CV available upon request.</p>
       </div>
     </section>;
 };
