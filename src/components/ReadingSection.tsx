@@ -7,9 +7,9 @@ const ReadingSection = () => {
   }}>
       <div style={{ marginBottom: '25px' }}>
         <h2 style={{
-          fontSize: '24px',
+          fontSize: '16px',
           marginBottom: '15px',
-          fontWeight: 'normal',
+          fontWeight: '500',
         }}>
           <Link to="/things-i-love" style={{
             color: 'var(--site-link)',
