@@ -12,7 +12,8 @@ import Footer from '@/components/Footer';
 const Index = () => {
   return (
     <>
-      <main>
+      <Header />
+      <main style={{ paddingTop: '56px' }}>
         <HeroSection />
         <AboutSection />
         <PublicationsSection />
