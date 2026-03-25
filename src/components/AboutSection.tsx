@@ -38,7 +38,7 @@ const AboutSection = () => {
           marginBottom: '10px'
         }}>Outside of research, I've been fortunate to compete in Judo at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
           
-          <p>In my free time, I enjoy playing the guitar, reading, and spending time with my family and friends. In mid 2025, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing the meal with the people I care about.</p>
+          <p>In my free time, I enjoy playing the guitar, reading, and spending time with my family and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing the meal with the people I care about.</p>
         </div>
       </div>
 
