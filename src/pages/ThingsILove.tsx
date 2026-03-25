@@ -117,6 +117,76 @@ const ThingsILove = () => {
             </li>
           </ul>
         </section>
+
+        <section style={{ marginBottom: '40px' }}>
+          <h2 style={{
+            fontSize: '22px',
+            fontWeight: '600',
+            marginBottom: '20px',
+            color: '#333'
+          }}>
+            Guitar Pedals
+          </h2>
+          <ul style={{
+            listStyle: 'none',
+            padding: 0,
+            margin: 0
+          }}>
+            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
+              Ibanez TS10 Tube Screamer
+            </li>
+            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
+              Keeley Katana Clean Boost
+            </li>
+            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
+              Way Huge Aqua-Puss Analog Delay
+            </li>
+            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
+              Electro-Harmonix Q-Tron+
+            </li>
+            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
+              J. Rockett Archer / Klon Centaur
+            </li>
+          </ul>
+        </section>
+
+        <section style={{ marginBottom: '40px' }}>
+          <h2 style={{
+            fontSize: '22px',
+            fontWeight: '600',
+            marginBottom: '20px',
+            color: '#333'
+          }}>
+            Favorite Judo Throws
+          </h2>
+          <ul style={{
+            listStyle: 'none',
+            padding: 0,
+            margin: 0
+          }}>
+            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
+              Uchi Mata
+            </li>
+            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
+              Sode Tsurikomi Goshi
+            </li>
+            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
+              Tai Otoshi
+            </li>
+            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
+              Yoko Tomoe Nage
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
   );
