@@ -162,7 +162,7 @@ const ThingsILove = () => {
             marginBottom: '20px',
             color: '#333'
           }}>
-            Favorite Judo Throws
+            Judo Throws
           </h2>
           <ul style={{
             listStyle: 'none',
