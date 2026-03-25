@@ -1,9 +1,8 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTheme } from '@/context/ThemeContext';
 import { Moon, Sun } from 'lucide-react';
 
 const Header = () => {
-  const location = useLocation();
   const { theme, toggleTheme } = useTheme();
   
   return (
@@ -24,39 +23,22 @@ const Header = () => {
             Eddy Hage-Youssef
           </Link>
           
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <button
-              onClick={toggleTheme}
-              aria-label="Toggle dark mode"
-              style={{
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                color: 'var(--site-text-muted)',
-                padding: '4px',
-                display: 'flex',
-                alignItems: 'center',
-                transition: 'color 0.2s'
-              }}
-            >
-              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-            </button>
-              onClick={toggleTheme}
-              aria-label="Toggle dark mode"
-              style={{
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                color: 'var(--site-text-muted)',
-                padding: '4px',
-                display: 'flex',
-                alignItems: 'center',
-                transition: 'color 0.2s'
-              }}
-            >
-              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-            </button>
-          </div>
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle dark mode"
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              color: 'var(--site-text-muted)',
+              padding: '4px',
+              display: 'flex',
+              alignItems: 'center',
+              transition: 'color 0.2s'
+            }}
+          >
+            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+          </button>
         </div>
       </div>
     </header>
