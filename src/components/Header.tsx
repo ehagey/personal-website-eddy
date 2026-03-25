@@ -24,20 +24,23 @@ const Header = () => {
             Eddy Hage-Youssef
           </Link>
           
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <Link 
-              to="/" 
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <button
+              onClick={toggleTheme}
+              aria-label="Toggle dark mode"
               style={{
-                fontSize: '14px',
-                fontWeight: 500,
-                color: location.pathname === '/' ? 'var(--site-text)' : 'var(--site-text-muted)',
-                textDecoration: 'none',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                color: 'var(--site-text-muted)',
+                padding: '4px',
+                display: 'flex',
+                alignItems: 'center',
                 transition: 'color 0.2s'
               }}
             >
-              Home
-            </Link>
-            <button
+              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
               onClick={toggleTheme}
               aria-label="Toggle dark mode"
               style={{
