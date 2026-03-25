@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <>
       <Header />
-      <main style={{ paddingTop: '56px' }}>
+      <main>
         <HeroSection />
         <AboutSection />
         <PublicationsSection />

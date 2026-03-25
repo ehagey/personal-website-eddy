@@ -15,7 +15,7 @@ const ContactSection = () => {
       color: 'var(--site-text-muted)',
       marginBottom: '20px',
       lineHeight: '1.4'
-    }}>Have a project in mind or just want to say hello? Please feel free to reach out.</p>
+    }}>Have a project in mind or just want to say hello? Please do reach out!</p>
       
       <div style={{
       marginBottom: '20px',

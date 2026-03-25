@@ -7,12 +7,7 @@ const Header = () => {
   
   return (
     <header style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
       backgroundColor: 'var(--site-header-bg)',
-      backdropFilter: 'blur(12px)',
       borderBottom: '1px solid var(--site-header-border)',
       zIndex: 50,
       transition: 'background-color 0.3s, border-color 0.3s'
