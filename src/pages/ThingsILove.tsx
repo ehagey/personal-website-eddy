@@ -11,7 +11,7 @@ const ThingsILove = () => {
       <Link 
         to="/" 
         style={{ 
-          color: '#666', 
+          color: 'var(--site-text-muted)', 
           textDecoration: 'underline',
           fontSize: '14px',
           marginBottom: '30px',
@@ -25,7 +25,7 @@ const ThingsILove = () => {
         fontSize: '28px', 
         fontWeight: '600', 
         marginBottom: '30px',
-        color: '#333',
+        color: 'var(--site-text)',
         lineHeight: '1.3'
       }}>
         Things I Love
@@ -34,157 +34,62 @@ const ThingsILove = () => {
       <div style={{ 
         lineHeight: '1.7', 
         fontSize: '16px',
-        color: '#333'
+        color: 'var(--site-text)'
       }}>
         <section style={{ marginBottom: '40px' }}>
-          <h2 style={{
-            fontSize: '22px',
-            fontWeight: '600',
-            marginBottom: '20px',
-            color: '#333'
-          }}>
-            Books
-          </h2>
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0
-          }}>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              <em>Extreme Ownership: How U.S. Navy SEALs Lead and Win</em> by Jocko Willink
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              <em>Discipline Equals Freedom: Field Manual</em> by Jocko Willink
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              <em>Can't Hurt Me</em> by David Goggins
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              <em>Meditations</em> by Marcus Aurelius
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              <em>Man's Search for Meaning</em> by Viktor Frankl
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              <em>The Signal and the Noise</em> by Nate Silver
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              <em>Factfulness</em> by Hans Rosling
-            </li>
+          <h2 style={{ fontSize: '22px', fontWeight: '600', marginBottom: '20px', color: 'var(--site-text)' }}>Books</h2>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            {['Extreme Ownership: How U.S. Navy SEALs Lead and Win by Jocko Willink',
+              'Discipline Equals Freedom: Field Manual by Jocko Willink',
+              "Can't Hurt Me by David Goggins",
+              'Meditations by Marcus Aurelius',
+              "Man's Search for Meaning by Viktor Frankl",
+              'The Signal and the Noise by Nate Silver',
+              'Factfulness by Hans Rosling'].map((book, i) => {
+              const parts = book.split(' by ');
+              return (
+                <li key={i} style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+                  <span style={{ position: 'absolute', left: 0, color: 'var(--site-text-muted)' }}>•</span>
+                  <em>{parts[0]}</em>{parts[1] ? ` by ${parts[1]}` : ''}
+                </li>
+              );
+            })}
           </ul>
         </section>
 
         <section style={{ marginBottom: '40px' }}>
-          <h2 style={{
-            fontSize: '22px',
-            fontWeight: '600',
-            marginBottom: '20px',
-            color: '#333'
-          }}>
-            Music
-          </h2>
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0
-          }}>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              John Mayer 🐐
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Stevie Ray Vaughan
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Eric Clapton
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Bob Dylan
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Bill Evans
-            </li>
+          <h2 style={{ fontSize: '22px', fontWeight: '600', marginBottom: '20px', color: 'var(--site-text)' }}>Music</h2>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            {['John Mayer 🐐', 'Stevie Ray Vaughan', 'Eric Clapton', 'Bob Dylan', 'Bill Evans'].map((item, i) => (
+              <li key={i} style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: 0, color: 'var(--site-text-muted)' }}>•</span>
+                {item}
+              </li>
+            ))}
           </ul>
         </section>
 
         <section style={{ marginBottom: '40px' }}>
-          <h2 style={{
-            fontSize: '22px',
-            fontWeight: '600',
-            marginBottom: '20px',
-            color: '#333'
-          }}>
-            Guitar Pedals
-          </h2>
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0
-          }}>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Ibanez TS10 Tube Screamer
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Keeley Katana Clean Boost
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Way Huge Aqua-Puss Analog Delay
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Electro-Harmonix Q-Tron+
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              J. Rockett Archer / Klon Centaur
-            </li>
+          <h2 style={{ fontSize: '22px', fontWeight: '600', marginBottom: '20px', color: 'var(--site-text)' }}>Guitar Pedals</h2>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            {['Ibanez TS10 Tube Screamer', 'Keeley Katana Clean Boost', 'Way Huge Aqua-Puss Analog Delay', 'Electro-Harmonix Q-Tron+', 'J. Rockett Archer / Klon Centaur'].map((item, i) => (
+              <li key={i} style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: 0, color: 'var(--site-text-muted)' }}>•</span>
+                {item}
+              </li>
+            ))}
           </ul>
         </section>
 
         <section style={{ marginBottom: '40px' }}>
-          <h2 style={{
-            fontSize: '22px',
-            fontWeight: '600',
-            marginBottom: '20px',
-            color: '#333'
-          }}>
-            Judo Throws
-          </h2>
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0
-          }}>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Uchi Mata
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Sode Tsurikomi Goshi
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Tai Otoshi
-            </li>
-            <li style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#666' }}>•</span>
-              Yoko Tomoe Nage
-            </li>
+          <h2 style={{ fontSize: '22px', fontWeight: '600', marginBottom: '20px', color: 'var(--site-text)' }}>Judo Throws</h2>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            {['Uchi Mata', 'Sode Tsurikomi Goshi', 'Tai Otoshi', 'Yoko Tomoe Nage'].map((item, i) => (
+              <li key={i} style={{ marginBottom: '8px', paddingLeft: '15px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: 0, color: 'var(--site-text-muted)' }}>•</span>
+                {item}
+              </li>
+            ))}
           </ul>
         </section>
       </div>

@@ -42,7 +42,7 @@ const BlogPost = ({ title, date, content, slug, isPreview = false }: BlogPostPro
       <Link 
         to="/" 
         style={{ 
-          color: '#666', 
+          color: 'var(--site-text-muted)', 
           textDecoration: 'underline',
           fontSize: '14px',
           marginBottom: '30px',
@@ -56,7 +56,7 @@ const BlogPost = ({ title, date, content, slug, isPreview = false }: BlogPostPro
         fontSize: '28px', 
         fontWeight: '600', 
         marginBottom: '30px',
-        color: '#333',
+        color: 'var(--site-text)',
         lineHeight: '1.3'
       }}>
         {title}
@@ -65,7 +65,7 @@ const BlogPost = ({ title, date, content, slug, isPreview = false }: BlogPostPro
       <div style={{ 
         lineHeight: '1.7', 
         fontSize: '16px',
-        color: '#333'
+        color: 'var(--site-text)'
       }}>
         {content}
       </div>

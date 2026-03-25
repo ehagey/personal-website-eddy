@@ -13,24 +13,25 @@ const WritingSection = () => {
         <h2 style={{
           fontSize: '24px',
           marginBottom: '15px',
-          fontWeight: 'normal'
+          fontWeight: 'normal',
+          color: 'var(--site-text)'
         }}>Writing</h2>
         <div style={{
           fontSize: '14px',
           lineHeight: '1.6',
-          color: '#666'
+          color: 'var(--site-text-muted)'
         }}>
           <div style={{ marginBottom: '12px' }}>
             <h3 style={{
               fontSize: '16px',
               fontWeight: '500',
-              color: '#333',
+              color: 'var(--site-text)',
               marginBottom: '8px'
             }}>
               <Link 
                 to="/blog/on-mental-models" 
                 style={{
-                  color: '#333',
+                  color: 'var(--site-link)',
                   textDecoration: 'underline'
                 }}
               >
