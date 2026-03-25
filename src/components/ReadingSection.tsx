@@ -7,7 +7,7 @@ const ReadingSection = () => {
   }}>
       <div style={{ marginBottom: '25px' }}>
         <h2 style={{
-          fontSize: '24px',
+          fontSize: '20px',
           marginBottom: '15px',
           fontWeight: 'normal',
         }}>
