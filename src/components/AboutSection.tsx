@@ -14,7 +14,7 @@ const AboutSection = () => {
         marginBottom: '15px',
         fontWeight: '400',
         color: 'var(--site-text)'
-      }}>About <span style={{ fontWeight: '400' }}>Eddy Hage-Youssef</span></h2>
+      }}>About Me</h2>
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',
