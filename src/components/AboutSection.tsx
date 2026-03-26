@@ -22,7 +22,7 @@ const AboutSection = () => {
       }}>
           <p style={{
           marginBottom: '10px'
-}}>I'm Eddy, a fourth-year undergraduate student in Computer Science and Statistics at McGill University. I am incredibly grateful to work under <a href="https://maxccohen.github.io/" target="_blank" rel="noopener noreferrer" style={{
+}}>I'm Eddy, a fourth-year undergraduate student in Computer Science and Statistics at McGill University. I am incredibly grateful to }}>I'm Eddy, a fourth-year undergraduate student in Computer Science and Statistics at McGill University. I am incredibly grateful to work with <a href="https://maxccohen.github.io/" target="_blank" rel="noopener noreferrer" style={{ <a href="https://maxccohen.github.io/" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
           }}>Professor Maxime Cohen</a>, where our research focuses on AI. A major part of our work involves extensive industry collaborations to build and deploy practical AI agents. Our work has been published in outlets like <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
