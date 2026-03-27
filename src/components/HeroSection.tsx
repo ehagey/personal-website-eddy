@@ -4,7 +4,7 @@ const HeroSection = () => {
     maxWidth: '600px',
     margin: '0 auto',
     display: 'flex',
-    justifyContent: 'flex-start'
+    justifyContent: 'center'
   }}>
     <img
       src="/lovable-uploads/e3682f1c-f543-43d2-8b64-8b6d2732dc0e.jpg"
