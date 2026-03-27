@@ -22,7 +22,7 @@ const AboutSection = () => {
         color: 'var(--site-text-muted)'
       }}>
            <img
-             src="/lovable-uploads/eddy-photo-small.jpg"
+             src="/lovable-uploads/eddy-photo-medium.jpg"
              alt="Eddy Hage Youssef"
              loading="eager"
              decoding="sync"
