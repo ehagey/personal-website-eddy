@@ -10,17 +10,6 @@ const AboutSection = () => {
       marginBottom: '25px'
     }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-          <img
-            src="/lovable-uploads/e3682f1c-f543-43d2-8b64-8b6d2732dc0e.jpg"
-            alt="Eddy Hage Youssef"
-            style={{
-              width: '80px',
-              height: '80px',
-              borderRadius: '6px',
-              objectFit: 'cover',
-              flexShrink: 0,
-            }}
-          />
           <h2 style={{
             fontSize: '24px',
             fontWeight: '400',
