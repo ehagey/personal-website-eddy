@@ -38,3 +38,16 @@ body {
   background-color: var(--site-bg);
   transition: background-color 0.3s, color 0.3s;
 }
+
+@keyframes unveil-top-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.photo-unveil {
+  animation: unveil-top-down 1.2s ease-out forwards;
+}
