@@ -20,7 +20,20 @@ const AboutSection = () => {
         lineHeight: '1.6',
         color: 'var(--site-text-muted)'
       }}>
-          <p style={{
+           <img
+             src="/lovable-uploads/e3682f1c-f543-43d2-8b64-8b6d2732dc0e.jpg"
+             alt="Eddy Hage Youssef"
+             style={{
+               width: '110px',
+               height: '110px',
+               borderRadius: '6px',
+               objectFit: 'cover',
+               float: 'right',
+               marginLeft: '15px',
+               marginBottom: '10px',
+             }}
+           />
+           <p style={{
           marginBottom: '10px'
 }}>I'm Eddy, a fourth-year undergraduate student in Computer Science and Statistics at McGill University. I am incredibly grateful to work with <a href="https://maxccohen.github.io/" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
