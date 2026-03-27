@@ -41,13 +41,23 @@ body {
 
 @keyframes unveil-top-down {
   from {
-    clip-path: inset(0 0 100% 0);
+    transform: translateY(0);
   }
   to {
-    clip-path: inset(0 0 0 0);
+    transform: translateY(100%);
   }
 }
 
-.photo-unveil {
-  animation: unveil-top-down 1.2s ease-out forwards;
+.photo-unveil-wrapper {
+  position: relative;
+  contain: layout paint;
+}
+
+.photo-unveil-cover {
+  position: absolute;
+  inset: 0;
+  background: var(--site-bg);
+  animation: unveil-top-down 0.7s ease-out forwards;
+  will-change: transform;
+  pointer-events: none;
 }
