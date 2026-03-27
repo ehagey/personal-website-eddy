@@ -39,25 +39,3 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-@keyframes unveil-top-down {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(100%);
-  }
-}
-
-.photo-unveil-wrapper {
-  position: relative;
-  contain: layout paint;
-}
-
-.photo-unveil-cover {
-  position: absolute;
-  inset: 0;
-  background: var(--site-bg);
-  animation: unveil-top-down 0.7s ease-out forwards;
-  will-change: transform;
-  pointer-events: none;
-}
