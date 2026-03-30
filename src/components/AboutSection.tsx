@@ -46,7 +46,7 @@ const AboutSection = () => {
           }}>Professor Maxime Cohen</a>, where our research focuses on AI. A major part of our work involves extensive industry collaborations to build and deploy practical AI agents. Our work has been published in outlets like <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
-          }}>Harvard Business Review</a>. Since September 2025, I have been contracted by the European Competition Team at Charles River Associates to design and build internal AI tools.</p>
+          }}>Harvard Business Review</a>. Since September 2025, I have been working with the European Competition team at Charles River Associates on internal AI projects.</p>
           
           <p style={{
           marginBottom: '10px'
