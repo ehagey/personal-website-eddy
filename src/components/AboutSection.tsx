@@ -50,10 +50,6 @@ const AboutSection = () => {
           
           <p style={{
           marginBottom: '10px'
-}}>My current research focuses on privacy-preserving approaches to AI-driven decision systems, alongside the use of causal inference methods to study the impact of a recent major AI-related policy announcement.</p>
-          
-          <p style={{
-          marginBottom: '10px'
 }}>Previously, I've worked on benchmarking criteria for LLMs in medical settings at the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
