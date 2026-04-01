@@ -28,8 +28,8 @@ const AboutSection = () => {
              decoding="sync"
              fetchPriority="high"
              style={{
-               width: '80px',
-               height: '80px',
+                width: '110px',
+                height: '110px',
                borderRadius: '6px',
                objectFit: 'cover',
                float: 'left',
