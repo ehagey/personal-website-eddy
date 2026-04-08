@@ -103,7 +103,7 @@ const AboutSection = () => {
           
           <p>In my free time, I enjoy playing the <button type="button" onClick={() => setShowGuitar(!showGuitar)} style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer', background: 'none', border: 'none', padding: 0, font: 'inherit' }}>guitar</button>, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
           {showGuitar && (
-            <div style={{ position: 'relative', marginTop: '10px', marginBottom: '10px' }}>
+            <div style={{ position: 'relative', marginTop: '10px', marginBottom: '10px', maxWidth: '280px' }}>
               <button
                 type="button"
                 onClick={() => setShowGuitar(false)}
