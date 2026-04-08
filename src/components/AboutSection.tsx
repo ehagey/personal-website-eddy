@@ -193,7 +193,14 @@ const AboutSection = () => {
             }}>
               <span>Testing a new overdrive pedal I just got.</span>
               <span
-                onClick={() => setGuitarStep('video')}
+                onClick={() => {
+                  setGuitarStep('video');
+                  supabase.from('video_views').insert({
+                    video_name: 'guitar',
+                    user_agent: navigator.userAgent,
+                    referrer: document.referrer || null,
+                  }).then(() => {});
+                }}
                 style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer', whiteSpace: 'nowrap' }}
               >Watch video →</span>
               <span
