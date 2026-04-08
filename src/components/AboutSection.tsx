@@ -17,13 +17,13 @@ const MediaPreview = ({
       style={{
         position: 'absolute',
         bottom: '100%',
-        left: '50%',
-        transform: show ? 'translateX(-50%) translateY(-8px) scale(1)' : 'translateX(-50%) translateY(0) scale(0.95)',
+        left: '0',
+        transform: show ? 'translateY(-8px) scale(1)' : 'translateY(0) scale(0.95)',
         opacity: show ? 1 : 0,
         pointerEvents: show ? 'auto' : 'none',
         transition: 'opacity 0.2s ease, transform 0.2s ease',
         zIndex: 10,
-        width: type === 'video' ? '200px' : '220px',
+        width: type === 'video' ? '180px' : '180px',
         borderRadius: '10px',
         overflow: 'hidden',
         boxShadow: '0 8px 30px rgba(0,0,0,0.18)',
@@ -69,12 +69,12 @@ const InlineMediaLink = ({
   const show = hovered || tapped;
 
   const handleTouchStart = () => {
-    setTapped(true);
+    setTapped(prev => !prev);
     clearTimeout(timeoutRef.current);
   };
 
   const handleTouchEnd = () => {
-    timeoutRef.current = setTimeout(() => setTapped(false), 1500);
+    // Don't auto-dismiss on mobile — user taps again to close
   };
 
   return (
