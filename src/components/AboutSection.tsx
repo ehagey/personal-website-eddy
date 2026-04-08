@@ -1,9 +1,105 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import judoPhoto from '@/assets/judo-real.jpg';
 
+const MediaPreview = ({
+  src,
+  alt,
+  type,
+  show,
+}: {
+  src: string;
+  alt: string;
+  type: 'image' | 'video';
+  show: boolean;
+}) => {
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        bottom: '100%',
+        left: '50%',
+        transform: show ? 'translateX(-50%) translateY(-8px) scale(1)' : 'translateX(-50%) translateY(0) scale(0.95)',
+        opacity: show ? 1 : 0,
+        pointerEvents: show ? 'auto' : 'none',
+        transition: 'opacity 0.2s ease, transform 0.2s ease',
+        zIndex: 10,
+        width: type === 'video' ? '200px' : '220px',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 30px rgba(0,0,0,0.18)',
+        background: 'var(--site-bg)',
+        border: '1px solid var(--site-border, rgba(128,128,128,0.15))',
+      }}
+    >
+      {type === 'image' ? (
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          style={{ width: '100%', display: 'block' }}
+        />
+      ) : (
+        <video
+          src={src}
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{ width: '100%', display: 'block' }}
+        />
+      )}
+    </div>
+  );
+};
+
+const InlineMediaLink = ({
+  label,
+  src,
+  alt,
+  type,
+}: {
+  label: string;
+  src: string;
+  alt: string;
+  type: 'image' | 'video';
+}) => {
+  const [hovered, setHovered] = useState(false);
+  const [tapped, setTapped] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const show = hovered || tapped;
+
+  const handleTouchStart = () => {
+    setTapped(true);
+    clearTimeout(timeoutRef.current);
+  };
+
+  const handleTouchEnd = () => {
+    timeoutRef.current = setTimeout(() => setTapped(false), 1500);
+  };
+
+  return (
+    <span
+      style={{ position: 'relative', display: 'inline-block' }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
+      <MediaPreview src={src} alt={alt} type={type} show={show} />
+      <span
+        style={{
+          color: 'var(--site-link)',
+          textDecoration: 'underline',
+          cursor: 'pointer',
+        }}
+      >
+        {label}
+      </span>
+    </span>
+  );
+};
+
 const AboutSection = () => {
-  const [showJudo, setShowJudo] = useState(false);
-  const [showGuitar, setShowGuitar] = useState(false);
   return <section id="about" style={{
     padding: '5px 20px 5px 20px',
     maxWidth: '600px',
@@ -62,72 +158,9 @@ const AboutSection = () => {
           
           <p style={{
           marginBottom: '10px'
-        }}>Outside of research, I've been fortunate to compete in <button type="button" onClick={() => setShowJudo(!showJudo)} style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer', background: 'none', border: 'none', padding: 0, font: 'inherit' }}>Judo</button> at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
-          {showJudo && (
-            <div
-              onClick={() => setShowJudo(false)}
-              style={{
-                marginTop: '12px',
-                marginBottom: '12px',
-                cursor: 'pointer',
-                overflow: 'hidden',
-                borderRadius: '8px',
-              }}
-              title="Click to close"
-            >
-              <img
-                src={judoPhoto}
-                alt="Eddy doing Judo"
-                loading="lazy"
-                style={{
-                  width: '100%',
-                  display: 'block',
-                  borderRadius: '8px',
-                }}
-              />
-            </div>
-          )}
+        }}>Outside of research, I've been fortunate to compete in <InlineMediaLink label="Judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
           
-          <p>In my free time, I enjoy playing the <button type="button" onClick={() => setShowGuitar(!showGuitar)} style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer', background: 'none', border: 'none', padding: 0, font: 'inherit' }}>guitar</button>, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
-          {showGuitar && (
-            <div style={{ position: 'relative', marginTop: '10px', marginBottom: '10px', maxWidth: '280px' }}>
-              <button
-                type="button"
-                onClick={() => setShowGuitar(false)}
-                style={{
-                  position: 'absolute',
-                  top: '8px',
-                  right: '8px',
-                  background: 'rgba(0,0,0,0.6)',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: '50%',
-                  width: '28px',
-                  height: '28px',
-                  cursor: 'pointer',
-                  fontSize: '16px',
-                  lineHeight: '28px',
-                  textAlign: 'center',
-                  padding: 0,
-                  zIndex: 1,
-                }}
-                aria-label="Close video"
-              >
-                ✕
-              </button>
-              <video
-                src="/videos/guitar.mp4"
-                controls
-                autoPlay
-                playsInline
-                style={{
-                  width: '100%',
-                  borderRadius: '6px',
-                  display: 'block',
-                }}
-              />
-            </div>
-          )}
+          <p>In my free time, I enjoy playing the <InlineMediaLink label="guitar" src="/videos/guitar.mp4" alt="Eddy playing guitar" type="video" />, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
         </div>
       </div>
 
