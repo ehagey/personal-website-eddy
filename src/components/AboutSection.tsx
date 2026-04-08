@@ -161,22 +161,63 @@ const AboutSection = () => {
           marginBottom: '10px'
         }}>Outside of research, I've been fortunate to compete in <InlineMediaLink label="Judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
           
-          <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the <InlineMediaLink label="guitar" src="/videos/guitar.mp4" alt="Eddy playing guitar" type="image" />, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
-          <video
-            src="/videos/guitar.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            style={{
-              width: '100%',
-              maxWidth: '280px',
+          <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the <span
+            onClick={() => setGuitarStep(prev => prev === 'hidden' ? 'prompt' : 'hidden')}
+            style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer' }}
+          >guitar</span>, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
+          
+          {guitarStep === 'prompt' && (
+            <div style={{
+              padding: '12px 16px',
               borderRadius: '8px',
-              marginTop: '5px',
+              border: '1px solid var(--site-border, rgba(128,128,128,0.15))',
+              background: 'var(--site-bg)',
               marginBottom: '10px',
-              display: 'block',
-            }}
-          />
+              fontSize: '13px',
+              color: 'var(--site-text-muted)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              flexWrap: 'wrap',
+            }}>
+              <span>🎸 This is me testing a new overdrive pedal I got.</span>
+              <span
+                onClick={() => setGuitarStep('video')}
+                style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer', whiteSpace: 'nowrap' }}
+              >Watch video →</span>
+              <span
+                onClick={() => setGuitarStep('hidden')}
+                style={{ color: 'var(--site-text-muted)', cursor: 'pointer', opacity: 0.6, whiteSpace: 'nowrap' }}
+              >Dismiss</span>
+            </div>
+          )}
+
+          {guitarStep === 'video' && (
+            <div style={{ marginBottom: '10px' }}>
+              <div style={{
+                fontSize: '13px',
+                color: 'var(--site-text-muted)',
+                marginBottom: '6px',
+              }}>🎸 Testing a new overdrive pedal.</div>
+              <video
+                src="/videos/guitar.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{
+                  width: '100%',
+                  maxWidth: '280px',
+                  borderRadius: '8px',
+                  display: 'block',
+                }}
+              />
+              <span
+                onClick={() => setGuitarStep('hidden')}
+                style={{ fontSize: '12px', color: 'var(--site-text-muted)', cursor: 'pointer', opacity: 0.6, marginTop: '6px', display: 'inline-block' }}
+              >Close</span>
+            </div>
+          )}
         </div>
       </div>
 
