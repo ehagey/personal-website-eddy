@@ -100,6 +100,7 @@ const InlineMediaLink = ({
 };
 
 const AboutSection = () => {
+  const [guitarStep, setGuitarStep] = useState<'hidden' | 'prompt' | 'video'>('hidden');
   return <section id="about" style={{
     padding: '5px 20px 5px 20px',
     maxWidth: '600px',
