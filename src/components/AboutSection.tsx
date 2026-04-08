@@ -3,6 +3,7 @@ import judoPhoto from '@/assets/judo-real.jpg';
 
 const AboutSection = () => {
   const [showJudo, setShowJudo] = useState(false);
+  const [showGuitar, setShowGuitar] = useState(false);
   return <section id="about" style={{
     padding: '5px 20px 5px 20px',
     maxWidth: '600px',
@@ -100,7 +101,46 @@ const AboutSection = () => {
             </div>
           )}
           
-          <p>In my free time, I enjoy playing the guitar, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
+          <p>In my free time, I enjoy playing the <button type="button" onClick={() => setShowGuitar(!showGuitar)} style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer', background: 'none', border: 'none', padding: 0, font: 'inherit' }}>guitar</button>, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
+          {showGuitar && (
+            <div style={{ position: 'relative', marginTop: '10px', marginBottom: '10px' }}>
+              <button
+                type="button"
+                onClick={() => setShowGuitar(false)}
+                style={{
+                  position: 'absolute',
+                  top: '8px',
+                  right: '8px',
+                  background: 'rgba(0,0,0,0.6)',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '50%',
+                  width: '28px',
+                  height: '28px',
+                  cursor: 'pointer',
+                  fontSize: '16px',
+                  lineHeight: '28px',
+                  textAlign: 'center',
+                  padding: 0,
+                  zIndex: 1,
+                }}
+                aria-label="Close video"
+              >
+                ✕
+              </button>
+              <video
+                src="/videos/guitar.mp4"
+                controls
+                autoPlay
+                playsInline
+                style={{
+                  width: '100%',
+                  borderRadius: '6px',
+                  display: 'block',
+                }}
+              />
+            </div>
+          )}
         </div>
       </div>
 
