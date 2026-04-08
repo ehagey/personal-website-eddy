@@ -198,7 +198,17 @@ const AboutSection = () => {
                 fontSize: '13px',
                 color: 'var(--site-text-muted)',
                 marginBottom: '6px',
-              }}>Testing a new overdrive pedal I just got.</div>
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                maxWidth: '280px',
+              }}>
+                <span>Testing a new overdrive pedal I just got.</span>
+                <span
+                  onClick={() => setGuitarStep('hidden')}
+                  style={{ cursor: 'pointer', fontSize: '16px', color: 'var(--site-text-muted)', opacity: 0.6, lineHeight: 1, padding: '2px 4px' }}
+                >✕</span>
+              </div>
               <video
                 src="/videos/guitar.mp4"
                 autoPlay
@@ -212,10 +222,6 @@ const AboutSection = () => {
                   display: 'block',
                 }}
               />
-              <span
-                onClick={() => setGuitarStep('hidden')}
-                style={{ fontSize: '12px', color: 'var(--site-text-muted)', cursor: 'pointer', opacity: 0.6, marginTop: '6px', display: 'inline-block' }}
-              >Close</span>
             </div>
           )}
         </div>
