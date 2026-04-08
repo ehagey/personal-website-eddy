@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import judoPhoto from '@/assets/judo.jpg';
+import judoPhoto from '@/assets/judo-real.jpg';
 
 const AboutSection = () => {
   const [showJudo, setShowJudo] = useState(false);
