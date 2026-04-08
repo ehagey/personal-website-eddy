@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef } from 'react';
 import judoPhoto from '@/assets/judo-real.jpg';
 
 const MediaPreview = ({
@@ -12,18 +12,27 @@ const MediaPreview = ({
   type: 'image' | 'video';
   show: boolean;
 }) => {
+  const isTouchDevice = typeof window !== 'undefined' && window.matchMedia('(hover: none), (pointer: coarse)').matches;
+
   return (
     <div
       style={{
-        position: 'absolute',
-        bottom: '100%',
-        left: '0',
-        transform: show ? 'translateY(-8px) scale(1)' : 'translateY(0) scale(0.95)',
+        position: isTouchDevice ? 'fixed' : 'absolute',
+        bottom: isTouchDevice ? 'auto' : '100%',
+        top: isTouchDevice ? '16px' : undefined,
+        left: isTouchDevice ? '50%' : '0',
+        transform: isTouchDevice
+          ? show
+            ? 'translateX(-50%) translateY(0) scale(1)'
+            : 'translateX(-50%) translateY(-4px) scale(0.96)'
+          : show
+            ? 'translateY(-8px) scale(1)'
+            : 'translateY(0) scale(0.95)',
         opacity: show ? 1 : 0,
         pointerEvents: show ? 'auto' : 'none',
         transition: 'opacity 0.2s ease, transform 0.2s ease',
         zIndex: 10,
-        width: type === 'video' ? '180px' : '180px',
+        width: isTouchDevice ? 'min(220px, calc(100vw - 32px))' : '180px',
         borderRadius: '10px',
         overflow: 'hidden',
         boxShadow: '0 8px 30px rgba(0,0,0,0.18)',
@@ -69,12 +78,12 @@ const InlineMediaLink = ({
   const show = hovered || tapped;
 
   const handleTouchStart = () => {
-    setTapped(prev => !prev);
+    setTapped(true);
     clearTimeout(timeoutRef.current);
   };
 
   const handleTouchEnd = () => {
-    // Don't auto-dismiss on mobile — user taps again to close
+    timeoutRef.current = setTimeout(() => setTapped(false), 1400);
   };
 
   return (
