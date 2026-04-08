@@ -160,7 +160,22 @@ const AboutSection = () => {
           marginBottom: '10px'
         }}>Outside of research, I've been fortunate to compete in <InlineMediaLink label="Judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
           
-          <p>In my free time, I enjoy playing the <InlineMediaLink label="guitar" src="/videos/guitar.mp4" alt="Eddy playing guitar" type="video" />, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
+          <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the <InlineMediaLink label="guitar" src="/videos/guitar.mp4" alt="Eddy playing guitar" type="image" />, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
+          <video
+            src="/videos/guitar.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{
+              width: '100%',
+              maxWidth: '280px',
+              borderRadius: '8px',
+              marginTop: '5px',
+              marginBottom: '10px',
+              display: 'block',
+            }}
+          />
         </div>
       </div>
 
