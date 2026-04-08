@@ -79,7 +79,7 @@ const InlineMediaLink = ({
   };
 
   const handleTouchEnd = () => {
-    timeoutRef.current = setTimeout(() => setTapped(false), 1200);
+    timeoutRef.current = setTimeout(() => setTapped(false), 4000);
   };
 
   return (
