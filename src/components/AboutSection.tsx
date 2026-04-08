@@ -17,22 +17,16 @@ const MediaPreview = ({
   return (
     <div
       style={{
-        position: isTouchDevice ? 'fixed' : 'absolute',
-        bottom: isTouchDevice ? 'auto' : '100%',
-        top: isTouchDevice ? '16px' : undefined,
-        left: isTouchDevice ? '50%' : '0',
-        transform: isTouchDevice
-          ? show
-            ? 'translateX(-50%) translateY(0) scale(1)'
-            : 'translateX(-50%) translateY(-4px) scale(0.96)'
-          : show
-            ? 'translateY(-8px) scale(1)'
-            : 'translateY(0) scale(0.95)',
+        position: 'absolute',
+        bottom: '100%',
+        left: '0',
+        transform: show ? 'translateY(-8px) scale(1)' : 'translateY(0) scale(0.95)',
         opacity: show ? 1 : 0,
-        pointerEvents: show ? 'auto' : 'none',
+        pointerEvents: 'none',
         transition: 'opacity 0.2s ease, transform 0.2s ease',
         zIndex: 10,
-        width: isTouchDevice ? 'min(220px, calc(100vw - 32px))' : '180px',
+        width: isTouchDevice ? 'min(170px, calc(100vw - 40px))' : '180px',
+        maxWidth: 'calc(100vw - 40px)',
         borderRadius: '10px',
         overflow: 'hidden',
         boxShadow: '0 8px 30px rgba(0,0,0,0.18)',
@@ -75,24 +69,30 @@ const InlineMediaLink = ({
   const [hovered, setHovered] = useState(false);
   const [tapped, setTapped] = useState(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const isTouchDevice = typeof window !== 'undefined' && window.matchMedia('(hover: none), (pointer: coarse)').matches;
   const show = hovered || tapped;
 
   const handleTouchStart = () => {
-    setTapped(true);
     clearTimeout(timeoutRef.current);
+    setTapped(true);
   };
 
   const handleTouchEnd = () => {
-    timeoutRef.current = setTimeout(() => setTapped(false), 1400);
+    timeoutRef.current = setTimeout(() => setTapped(false), 1200);
   };
 
   return (
     <span
       style={{ position: 'relative', display: 'inline-block' }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onMouseEnter={() => {
+        if (!isTouchDevice) setHovered(true);
+      }}
+      onMouseLeave={() => {
+        if (!isTouchDevice) setHovered(false);
+      }}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
+      onTouchCancel={() => setTapped(false)}
     >
       <MediaPreview src={src} alt={alt} type={type} show={show} />
       <span
