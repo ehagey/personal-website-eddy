@@ -180,7 +180,7 @@ const AboutSection = () => {
               gap: '12px',
               flexWrap: 'wrap',
             }}>
-              <span>🎸 This is me testing a new overdrive pedal I got.</span>
+              <span>Testing a new overdrive pedal I just got.</span>
               <span
                 onClick={() => setGuitarStep('video')}
                 style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer', whiteSpace: 'nowrap' }}
@@ -198,11 +198,11 @@ const AboutSection = () => {
                 fontSize: '13px',
                 color: 'var(--site-text-muted)',
                 marginBottom: '6px',
-              }}>🎸 Testing a new overdrive pedal.</div>
+              }}>Testing a new overdrive pedal I just got.</div>
               <video
                 src="/videos/guitar.mp4"
                 autoPlay
-                muted
+                controls
                 loop
                 playsInline
                 style={{
