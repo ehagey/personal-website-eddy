@@ -63,17 +63,41 @@ const AboutSection = () => {
           marginBottom: '10px'
         }}>Outside of research, I've been fortunate to compete in <button type="button" onClick={() => setShowJudo(!showJudo)} style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer', background: 'none', border: 'none', padding: 0, font: 'inherit' }}>Judo</button> at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
           {showJudo && (
-            <img
-              src={judoPhoto}
-              alt="Eddy doing Judo"
-              loading="lazy"
-              style={{
-                width: '100%',
-                borderRadius: '6px',
-                marginTop: '10px',
-                marginBottom: '10px',
-              }}
-            />
+            <div style={{ position: 'relative', marginTop: '10px', marginBottom: '10px' }}>
+              <button
+                type="button"
+                onClick={() => setShowJudo(false)}
+                style={{
+                  position: 'absolute',
+                  top: '8px',
+                  right: '8px',
+                  background: 'rgba(0,0,0,0.6)',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '50%',
+                  width: '28px',
+                  height: '28px',
+                  cursor: 'pointer',
+                  fontSize: '16px',
+                  lineHeight: '28px',
+                  textAlign: 'center',
+                  padding: 0,
+                }}
+                aria-label="Close photo"
+              >
+                ✕
+              </button>
+              <img
+                src={judoPhoto}
+                alt="Eddy doing Judo"
+                loading="lazy"
+                style={{
+                  width: '100%',
+                  borderRadius: '6px',
+                  display: 'block',
+                }}
+              />
+            </div>
           )}
           
           <p>In my free time, I enjoy playing the guitar, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
