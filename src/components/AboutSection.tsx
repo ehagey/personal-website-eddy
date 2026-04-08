@@ -19,7 +19,8 @@ const MediaPreview = ({
       style={{
         position: 'absolute',
         bottom: '100%',
-        left: '0',
+        left: isTouchDevice ? 'auto' : '0',
+        right: isTouchDevice ? '0' : 'auto',
         transform: show ? 'translateY(-8px) scale(1)' : 'translateY(0) scale(0.95)',
         opacity: show ? 1 : 0,
         pointerEvents: 'none',
