@@ -175,7 +175,7 @@ const AboutSection = () => {
           <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the <span
             onClick={() => setGuitarStep(prev => prev === 'hidden' ? 'prompt' : 'hidden')}
             style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer' }}
-          >guitar</span>, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. Recently, I got into running, and I am currently training for my next 50km race. I also really enjoy cooking and sharing a meal with the people I care about.</p>
+          >guitar</span>, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. I also really enjoy cooking and sharing a meal with the people I care about.</p>
           
           {guitarStep === 'prompt' && (
             <div style={{
