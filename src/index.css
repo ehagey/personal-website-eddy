@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --site-bg: #ffffff;
-  --site-text: #333333;
-  --site-text-muted: #666666;
+  --site-bg: #fafaf8;
+  --site-text: #2a2a2a;
+  --site-text-muted: #5a5a5a;
   --site-text-faint: #888888;
   --site-text-pale: #999999;
-  --site-border: #eeeeee;
-  --site-link: #333333;
-  --site-blockquote-bg: #f9fafb;
-  --site-header-bg: rgba(255, 255, 255, 0.8);
-  --site-header-border: #f3f4f6;
+  --site-border: #e8e6e1;
+  --site-link: #3d5a80;
+  --site-link-hover: #2c4a6e;
+  --site-blockquote-bg: #f5f4f0;
+  --site-header-bg: rgba(250, 250, 248, 0.85);
+  --site-header-border: #e8e6e1;
+  --site-divider: #e0ded8;
 }
 
 .dark {
@@ -23,23 +26,58 @@
   --site-text-faint: #888888;
   --site-text-pale: #777777;
   --site-border: #2a2a2a;
-  --site-link: #d0d0d0;
+  --site-link: #7fadcf;
+  --site-link-hover: #a3c5e0;
   --site-blockquote-bg: #1a1a1a;
-  --site-header-bg: rgba(17, 17, 17, 0.8);
+  --site-header-bg: rgba(17, 17, 17, 0.85);
   --site-header-border: #222222;
+  --site-divider: #2a2a2a;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.4;
+  line-height: 1.6;
   color: var(--site-text);
   background-color: var(--site-bg);
   transition: background-color 0.3s, color 0.3s;
   overflow-x: hidden;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Elegant link hover transitions */
+a {
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--site-link-hover) !important;
+}
+
+/* Section dividers */
+.section-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--site-divider);
+  margin: 10px 0 20px 0;
+}
+
+/* Scroll reveal animations */
+.reveal {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(16px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
