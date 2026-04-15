@@ -13,19 +13,19 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <SectionWrapper id="about-wrapper" delay={0} showDivider={true}>
+        <SectionWrapper delay={0} showDivider={true}>
           <AboutSection />
         </SectionWrapper>
-        <SectionWrapper id="pubs-wrapper" delay={100} showDivider={true}>
+        <SectionWrapper delay={100} showDivider={true}>
           <PublicationsSection />
         </SectionWrapper>
-        <SectionWrapper id="writing-wrapper" delay={150} showDivider={true}>
+        <SectionWrapper delay={150} showDivider={true}>
           <WritingSection />
         </SectionWrapper>
-        <SectionWrapper id="reading-wrapper" delay={200} showDivider={true}>
+        <SectionWrapper delay={200} showDivider={true}>
           <ReadingSection />
         </SectionWrapper>
-        <SectionWrapper id="contact-wrapper" delay={250} showDivider={false}>
+        <SectionWrapper delay={250} showDivider={false}>
           <ContactSection />
         </SectionWrapper>
       </main>

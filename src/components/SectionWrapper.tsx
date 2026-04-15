@@ -2,18 +2,16 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ReactNode } from 'react';
 
 interface SectionWrapperProps {
-  id: string;
   children: ReactNode;
   delay?: number;
   showDivider?: boolean;
 }
 
-const SectionWrapper = ({ id, children, delay = 0, showDivider = true }: SectionWrapperProps) => {
+const SectionWrapper = ({ children, delay = 0, showDivider = true }: SectionWrapperProps) => {
   const ref = useScrollReveal({ delay });
 
   return (
-    <section
-      id={id}
+    <div
       ref={ref}
       style={{
         padding: '5px 20px 5px 20px',
@@ -31,7 +29,7 @@ const SectionWrapper = ({ id, children, delay = 0, showDivider = true }: Section
           opacity: 0.6,
         }} />
       )}
-    </section>
+    </div>
   );
 };
 
