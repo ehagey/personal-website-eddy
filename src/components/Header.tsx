@@ -8,14 +8,13 @@ const Header = () => {
   return (
     <header style={{
       backgroundColor: 'var(--site-header-bg)',
-      backdropFilter: 'blur(12px)',
       borderBottom: '1px solid var(--site-header-border)',
       zIndex: 50,
       transition: 'background-color 0.3s, border-color 0.3s'
     }}>
       <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 20px' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '56px' }}>
-          <Link to="/" style={{ fontFamily: "'EB Garamond', Georgia, serif", fontSize: '20px', fontWeight: 500, color: 'var(--site-text)', textDecoration: 'none', letterSpacing: '-0.01em' }}>
+          <Link to="/" style={{ fontSize: '18px', fontWeight: 600, color: 'var(--site-text)', textDecoration: 'none' }}>
             Eddy Hage-Youssef
           </Link>
           

@@ -101,10 +101,7 @@ const InlineMediaLink = ({
         style={{
           color: 'var(--site-link)',
           textDecoration: 'underline',
-          textUnderlineOffset: '3px',
-          textDecorationColor: 'var(--site-divider)',
           cursor: 'pointer',
-          transition: 'color 0.2s ease',
         }}
       >
         {label}
@@ -113,68 +110,71 @@ const InlineMediaLink = ({
   );
 };
 
-const sectionHeadingStyle = {
-  fontFamily: "'EB Garamond', Georgia, serif",
-  fontSize: '26px',
-  fontWeight: 400 as const,
-  color: 'var(--site-text)',
-  letterSpacing: '-0.01em',
-};
-
 const AboutSection = () => {
   const [guitarStep, setGuitarStep] = useState<'hidden' | 'prompt' | 'video'>('hidden');
-  return (
-    <div id="about">
-      <div style={{ marginBottom: '25px' }}>
+  return <section id="about" style={{
+    padding: '5px 20px 5px 20px',
+    maxWidth: '600px',
+    margin: '0 auto'
+  }}>
+      
+      {/* About Me */}
+      <div style={{
+      marginBottom: '25px'
+    }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-          <h2 style={sectionHeadingStyle}>About Me</h2>
+          <h2 style={{
+            fontSize: '24px',
+            fontWeight: '400',
+            color: 'var(--site-text)'
+          }}>About Me</h2>
         </div>
         <div style={{
-          fontSize: '14px',
-          lineHeight: '1.7',
-          color: 'var(--site-text-muted)'
-        }}>
-          <img
-            src="/lovable-uploads/e3682f1c-f543-43d2-8b64-8b6d2732dc0e.jpg"
-            alt="Eddy Hage Youssef"
-            loading="eager"
-            decoding="sync"
-            fetchPriority="high"
-            style={{
-              width: '110px',
-              height: '110px',
-              borderRadius: '6px',
-              objectFit: 'cover',
-              float: 'left',
-              marginRight: '15px',
-              marginBottom: '5px',
-              display: 'block',
-            }}
-          />
-          <p style={{ marginBottom: '10px' }}>I'm Eddy, a fourth-year undergraduate student in Computer Science and Statistics at McGill University. I am incredibly grateful to work with <a href="https://maxccohen.github.io/" target="_blank" rel="noopener noreferrer" style={{
+        fontSize: '14px',
+        lineHeight: '1.6',
+        color: 'var(--site-text-muted)'
+      }}>
+           <img
+             src="/lovable-uploads/e3682f1c-f543-43d2-8b64-8b6d2732dc0e.jpg"
+             alt="Eddy Hage Youssef"
+             loading="eager"
+             decoding="sync"
+             fetchPriority="high"
+             style={{
+                width: '110px',
+                height: '110px',
+               borderRadius: '6px',
+               objectFit: 'cover',
+               float: 'left',
+               marginRight: '15px',
+               marginBottom: '5px',
+               display: 'block',
+             }}
+           />
+           <p style={{
+          marginBottom: '10px'
+}}>I'm Eddy, a fourth-year undergraduate student in Computer Science and Statistics at McGill University. I am incredibly grateful to work with <a href="https://maxccohen.github.io/" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
-            textDecoration: 'underline',
-            textUnderlineOffset: '3px',
-            textDecorationColor: 'var(--site-divider)',
+            textDecoration: 'underline'
           }}>Professor Maxime Cohen</a> on applied AI research. A major part of our work involves extensive industry collaborations to build and deploy practical AI agents. Our work has been featured in outlets like <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
-            textDecoration: 'underline',
-            textUnderlineOffset: '3px',
-            textDecorationColor: 'var(--site-divider)',
-          }}>Harvard Business Review</a>. Since September 2025, I have also been working as a contracted consultant with the European Competition team at Charles River Associates, where I design and deploy internal AI tools for legal case work.</p>
+            textDecoration: 'underline'
+           }}>Harvard Business Review</a>. Since September 2025, I have also been working as a contracted consultant with the European Competition team at Charles River Associates, where I design and deploy internal AI tools for legal case work.</p>
           
-          <p style={{ marginBottom: '10px' }}>Previously, I've worked on benchmarking criteria for LLMs in medical settings at the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
+          <p style={{
+          marginBottom: '10px'
+}}>Previously, I've worked on benchmarking criteria for LLMs in medical settings at the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
-            textDecoration: 'underline',
-            textUnderlineOffset: '3px',
-            textDecorationColor: 'var(--site-divider)',
+            textDecoration: 'underline'
           }}>AI Health Institute</a>. My introduction to agentic AI started in Summer 2024 when I worked on building RAG and Ontology frameworks for domain-specific language models.</p>
           
-          <p style={{ marginBottom: '10px' }}>Outside of research, I've been fortunate to compete in <InlineMediaLink label="Judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
+          <p style={{
+          marginBottom: '10px'
+        }}>Outside of research, I've been fortunate to compete in <InlineMediaLink label="Judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
           
           <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the <span
             onClick={() => setGuitarStep(prev => prev === 'hidden' ? 'prompt' : 'hidden')}
-            style={{ color: 'var(--site-link)', textDecoration: 'underline', textUnderlineOffset: '3px', textDecorationColor: 'var(--site-divider)', cursor: 'pointer' }}
+            style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer' }}
           >guitar</span>, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. I also really enjoy cooking and sharing a meal with the people I care about.</p>
           
           {guitarStep === 'prompt' && (
@@ -244,7 +244,7 @@ const AboutSection = () => {
           )}
         </div>
       </div>
-    </div>
-  );
+
+    </section>;
 };
 export default AboutSection;

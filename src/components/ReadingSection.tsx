@@ -1,24 +1,24 @@
 import { Link } from 'react-router-dom';
 const ReadingSection = () => {
-  return <div id="reading">
+  return <section id="reading" style={{
+    padding: '5px 20px 5px 20px',
+    maxWidth: '600px',
+    margin: '0 auto'
+  }}>
       <div style={{ marginBottom: '25px' }}>
         <h2 style={{
-          fontFamily: "'EB Garamond', Georgia, serif",
-          fontSize: '22px',
+          fontSize: '20px',
           marginBottom: '15px',
-          fontWeight: 400,
-          letterSpacing: '-0.01em',
+          fontWeight: 'normal',
         }}>
           <Link to="/things-i-love" style={{
             color: 'var(--site-link)',
-            textDecoration: 'underline',
-            textUnderlineOffset: '3px',
-            textDecorationColor: 'var(--site-divider)',
+            textDecoration: 'underline'
           }}>
             My Favorites
           </Link>
         </h2>
       </div>
-    </div>;
+    </section>;
 };
 export default ReadingSection;
