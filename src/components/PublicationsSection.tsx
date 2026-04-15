@@ -43,7 +43,7 @@ const PublicationsSection = () => {
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
-          }}>Submitted</p>
+          }}>Submitted · <a href="https://www.dropbox.com/scl/fi/gl99iry9nvwhxtyp77d9i/three-bets-AI-slides.pptx?rlkey=66yqsamsx7sdayvypkm58ra8q&e=1&st=9hwhj0wa&dl=0" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>Slides</a> (prepared by Professor McCarthy)</p>
           </div>
           
           <div style={{
