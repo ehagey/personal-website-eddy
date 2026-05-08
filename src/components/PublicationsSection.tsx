@@ -76,11 +76,6 @@ const PublicationsSection = () => {
             fontSize: '13px',
             color: 'var(--site-text-faint)'
           }}>Harvard Business Review, Digital Article (October 1, 2025) & Print Issue (March–April 2026)</p>
-            <p style={{
-            fontSize: '13px',
-            color: 'var(--site-text-faint)',
-            marginTop: '4px'
-          }}>Cited in <a href="https://www.ilo.org/sites/default/files/2026-03/TMDWAI-2026-EN_.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-text-faint)', textDecoration: 'underline' }}>ILO: AI in Manufacturing (2026)</a></p>
           </div>
           
           <div style={{
