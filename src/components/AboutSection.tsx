@@ -151,7 +151,7 @@ const AboutSection = () => {
                display: 'block',
              }}
            />
-           <p style={{
+          <p style={{
           marginBottom: '10px'
 }}>I'm Eddy, a fourth-year undergraduate student in Computer Science and Statistics at McGill University. I am incredibly grateful to work with <a href="https://maxccohen.github.io/" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
@@ -159,7 +159,7 @@ const AboutSection = () => {
           }}>Professor Maxime Cohen</a> on applied AI research. A major part of our work involves extensive industry collaborations to build and deploy practical AI agents. Our work has been featured in outlets like <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
-           }}>Harvard Business Review</a>. Since September 2025, I have also been working as a contracted consultant with the European Competition team at Charles River Associates, where I design and deploy internal AI tools for legal case work.</p>
+           }}>Harvard Business Review</a> (March–April 2026 print issue). Since September 2025, I have also been working as a contracted consultant with the European Competition team at Charles River Associates, where I design and deploy internal AI tools for legal case work.</p>
           
           <p style={{
           marginBottom: '10px'
