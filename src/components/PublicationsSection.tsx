@@ -77,7 +77,6 @@ const PublicationsSection = () => {
             color: 'var(--site-text-faint)'
           }}>Harvard Business Review, Digital Article (October 1, 2025) & Print Issue (March–April 2026)</p>
           </div>
-          </div>
           
           <div style={{
           marginBottom: '15px',
