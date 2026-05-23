@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import judoPhoto from '@/assets/judo-real.jpg';
-import { supabase } from '@/integrations/supabase/client';
 
 const MediaPreview = ({
   src,
