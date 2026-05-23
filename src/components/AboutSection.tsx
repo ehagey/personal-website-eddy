@@ -110,7 +110,6 @@ const InlineMediaLink = ({
 };
 
 const AboutSection = () => {
-  const [guitarStep, setGuitarStep] = useState<'hidden' | 'prompt' | 'video'>('hidden');
   return <section id="about" style={{
     padding: '5px 20px 5px 20px',
     maxWidth: '600px',
@@ -171,76 +170,7 @@ const AboutSection = () => {
           marginBottom: '10px'
         }}>Outside of research, I've been fortunate to compete in <InlineMediaLink label="Judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
           
-          <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the <span
-            onClick={() => setGuitarStep(prev => prev === 'hidden' ? 'prompt' : 'hidden')}
-            style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer' }}
-          >guitar</span>, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. I also really enjoy cooking and sharing a meal with the people I care about.</p>
-          
-          {guitarStep === 'prompt' && (
-            <div style={{
-              padding: '12px 16px',
-              borderRadius: '8px',
-              border: '1px solid var(--site-border, rgba(128,128,128,0.15))',
-              background: 'var(--site-bg)',
-              marginBottom: '10px',
-              fontSize: '13px',
-              color: 'var(--site-text-muted)',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '12px',
-              flexWrap: 'wrap',
-            }}>
-              <span>Testing a new overdrive pedal I just got.</span>
-              <span
-                onClick={() => {
-                  setGuitarStep('video');
-                  supabase.from('video_views').insert({
-                    video_name: 'guitar',
-                    user_agent: navigator.userAgent,
-                    referrer: document.referrer || null,
-                  }).then(() => {});
-                }}
-                style={{ color: 'var(--site-link)', textDecoration: 'underline', cursor: 'pointer', whiteSpace: 'nowrap' }}
-              >Watch video →</span>
-              <span
-                onClick={() => setGuitarStep('hidden')}
-                style={{ color: 'var(--site-text-muted)', cursor: 'pointer', opacity: 0.6, whiteSpace: 'nowrap' }}
-              >Dismiss</span>
-            </div>
-          )}
-
-          {guitarStep === 'video' && (
-            <div style={{ marginBottom: '10px' }}>
-              <div style={{
-                fontSize: '13px',
-                color: 'var(--site-text-muted)',
-                marginBottom: '6px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                maxWidth: '280px',
-              }}>
-                <span>Testing a new overdrive pedal I just got.</span>
-                <span
-                  onClick={() => setGuitarStep('hidden')}
-                  style={{ cursor: 'pointer', fontSize: '16px', color: 'var(--site-text-muted)', opacity: 0.6, lineHeight: 1, padding: '2px 4px' }}
-                >✕</span>
-              </div>
-              <video
-                src="/videos/guitar.mp4"
-                autoPlay
-                controls
-                loop
-                playsInline
-                style={{
-                  width: '100%',
-                  maxWidth: '280px',
-                  borderRadius: '8px',
-                  display: 'block',
-                }}
-              />
-            </div>
-          )}
+          <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the guitar, working out, reading, and spending time with my family (especially my nieces and nephew!) and friends. I also really enjoy cooking and sharing a meal with the people I care about.</p>
         </div>
       </div>
 
