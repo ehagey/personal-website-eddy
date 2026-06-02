@@ -1,0 +1,15 @@
+# Eddy Hage Youssef
+
+> Personal portfolio of Eddy Hage Youssef, a fourth-year Computer Science and Statistics undergraduate at McGill University researching applied AI.
+
+Eddy Hage Youssef is a fourth-year undergraduate student in Computer Science and Statistics at McGill University. He works with Professor Maxime Cohen on applied AI research, with a focus on building and deploying practical AI agents through industry collaborations. His work has been featured in the Harvard Business Review (March–April 2026 print issue). Since September 2025, he has also worked as a contracted consultant with the European Competition team at Charles River Associates, designing and deploying internal AI tools for legal case work.
+
+## Pages
+
+- [/](/): Home — About Me, Publications, Writing, Reading, and Contact.
+- [/blog/on-mental-models](/blog/on-mental-models): Blog post on mental models and the latticework of thinking frameworks borrowed from multiple disciplines.
+- [/things-i-love](/things-i-love): Personal curation of books, music, guitar pedals, and judo throws.
+
+## Optional
+
+- Eddy's research focuses on applied AI, LLM benchmarking in medical settings, RAG and Ontology frameworks, and internal AI tooling for legal case work.
