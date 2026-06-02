@@ -10,7 +10,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import DependableBlogPost from "./pages/DependableBlogPost";
 import MentalModelsBlogPost from "./pages/MentalModelsBlogPost";
-import ThingsILove from "./pages/ThingsILove";
 
 
 const queryClient = new QueryClient();
@@ -26,7 +25,6 @@ const App = () => (
             <Route path="/" element={<Index />} />
             
             <Route path="/blog/on-mental-models" element={<MentalModelsBlogPost />} />
-            <Route path="/things-i-love" element={<ThingsILove />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
