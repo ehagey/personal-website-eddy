@@ -8,7 +8,6 @@ Eddy Hage Youssef is a fourth-year undergraduate student in Computer Science and
 
 - [/](/): Home — About Me, Publications, Writing, Reading, and Contact.
 - [/blog/on-mental-models](/blog/on-mental-models): Blog post on mental models and the latticework of thinking frameworks borrowed from multiple disciplines.
-- [/things-i-love](/things-i-love): Personal curation of books, music, guitar pedals, and judo throws.
 
 ## Optional
 

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 const ReadingSection = () => {
   return <section id="reading" style={{
     padding: '5px 20px 5px 20px',
@@ -11,12 +10,7 @@ const ReadingSection = () => {
           marginBottom: '15px',
           fontWeight: 'normal',
         }}>
-          <Link to="/things-i-love" style={{
-            color: 'var(--site-link)',
-            textDecoration: 'underline'
-          }}>
-            My Favorites
-          </Link>
+          My Favorites
         </h2>
       </div>
     </section>;
