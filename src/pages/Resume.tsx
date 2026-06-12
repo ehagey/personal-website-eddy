@@ -2,7 +2,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Briefcase, GraduationCap, Download, HeartHandshake } from 'lucide-react';
+import { Briefcase, GraduationCap, HeartHandshake } from 'lucide-react';
 
 const Resume = () => {
   return (
@@ -10,19 +10,13 @@ const Resume = () => {
       <Header />
       <main className="pt-24 pb-16">
         <section className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center mb-10">
+          <div className="mb-10">
             <div>
               <h1 className="heading-lg mb-2">Resume</h1>
               <p className="text-muted-foreground">
                 My professional background and experience
               </p>
             </div>
-            <Button className="flex items-center" asChild>
-              <a href="/Eddy_Hage_Resume.pdf" download>
-                <Download className="mr-2 h-4 w-4" />
-                Download PDF
-              </a>
-            </Button>
           </div>
 
           <div className="space-y-12">
