@@ -2,7 +2,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Briefcase, GraduationCap, Download, HeartHandshake } from 'lucide-react';
+import { Briefcase, GraduationCap, HeartHandshake } from 'lucide-react';
 
 const Resume = () => {
   return (
