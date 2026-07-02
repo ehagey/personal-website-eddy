@@ -43,7 +43,7 @@ const PublicationsSection = () => {
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
-          }}>Submitted</p>
+          }}>Provisonally accepted in California Management Review</p>
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
