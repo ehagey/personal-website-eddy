@@ -43,7 +43,7 @@ const PublicationsSection = () => {
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
-          }}>Submitted</p>
+          }}>Provisonally accepted in California Management Review</p>
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
@@ -129,6 +129,16 @@ const PublicationsSection = () => {
             color: 'var(--site-text-faint)',
             marginBottom: '5px'
           }}>INFORMS Journal on Data Science, Major Revision</p>
+          </div>
+        </div>
+
+        <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px', color: 'var(--site-text)' }}>Working Papers</h2>
+        <div style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--site-text-muted)' }}>
+          <div>
+            <h3 style={{ fontSize: '16px', fontWeight: '500', color: 'var(--site-text)', marginBottom: '8px' }}>
+              Confirmation Bias and Anchoring in LLM Pricing Recommendations
+              <span style={{ fontWeight: 'normal', color: 'var(--site-text-muted)' }}> with M. C. Cohen</span>
+            </h3>
           </div>
         </div>
 
