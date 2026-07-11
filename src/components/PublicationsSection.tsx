@@ -136,7 +136,7 @@ const PublicationsSection = () => {
         <div style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--site-text-muted)' }}>
           <div>
             <h3 style={{ fontSize: '16px', fontWeight: '500', color: 'var(--site-text)', marginBottom: '8px' }}>
-              Confirmation Bias and Anchoring in LLM Pricing Recommendations
+              Confirmation Bias in LLM Pricing Recommendations
               <span style={{ fontWeight: 'normal', color: 'var(--site-text-muted)' }}> with M. C. Cohen</span>
             </h3>
           </div>
