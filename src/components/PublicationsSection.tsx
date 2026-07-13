@@ -29,6 +29,30 @@ const PublicationsSection = () => {
             color: 'var(--site-text)',
             marginBottom: '8px'
           }}>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7111078" target="_blank" rel="noopener noreferrer" style={{
+              color: 'var(--site-link)',
+              textDecoration: 'underline'
+            }}>
+                Confirmation Bias in LLM Pricing Recommendations
+              </a>
+              <span style={{
+                fontWeight: 'normal',
+                color: 'var(--site-text-muted)'
+              }}> with M. C. Cohen</span>
+            </h3>
+          </div>
+          
+          <div style={{
+          marginBottom: '15px',
+          paddingBottom: '15px',
+          borderBottom: '1px solid var(--site-border)'
+        }}>
+            <h3 style={{
+            fontSize: '16px',
+            fontWeight: '500',
+            color: 'var(--site-text)',
+            marginBottom: '8px'
+          }}>
               <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6331258" target="_blank" rel="noopener noreferrer" style={{
               color: 'var(--site-link)',
               textDecoration: 'underline'
@@ -106,11 +130,7 @@ const PublicationsSection = () => {
           }}>Submitted</p>
           </div>
           
-          <div style={{
-          marginBottom: '15px',
-          paddingBottom: '15px',
-          borderBottom: '1px solid var(--site-border)'
-        }}>
+          <div>
             <h3 style={{
             fontSize: '16px',
             fontWeight: '500',
@@ -133,26 +153,6 @@ const PublicationsSection = () => {
             color: 'var(--site-text-faint)',
             marginBottom: '5px'
           }}>INFORMS Journal on Data Science, Major Revision</p>
-          </div>
-          
-          <div>
-            <h3 style={{
-            fontSize: '16px',
-            fontWeight: '500',
-            color: 'var(--site-text)',
-            marginBottom: '8px'
-          }}>
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7111078" target="_blank" rel="noopener noreferrer" style={{
-              color: 'var(--site-link)',
-              textDecoration: 'underline'
-            }}>
-                Confirmation Bias in LLM Pricing Recommendations
-              </a>
-              <span style={{
-                fontWeight: 'normal',
-                color: 'var(--site-text-muted)'
-              }}> with M. C. Cohen</span>
-            </h3>
           </div>
         </div>
 
