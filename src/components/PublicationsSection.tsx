@@ -40,6 +40,10 @@ const PublicationsSection = () => {
                 color: 'var(--site-text-muted)'
               }}> with M. C. Cohen</span>
             </h3>
+            <p style={{
+            fontSize: '13px',
+            color: 'var(--site-text-faint)'
+          }}>Submitted</p>
           </div>
           
           <div style={{
@@ -67,7 +71,7 @@ const PublicationsSection = () => {
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
-          }}>Provisonally accepted in California Management Review, pending publication</p>
+          }}>Forthcoming in California Management Review, 2026</p>
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
