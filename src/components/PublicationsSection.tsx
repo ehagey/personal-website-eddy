@@ -106,7 +106,11 @@ const PublicationsSection = () => {
           }}>Submitted</p>
           </div>
           
-          <div>
+          <div style={{
+          marginBottom: '15px',
+          paddingBottom: '15px',
+          borderBottom: '1px solid var(--site-border)'
+        }}>
             <h3 style={{
             fontSize: '16px',
             fontWeight: '500',
@@ -130,14 +134,24 @@ const PublicationsSection = () => {
             marginBottom: '5px'
           }}>INFORMS Journal on Data Science, Major Revision</p>
           </div>
-        </div>
-
-        <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px', color: 'var(--site-text)' }}>Working Papers</h2>
-        <div style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--site-text-muted)' }}>
+          
           <div>
-            <h3 style={{ fontSize: '16px', fontWeight: '500', color: 'var(--site-text)', marginBottom: '8px' }}>
-              Confirmation Bias in LLM Pricing Recommendations
-              <span style={{ fontWeight: 'normal', color: 'var(--site-text-muted)' }}> with M. C. Cohen</span>
+            <h3 style={{
+            fontSize: '16px',
+            fontWeight: '500',
+            color: 'var(--site-text)',
+            marginBottom: '8px'
+          }}>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7111078" target="_blank" rel="noopener noreferrer" style={{
+              color: 'var(--site-link)',
+              textDecoration: 'underline'
+            }}>
+                Confirmation Bias in LLM Pricing Recommendations
+              </a>
+              <span style={{
+                fontWeight: 'normal',
+                color: 'var(--site-text-muted)'
+              }}> with M. C. Cohen</span>
             </h3>
           </div>
         </div>
