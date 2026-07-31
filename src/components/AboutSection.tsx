@@ -158,17 +158,10 @@ const AboutSection = () => {
             color: 'var(--site-link)',
             textDecoration: 'underline'
            }}>Harvard Business Review</a> (March–April 2026 print issue). Since September 2025, I have also been working as a contracted consultant with the European Competition team at Charles River Associates, where I design and deploy internal AI tools for legal case work.</p>
-          
+
           <p style={{
           marginBottom: '10px'
-}}>Previously, I've worked on benchmarking criteria for LLMs in medical settings at the <a href="https://aihealthinstitute.org/" target="_blank" rel="noopener noreferrer" style={{
-            color: 'var(--site-link)',
-            textDecoration: 'underline'
-          }}>AI Health Institute</a>. My introduction to agentic AI started in Summer 2024 when I worked on building RAG and Ontology frameworks for domain-specific language models.</p>
-          
-          <p style={{
-          marginBottom: '10px'
-        }}>Outside of research, I've been fortunate to compete in <InlineMediaLink label="Judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> at a high level, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
+        }}>Outside of research, I've been fortunate to practice <InlineMediaLink label="Judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> growing up, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
           
           <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the guitar, working out, reading, and spending time with my family and friends. I also really enjoy cooking and sharing a meal with the people I care about.</p>
         </div>
