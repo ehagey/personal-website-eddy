@@ -17,7 +17,7 @@ const PublicationsSection = () => {
         fontSize: '13px',
         color: 'var(--site-text-faint)',
         marginBottom: '15px'
-      }}>Listed in alphabetical order.</p>
+      }}>Listed in alphabetical order. Author names on each publication are listed in alphabetical order by surname.</p>
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',
@@ -43,7 +43,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}> with M. C. Cohen</span>
+              }}>, M. C. Cohen and E. Hage-Youssef</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -71,7 +71,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}> with M. C. Cohen, D. McCarthy, and D. D. Sokol</span>
+              }}>, M. C. Cohen, E. Hage-Youssef, D. McCarthy, and D. D. Sokol</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -103,7 +103,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}> with M. C. Cohen and W. Khern-am-nuai</span>
+              }}>, M. C. Cohen, E. Hage-Youssef, and W. Khern-am-nuai</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -131,7 +131,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}> with M. C. Cohen and W. Khern-am-nuai</span>
+              }}>, M. C. Cohen, E. Hage-Youssef, and W. Khern-am-nuai</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -155,7 +155,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}> with M. C. Cohen</span>
+              }}>, M. C. Cohen and E. Hage-Youssef</span>
             </h3>
             <p style={{
             fontSize: '13px',
