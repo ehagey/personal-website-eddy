@@ -17,7 +17,7 @@ const PublicationsSection = () => {
         fontSize: '13px',
         color: 'var(--site-text-faint)',
         marginBottom: '15px'
-      }}>Listed in alphabetical order. Author names on each publication are listed in alphabetical order by surname.</p>
+      }}>Author names on each publication are listed in alphabetical order by surname.</p>
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',
