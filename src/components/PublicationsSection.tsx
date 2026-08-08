@@ -156,7 +156,7 @@ const PublicationsSection = () => {
             fontSize: '13px',
             color: 'var(--site-text-faint)',
             marginBottom: '5px'
-          }}>INFORMS Journal on Data Science, Major Revision</p>
+          }}>INFORMS Journal on Data Science, Minor Revision</p>
           </div>
         </div>
 
