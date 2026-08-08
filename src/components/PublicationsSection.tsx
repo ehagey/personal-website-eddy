@@ -13,6 +13,11 @@ const PublicationsSection = () => {
         fontWeight: 'normal',
         color: 'var(--site-text)'
       }}>Publications</h2>
+        <p style={{
+        fontSize: '13px',
+        color: 'var(--site-text-faint)',
+        marginBottom: '15px'
+      }}>Listed in alphabetical order.</p>
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',
