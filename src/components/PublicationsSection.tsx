@@ -136,9 +136,9 @@ const PublicationsSection = () => {
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
-          }}>Submitted</p>
+          }}>AI & Ethics, Major Revision</p>
           </div>
-          
+
           <div>
             <h3 style={{
             fontSize: '16px',
