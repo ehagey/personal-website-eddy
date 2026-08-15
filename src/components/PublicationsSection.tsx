@@ -66,7 +66,7 @@ const PublicationsSection = () => {
               color: 'var(--site-link)',
               textDecoration: 'underline'
             }}>
-                Three Strategic Bets on AI's Future
+                Three Winning AI Strategies
               </a>
               <span style={{
                 fontWeight: 'normal',
