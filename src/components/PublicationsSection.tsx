@@ -62,7 +62,7 @@ const PublicationsSection = () => {
             color: 'var(--site-text)',
             marginBottom: '8px'
           }}>
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6331258" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://journals.sagepub.com/doi/10.1177/00081256261477028" target="_blank" rel="noopener noreferrer" style={{
               color: 'var(--site-link)',
               textDecoration: 'underline'
             }}>
@@ -76,7 +76,7 @@ const PublicationsSection = () => {
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
-          }}>Forthcoming in California Management Review, 2026</p>
+          }}>Published in California Management Review, August 15, 2026</p>
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
