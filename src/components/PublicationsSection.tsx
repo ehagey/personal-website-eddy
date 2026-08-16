@@ -73,7 +73,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen, E. Hage-Youssef, Daniel McCarthy, and D. Daniel Sokol</span>
+              }}>, Maxime C. Cohen, Eddy Hage-Youssef, Daniel M. McCarthy, and D. Daniel Sokol</span>
             </h3>
             <p style={{
             fontSize: '13px',
