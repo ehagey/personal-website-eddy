@@ -16,7 +16,9 @@ const PublicationsSection = () => {
         <p style={{
         fontSize: '13px',
         color: 'var(--site-text-faint)',
-        marginBottom: '15px'
+        marginBottom: '15px',
+        fontWeight: 600,
+        fontStyle: 'italic'
       }}>Author names on each publication are listed in alphabetical order by surname.</p>
         <div style={{
         fontSize: '14px',
@@ -43,7 +45,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, M. C. Cohen and E. Hage-Youssef</span>
+              }}>, Maxime C. Cohen and E. Hage-Youssef</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -71,7 +73,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, M. C. Cohen, E. Hage-Youssef, D. McCarthy, and D. D. Sokol</span>
+              }}>, Maxime C. Cohen, E. Hage-Youssef, Daniel McCarthy, and D. Daniel Sokol</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -103,7 +105,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, M. C. Cohen, E. Hage-Youssef, and W. Khern-am-nuai</span>
+              }}>, Maxime C. Cohen, E. Hage-Youssef, and Warut Khern-am-nuai</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -131,7 +133,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, M. C. Cohen, E. Hage-Youssef, and W. Khern-am-nuai</span>
+              }}>, Maxime C. Cohen, E. Hage-Youssef, and Warut Khern-am-nuai</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -155,7 +157,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, M. C. Cohen and E. Hage-Youssef</span>
+              }}>, Maxime C. Cohen and E. Hage-Youssef</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -189,7 +191,7 @@ const PublicationsSection = () => {
               <a href="https://maxccohen.github.io/State-of-AI-in-Canada.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>
                 The State of AI in Canada: Challenges, Opportunities, and Calls to Action
               </a>
-              <span style={{ fontWeight: 'normal', color: 'var(--site-text-muted)' }}> by M. C. Cohen</span>
+              <span style={{ fontWeight: 'normal', color: 'var(--site-text-muted)' }}> by Maxime C. Cohen</span>
             </h3>
             <p style={{ fontSize: '13px', color: 'var(--site-text-faint)' }}>The State of AI in Canada White Paper, January 2026</p>
           </div>
