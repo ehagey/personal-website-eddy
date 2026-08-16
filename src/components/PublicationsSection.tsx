@@ -45,7 +45,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen and E. Hage-Youssef</span>
+              }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -105,7 +105,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen, E. Hage-Youssef, and Warut Khern-am-nuai</span>
+              }}>, Maxime C. Cohen, Eddy Hage-Youssef, and Warut Khern-am-nuai</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -133,7 +133,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen, E. Hage-Youssef, and Warut Khern-am-nuai</span>
+              }}>, Maxime C. Cohen, Eddy Hage-Youssef, and Warut Khern-am-nuai</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -157,7 +157,7 @@ const PublicationsSection = () => {
               <span style={{
                 fontWeight: 'normal',
                 color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen and E. Hage-Youssef</span>
+              }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
             </h3>
             <p style={{
             fontSize: '13px',
@@ -173,7 +173,7 @@ const PublicationsSection = () => {
           {[
             { name: 'Maxime C. Cohen', affiliation: 'Desautels Faculty of Management, McGill University', url: 'https://maxccohen.github.io/' },
             { name: 'Warut Khern-am-nuai', affiliation: 'Desautels Faculty of Management, McGill University', url: 'https://www.warut.info/' },
-            { name: 'Daniel McCarthy', affiliation: 'University of Maryland - Robert H. Smith School of Business', url: 'https://www.rhsmith.umd.edu/directory/daniel-mccarthy' },
+            { name: 'Daniel M. McCarthy', affiliation: 'University of Maryland - Robert H. Smith School of Business', url: 'https://www.rhsmith.umd.edu/directory/daniel-mccarthy' },
             { name: 'D. Daniel Sokol', affiliation: 'USC Gould School of Law; USC Marshall School of Business', url: 'https://gould.usc.edu/faculty/profile/d-daniel-sokol/' },
           ].map((c, i, arr) => (
             <span key={c.name}>
