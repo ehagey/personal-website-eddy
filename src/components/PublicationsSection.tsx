@@ -108,7 +108,7 @@ const PublicationsSection = () => {
             <p style={{
             fontSize: '13px',
             color: 'var(--site-text-faint)'
-          }}>Harvard Business Review, Digital Article (October 1, 2025) & Print Issue (March–April 2026)</p>
+          }}>Harvard Business Review, 104(2):40-42, 2026</p>
           </div>
           
           <div style={{
