@@ -64,7 +64,7 @@ const PublicationsSection = () => {
             color: 'var(--site-text)',
             marginBottom: '8px'
           }}>
-              <a href="https://journals.sagepub.com/doi/10.1177/00081256261477028" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://cmr.berkeley.edu/2026/08/69-1-three-winning-ai-strategies/" target="_blank" rel="noopener noreferrer" style={{
               color: 'var(--site-link)',
               textDecoration: 'underline'
             }}>
