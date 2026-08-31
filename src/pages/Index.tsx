@@ -3,12 +3,14 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import PublicationsSection from '@/components/PublicationsSection';
+import InTheNewsSection from '@/components/InTheNewsSection';
 import WritingSection from '@/components/WritingSection';
 import ContactSection from '@/components/ContactSection';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const sections = [
-  { value: 'publications', title: 'Publications', Content: PublicationsSection },
+  { value: 'publications', title: 'Publications and Academic Work', Content: PublicationsSection },
+  { value: 'in-the-news', title: 'In the News', Content: InTheNewsSection },
   { value: 'writing', title: 'Writing', Content: WritingSection },
   { value: 'contact', title: 'Contact', Content: ContactSection },
 ];
@@ -27,8 +29,8 @@ const Index = () => {
               <AccordionItem key={value} value={value} id={value} className="border-[var(--site-border)]">
                 <AccordionTrigger
                   style={{
-                    fontSize: '24px',
-                    fontWeight: 'normal',
+                    fontSize: '16px',
+                    fontWeight: 500,
                     color: 'var(--site-text)',
                   }}
                 >

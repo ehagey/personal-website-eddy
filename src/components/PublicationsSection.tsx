@@ -1,219 +1,171 @@
+import AcademicCollaboratorsSection from '@/components/AcademicCollaboratorsSection';
+import EditingSection from '@/components/EditingSection';
+
 const PublicationsSection = () => {
   return <div>
-      <div>
-        <p style={{
-        fontSize: '13px',
-        color: 'var(--site-text-faint)',
-        marginBottom: '15px',
-        fontWeight: 600,
-        fontStyle: 'italic'
-      }}>Author names on each publication are listed in alphabetical order by surname.</p>
+      <p style={{
+      fontSize: '13px',
+      color: 'var(--site-text-faint)',
+      marginBottom: '15px',
+      fontWeight: 600,
+      fontStyle: 'italic'
+    }}>Author names on each publication are listed in alphabetical order by surname.</p>
+      <div style={{
+      fontSize: '14px',
+      lineHeight: '1.6',
+      color: 'var(--site-text-muted)'
+    }}>
         <div style={{
-        fontSize: '14px',
-        lineHeight: '1.6',
-        color: 'var(--site-text-muted)'
+        marginBottom: '15px',
+        paddingBottom: '15px',
+        borderBottom: '1px solid var(--site-border)'
       }}>
-          <div style={{
-          marginBottom: '15px',
-          paddingBottom: '15px',
-          borderBottom: '1px solid var(--site-border)'
+          <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
         }}>
-            <h3 style={{
-            fontSize: '16px',
-            fontWeight: '500',
-            color: 'var(--site-text)',
-            marginBottom: '8px'
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7111078" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
           }}>
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7111078" target="_blank" rel="noopener noreferrer" style={{
-              color: 'var(--site-link)',
-              textDecoration: 'underline'
-            }}>
-                Confirmation Bias in LLM Pricing Recommendations
-              </a>
-              <span style={{
-                fontWeight: 'normal',
-                color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
-            </h3>
-            <p style={{
-            fontSize: '13px',
-            color: 'var(--site-text-faint)'
-          }}>Submitted</p>
-          </div>
-          
-          <div style={{
-          marginBottom: '15px',
-          paddingBottom: '15px',
-          borderBottom: '1px solid var(--site-border)'
-        }}>
-            <h3 style={{
-            fontSize: '16px',
-            fontWeight: '500',
-            color: 'var(--site-text)',
-            marginBottom: '8px'
-          }}>
-              <a href="https://cmr.berkeley.edu/2026/08/69-1-three-winning-ai-strategies/" target="_blank" rel="noopener noreferrer" style={{
-              color: 'var(--site-link)',
-              textDecoration: 'underline'
-            }}>
-                Three Winning AI Strategies
-              </a>
-              <span style={{
-                fontWeight: 'normal',
-                color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen, Eddy Hage-Youssef, Daniel M. McCarthy, and D. Daniel Sokol</span>
-            </h3>
-            <p style={{
-            fontSize: '13px',
-            color: 'var(--site-text-faint)'
-          }}>California Management Review (August 15, 2026)</p>
-            <p style={{
-            fontSize: '13px',
-            color: 'var(--site-text-faint)'
-          }}>A longer pre-print version of this paper is available <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6331258" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>on SSRN</a>.</p>
-            <p style={{
-            fontSize: '13px',
-            color: 'var(--site-text-faint)'
-          }}><a href="https://www.dropbox.com/scl/fi/gl99iry9nvwhxtyp77d9i/three-bets-AI-slides.pptx?rlkey=66yqsamsx7sdayvypkm58ra8q&e=1&st=9hwhj0wa&dl=0" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>Slides</a> (prepared by Professor McCarthy)</p>
-          </div>
-          
-          <div style={{
-          marginBottom: '15px',
-          paddingBottom: '15px',
-          borderBottom: '1px solid var(--site-border)'
-        }}>
-            <h3 style={{
-            fontSize: '16px',
-            fontWeight: '500',
-            color: 'var(--site-text)',
-            marginBottom: '8px'
-          }}>
-              <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
-              color: 'var(--site-link)',
-              textDecoration: 'underline'
-            }}>
-                What Happens When AI Sets Wages
-              </a>
-              <span style={{
-                fontWeight: 'normal',
-                color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen, Eddy Hage-Youssef, and Warut Khern-am-nuai</span>
-            </h3>
-            <p style={{
-            fontSize: '13px',
-            color: 'var(--site-text-faint)'
-          }}>Harvard Business Review, 104(2):40-42, 2026</p>
-          </div>
-          
-          <div style={{
-          marginBottom: '15px',
-          paddingBottom: '15px',
-          borderBottom: '1px solid var(--site-border)'
-        }}>
-            <h3 style={{
-            fontSize: '16px',
-            fontWeight: '500',
-            color: 'var(--site-text)',
-            marginBottom: '8px'
-          }}>
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5404966" target="_blank" rel="noopener noreferrer" style={{
-              color: 'var(--site-link)',
-              textDecoration: 'underline'
-            }}>
-                When AI Sets Wages: Biases and Labor Discrimination in Generative Pricing
-              </a>
-              <span style={{
-                fontWeight: 'normal',
-                color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen, Eddy Hage-Youssef, and Warut Khern-am-nuai</span>
-            </h3>
-            <p style={{
-            fontSize: '13px',
-            color: 'var(--site-text-faint)'
-          }}>AI & Ethics, Major Revision</p>
-          </div>
-
-          <div>
-            <h3 style={{
-            fontSize: '16px',
-            fontWeight: '500',
-            color: 'var(--site-text)',
-            marginBottom: '8px'
-          }}>
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353923" target="_blank" rel="noopener noreferrer" style={{
-              color: 'var(--site-link)',
-              textDecoration: 'underline'
-            }}>
-                Generative AI for Data Scraping
-              </a>
-              <span style={{
-                fontWeight: 'normal',
-                color: 'var(--site-text-muted)'
-              }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
-            </h3>
-            <p style={{
-            fontSize: '13px',
-            color: 'var(--site-text-faint)',
-            marginBottom: '5px'
-          }}>INFORMS Journal on Data Science, Minor Revision</p>
-          </div>
+              Confirmation Bias in LLM Pricing Recommendations
+            </a>
+            <span style={{
+              fontWeight: 'normal',
+              color: 'var(--site-text-muted)'
+            }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
+          </h3>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}>Submitted</p>
         </div>
 
-        <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px', color: 'var(--site-text)' }}>Academic Collaborators</h2>
-        <p style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--site-text-muted)', marginBottom: '15px' }}>
-          I feel very fortunate and grateful to have worked and published academic work with{' '}
-          {[
-            { name: 'Maxime C. Cohen', affiliation: 'Desautels Faculty of Management, McGill University', url: 'https://maxccohen.github.io/' },
-            { name: 'Warut Khern-am-nuai', affiliation: 'Desautels Faculty of Management, McGill University', url: 'https://www.warut.info/' },
-            { name: 'Daniel M. McCarthy', affiliation: 'University of Maryland - Robert H. Smith School of Business', url: 'https://www.rhsmith.umd.edu/directory/daniel-mccarthy' },
-            { name: 'D. Daniel Sokol', affiliation: 'USC Gould School of Law; USC Marshall School of Business', url: 'https://gould.usc.edu/faculty/profile/d-daniel-sokol/' },
-          ].map((c, i, arr) => (
-            <span key={c.name}>
-              <a href={c.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>{c.name}</a>
-              <span style={{ color: 'var(--site-text-faint)' }}> ({c.affiliation})</span>
-              {i < arr.length - 2 ? ', ' : i === arr.length - 2 ? ', and ' : ''}
-            </span>
-          ))}.
-        </p>
-
-        <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px', color: 'var(--site-text)' }}>In the News</h2>
-        <div style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--site-text-muted)' }}>
-          <div style={{
-          marginBottom: '15px',
-          paddingBottom: '15px',
-          borderBottom: '1px solid var(--site-border)'
+        <div style={{
+        marginBottom: '15px',
+        paddingBottom: '15px',
+        borderBottom: '1px solid var(--site-border)'
+      }}>
+          <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
         }}>
-            <h3 style={{ fontSize: '16px', fontWeight: '500', color: 'var(--site-text)', marginBottom: '8px' }}>
-              <a href="https://finance.yahoo.com/technology/ai/articles/strategic-fit-not-market-share-172600753.html" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>
-                Strategic Fit—Not Market Share—Separates Winners in AI, Study Shows
-              </a>
-            </h3>
-            <p style={{ fontSize: '13px', color: 'var(--site-text-faint)' }}>Yahoo Finance, August 27, 2026</p>
-          </div>
-
-          <div>
-            <h3 style={{ fontSize: '16px', fontWeight: '500', color: 'var(--site-text)', marginBottom: '8px' }}>
-              <a href="https://techxplore.com/news/2026-08-strategic-winners-ai.html" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>
-                Strategic Fit—Not Market Share—Separates Winners in AI, Study Shows
-              </a>
-            </h3>
-            <p style={{ fontSize: '13px', color: 'var(--site-text-faint)' }}>Tech Xplore, August 25, 2026</p>
-          </div>
+            <a href="https://cmr.berkeley.edu/2026/08/69-1-three-winning-ai-strategies/" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>
+              Three Winning AI Strategies
+            </a>
+            <span style={{
+              fontWeight: 'normal',
+              color: 'var(--site-text-muted)'
+            }}>, Maxime C. Cohen, Eddy Hage-Youssef, Daniel M. McCarthy, and D. Daniel Sokol</span>
+          </h3>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}>California Management Review (August 15, 2026)</p>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}>A longer pre-print version of this paper is available <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6331258" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>on SSRN</a>.</p>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}><a href="https://www.dropbox.com/scl/fi/gl99iry9nvwhxtyp77d9i/three-bets-AI-slides.pptx?rlkey=66yqsamsx7sdayvypkm58ra8q&e=1&st=9hwhj0wa&dl=0" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>Slides</a> (prepared by Professor McCarthy)</p>
         </div>
 
-        <h2 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: 'normal', marginTop: '30px', color: 'var(--site-text)' }}>Editing</h2>
-        <div style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--site-text-muted)' }}>
-          <div>
-            <h3 style={{ fontSize: '16px', fontWeight: '500', color: 'var(--site-text)', marginBottom: '8px' }}>
-              <a href="https://maxccohen.github.io/State-of-AI-in-Canada.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>
-                The State of AI in Canada: Challenges, Opportunities, and Calls to Action
-              </a>
-              <span style={{ fontWeight: 'normal', color: 'var(--site-text-muted)' }}> by Maxime C. Cohen</span>
-            </h3>
-            <p style={{ fontSize: '13px', color: 'var(--site-text-faint)' }}>The State of AI in Canada White Paper, January 2026</p>
-          </div>
+        <div style={{
+        marginBottom: '15px',
+        paddingBottom: '15px',
+        borderBottom: '1px solid var(--site-border)'
+      }}>
+          <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
+        }}>
+            <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>
+              What Happens When AI Sets Wages
+            </a>
+            <span style={{
+              fontWeight: 'normal',
+              color: 'var(--site-text-muted)'
+            }}>, Maxime C. Cohen, Eddy Hage-Youssef, and Warut Khern-am-nuai</span>
+          </h3>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}>Harvard Business Review, 104(2):40-42, 2026</p>
+        </div>
+
+        <div style={{
+        marginBottom: '15px',
+        paddingBottom: '15px',
+        borderBottom: '1px solid var(--site-border)'
+      }}>
+          <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
+        }}>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5404966" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>
+              When AI Sets Wages: Biases and Labor Discrimination in Generative Pricing
+            </a>
+            <span style={{
+              fontWeight: 'normal',
+              color: 'var(--site-text-muted)'
+            }}>, Maxime C. Cohen, Eddy Hage-Youssef, and Warut Khern-am-nuai</span>
+          </h3>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}>AI & Ethics, Major Revision</p>
+        </div>
+
+        <div>
+          <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
+        }}>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353923" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>
+              Generative AI for Data Scraping
+            </a>
+            <span style={{
+              fontWeight: 'normal',
+              color: 'var(--site-text-muted)'
+            }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
+          </h3>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)',
+          marginBottom: '5px'
+        }}>INFORMS Journal on Data Science, Minor Revision</p>
         </div>
       </div>
+
+      <h3 style={{ fontSize: '18px', marginBottom: '15px', marginTop: '25px', fontWeight: 500, color: 'var(--site-text)' }}>Academic Collaborators</h3>
+      <AcademicCollaboratorsSection />
+
+      <h3 style={{ fontSize: '18px', marginBottom: '15px', marginTop: '25px', fontWeight: 500, color: 'var(--site-text)' }}>Editing</h3>
+      <EditingSection />
     </div>;
 };
 export default PublicationsSection;
