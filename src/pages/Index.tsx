@@ -5,16 +5,18 @@ import AboutSection from '@/components/AboutSection';
 import PublicationsSection from '@/components/PublicationsSection';
 import WritingSection from '@/components/WritingSection';
 import ContactSection from '@/components/ContactSection';
+import SideNav from '@/components/SideNav';
 
 const Index = () => {
   return (
     <>
       <Header />
+      <SideNav />
       <main>
         <HeroSection />
         <AboutSection />
         <PublicationsSection />
-        
+
         <WritingSection />
         <ContactSection />
       </main>
