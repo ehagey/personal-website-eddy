@@ -1,15 +1,5 @@
 const ContactSection = () => {
-  return <section id="contact" style={{
-    padding: '5px 20px 20px 20px',
-    maxWidth: '600px',
-    margin: '0 auto'
-  }}>
-      <h2 style={{
-      fontSize: '24px',
-      marginBottom: '10px',
-      fontWeight: 'normal',
-      color: 'var(--site-text)'
-    }}>Contact</h2>
+  return <div>
       <p style={{
       fontSize: '14px',
       color: 'var(--site-text-muted)',
@@ -33,6 +23,6 @@ const ContactSection = () => {
         </a>
         <p style={{ marginTop: '10px', fontSize: '14px', color: 'var(--site-text-muted)' }}>CV available upon request.</p>
       </div>
-    </section>;
+    </div>;
 };
 export default ContactSection;
