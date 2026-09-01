@@ -6,10 +6,17 @@ const PublicationsSection = () => {
       <p style={{
       fontSize: '13px',
       color: 'var(--site-text-faint)',
-      marginBottom: '15px',
+      marginBottom: '5px',
       fontWeight: 600,
       fontStyle: 'italic'
     }}>Author names on each publication are listed in alphabetical order by surname.</p>
+      <p style={{
+      fontSize: '13px',
+      color: 'var(--site-text-faint)',
+      marginBottom: '15px',
+      fontWeight: 600,
+      fontStyle: 'italic'
+    }}>Publications are listed in reverse chronological order.</p>
       <div style={{
       fontSize: '14px',
       lineHeight: '1.6',
@@ -26,6 +33,7 @@ const PublicationsSection = () => {
           color: 'var(--site-text)',
           marginBottom: '8px'
         }}>
+            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>1. </span>
             <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7111078" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
@@ -54,6 +62,7 @@ const PublicationsSection = () => {
           color: 'var(--site-text)',
           marginBottom: '8px'
         }}>
+            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>2. </span>
             <a href="https://cmr.berkeley.edu/2026/08/69-1-three-winning-ai-strategies/" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
@@ -90,6 +99,7 @@ const PublicationsSection = () => {
           color: 'var(--site-text)',
           marginBottom: '8px'
         }}>
+            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>3. </span>
             <a href="https://hbr.org/2025/10/what-happens-when-ai-sets-wages" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
@@ -118,6 +128,7 @@ const PublicationsSection = () => {
           color: 'var(--site-text)',
           marginBottom: '8px'
         }}>
+            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>4. </span>
             <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5404966" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
@@ -142,6 +153,7 @@ const PublicationsSection = () => {
           color: 'var(--site-text)',
           marginBottom: '8px'
         }}>
+            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>5. </span>
             <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353923" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
