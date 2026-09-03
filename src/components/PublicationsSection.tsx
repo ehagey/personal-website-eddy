@@ -172,7 +172,7 @@ const PublicationsSection = () => {
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
-        }}>Submitted</p>
+        }}>Manufacturing & Service Operations Management, Major Revision</p>
         </div>
 
         <div>
