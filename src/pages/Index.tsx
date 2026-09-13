@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import PublicationsSection from '@/components/PublicationsSection';
 import InTheNewsSection from '@/components/InTheNewsSection';
+import InvitedTalksSection from '@/components/InvitedTalksSection';
 import WritingSection from '@/components/WritingSection';
 import TeachingAssistanceSection from '@/components/TeachingAssistanceSection';
 import ContactSection from '@/components/ContactSection';
@@ -12,6 +13,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const sections = [
   { value: 'publications', title: 'Publications and Academic Work', Content: PublicationsSection },
   { value: 'in-the-news', title: 'In the News', Content: InTheNewsSection },
+  { value: 'invited-talks', title: 'Invited Talks', Content: InvitedTalksSection },
   { value: 'writing', title: 'Writing', Content: WritingSection },
   { value: 'teaching-assistance', title: 'Teaching Assistance', Content: TeachingAssistanceSection },
   { value: 'contact', title: 'Contact', Content: ContactSection },
