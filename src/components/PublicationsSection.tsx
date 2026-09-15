@@ -107,6 +107,10 @@ const PublicationsSection = () => {
           fontSize: '13px',
           color: 'var(--site-text-faint)'
         }}>Harvard Business Review, 104(2):40-42, 2026</p>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}>Also published as: <a href="https://www.hbrfrance.fr/innovation/que-se-passe-t-il-quand-l-ia-fixe-les-tarifs-61328" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR France</a>, <a href="https://hbrturkiye.com/dergi/maaslari-yapay-zeka-belirlediginde-neler-oluyor" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Turkey</a>, and <a href="https://service.hbrtaiwan.com/store/article/24832" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Taiwan</a></p>
         </div>
 
         <div style={{
