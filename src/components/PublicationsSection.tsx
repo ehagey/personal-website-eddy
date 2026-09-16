@@ -110,7 +110,7 @@ const PublicationsSection = () => {
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
-        }}>Also published as: <a href="https://www.hbrfrance.fr/innovation/que-se-passe-t-il-quand-l-ia-fixe-les-tarifs-61328" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR France</a>, <a href="https://hbrturkiye.com/dergi/maaslari-yapay-zeka-belirlediginde-neler-oluyor" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Turkey</a>, and <a href="https://service.hbrtaiwan.com/store/article/24832" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Taiwan</a></p>
+        }}>Also published as: <a href="https://www.hbrfrance.fr/innovation/que-se-passe-t-il-quand-l-ia-fixe-les-tarifs-61328" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR France</a>, <a href="https://hbrturkiye.com/dergi/maaslari-yapay-zeka-belirlediginde-neler-oluyor" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Turkey</a>, <a href="https://service.hbrtaiwan.com/store/article/24832" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Taiwan</a>, and <a href="https://www.hbrkorea.com/article/view/atype/ma/category_id/7_1/article_no/2412" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Korea</a></p>
         </div>
 
         <div style={{
