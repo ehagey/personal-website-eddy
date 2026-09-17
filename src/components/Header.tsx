@@ -17,23 +17,32 @@ const Header = () => {
           <Link to="/" style={{ fontSize: '18px', fontWeight: 600, color: 'var(--site-text)', textDecoration: 'none' }}>
             Eddy Hage-Youssef
           </Link>
-          
-          <button
-            onClick={toggleTheme}
-            aria-label="Toggle dark mode"
-            style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              color: 'var(--site-text-muted)',
-              padding: '4px',
-              display: 'flex',
-              alignItems: 'center',
-              transition: 'color 0.2s'
-            }}
-          >
-            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-          </button>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span
+              className="last-updated"
+              style={{ fontSize: '11px', color: 'var(--site-text-faint)', whiteSpace: 'nowrap' }}
+            >
+              Last updated: September 16, 2026
+            </span>
+
+            <button
+              onClick={toggleTheme}
+              aria-label="Toggle dark mode"
+              style={{
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                color: 'var(--site-text-muted)',
+                padding: '4px',
+                display: 'flex',
+                alignItems: 'center',
+                transition: 'color 0.2s'
+              }}
+            >
+              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
+          </div>
         </div>
       </div>
     </header>

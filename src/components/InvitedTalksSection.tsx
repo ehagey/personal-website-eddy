@@ -10,6 +10,9 @@ const InvitedTalksSection = () => {
         >
           Rotman Young Scholar Seminar Series
         </a>
+        <span style={{ color: 'var(--site-text-muted)' }}>
+          , presented "Confirmation Bias in LLM Pricing Recommendations"
+        </span>
       </p>
     </div>
   );

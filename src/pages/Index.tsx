@@ -8,6 +8,7 @@ import InvitedTalksSection from '@/components/InvitedTalksSection';
 import WritingSection from '@/components/WritingSection';
 import TeachingAssistanceSection from '@/components/TeachingAssistanceSection';
 import ContactSection from '@/components/ContactSection';
+import RevealSection from '@/components/RevealSection';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const sections = [
@@ -25,25 +26,29 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <AboutSection />
+        <RevealSection>
+          <AboutSection />
+        </RevealSection>
 
         <div style={{ maxWidth: '600px', margin: '0 auto', padding: '5px 20px 20px 20px' }}>
           <Accordion type="multiple">
             {sections.map(({ value, title, Content }) => (
-              <AccordionItem key={value} value={value} id={value} className="border-[var(--site-border)]">
-                <AccordionTrigger
-                  style={{
-                    fontSize: '16px',
-                    fontWeight: 500,
-                    color: 'var(--site-text)',
-                  }}
-                >
-                  {title}
-                </AccordionTrigger>
-                <AccordionContent>
-                  <Content />
-                </AccordionContent>
-              </AccordionItem>
+              <RevealSection key={value}>
+                <AccordionItem value={value} id={value} className="border-[var(--site-border)]">
+                  <AccordionTrigger
+                    style={{
+                      fontSize: '16px',
+                      fontWeight: 500,
+                      color: 'var(--site-text)',
+                    }}
+                  >
+                    {title}
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <Content />
+                  </AccordionContent>
+                </AccordionItem>
+              </RevealSection>
             ))}
           </Accordion>
         </div>

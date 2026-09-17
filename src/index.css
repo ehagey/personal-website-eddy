@@ -43,3 +43,30 @@ body {
 html {
   overflow-x: hidden;
 }
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+@media (max-width: 480px) {
+  .last-updated {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-hidden {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-visible {
+    transition: none;
+  }
+}
