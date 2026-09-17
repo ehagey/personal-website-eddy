@@ -55,12 +55,6 @@ html {
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-@media (max-width: 480px) {
-  .last-updated {
-    display: none;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .reveal-hidden {
     opacity: 1;

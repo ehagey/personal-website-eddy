@@ -52,6 +52,12 @@ const Index = () => {
             ))}
           </Accordion>
         </div>
+
+        <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 20px 20px 20px' }}>
+          <p style={{ fontSize: '11px', color: 'var(--site-text-faint)', textAlign: 'left' }}>
+            Last updated: September 16, 2026
+          </p>
+        </div>
       </main>
     </>
   );
