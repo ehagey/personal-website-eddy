@@ -130,8 +130,7 @@ const AboutSection = () => {
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',
-        color: 'var(--site-text-muted)',
-        textAlign: 'justify'
+        color: 'var(--site-text-muted)'
       }}>
            <img
              src="/lovable-uploads/e3682f1c-f543-43d2-8b64-8b6d2732dc0e.jpg"
