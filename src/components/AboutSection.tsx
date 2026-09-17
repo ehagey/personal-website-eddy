@@ -161,7 +161,7 @@ const AboutSection = () => {
 
           <p style={{
           marginBottom: '10px'
-        }}>Outside of research, I've been fortunate to practice <InlineMediaLink label="Judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> growing up, earning my black belt and competing in national and regional championships. Beyond the physical aspects, judo has taught me to stay calm when facing difficult situations, approach challenges with discipline and grit, and trust that hard work pays off over time. These are all mindsets that have shaped how I approach everything in life.</p>
+        }}>Outside of research, I've practiced <InlineMediaLink label="judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> since I was young, earning my black belt and competing in national and regional championships. This has shaped me more than anything in my life.</p>
           
           <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the guitar, working out, reading, and spending time with my family and friends. I also really enjoy cooking and sharing a meal with the people I care about.</p>
         </div>
