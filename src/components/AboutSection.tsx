@@ -109,6 +109,89 @@ const InlineMediaLink = ({
   );
 };
 
+const dailyReadPoem = `Do not love half lovers
+Do not entertain half friends
+Do not indulge in works of the half talented
+Do not live half a life
+and do not die a half death
+If you choose silence, then be silent
+When you speak, do so until you are finished
+Do not silence yourself to say something
+And do not speak to be silent
+If you accept, then express it bluntly
+Do not mask it
+If you refuse then be clear about it
+for an ambiguous refusal is but a weak acceptance
+Do not accept half a solution
+Do not believe half truths
+Do not dream half a dream
+Do not fantasize about half hopes
+Half a drink will not quench your thirst
+Half a meal will not satiate your hunger
+Half the way will get you no where
+Half an idea will bear you no results
+Your other half is not the one you love
+It is you in another time yet in the same space
+It is you when you are not
+Half a life is a life you didn't live,
+A word you have not said
+A smile you postponed
+A love you have not had
+A friendship you did not know
+To reach and not arrive
+Work and not work
+Attend only to be absent
+What makes you a stranger to them closest to you
+and they strangers to you
+The half is a mere moment of inability
+but you are able for you are not half a being
+You are a whole that exists to live a life
+not half a life`;
+
+const DailyRead = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div style={{ marginTop: '15px' }}>
+      <span
+        role="button"
+        tabIndex={0}
+        onClick={() => setExpanded((v) => !v)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') setExpanded((v) => !v);
+        }}
+        style={{
+          color: 'var(--site-link)',
+          textDecoration: 'underline',
+          cursor: 'pointer',
+        }}
+      >
+        Daily Read
+      </span>
+      {expanded && (
+        <div
+          style={{
+            marginTop: '10px',
+            padding: '15px',
+            borderRadius: '6px',
+            background: 'var(--site-blockquote-bg)',
+            fontSize: '13px',
+            fontStyle: 'italic',
+            lineHeight: '1.7',
+            color: 'var(--site-text-muted)',
+            whiteSpace: 'pre-line',
+          }}
+        >
+          {dailyReadPoem}
+          <div style={{ marginTop: '10px', fontStyle: 'normal', color: 'var(--site-text-faint)' }}>
+            - Gibran Khalil Gibran
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
 const AboutSection = () => {
   return <section id="about" style={{
     padding: '5px 20px 5px 20px',
@@ -162,6 +245,8 @@ const AboutSection = () => {
           <p style={{
           marginBottom: '10px'
         }}>Outside of research, I've practiced <InlineMediaLink label="judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> since I was young, earning my black belt and competing in national and regional championships. This has shaped me more than anything in my life. In my free time, I enjoy playing the guitar, working out, reading, and spending time with my family and friends. I also really enjoy cooking and sharing a meal with the people I care about.</p>
+
+          <DailyRead />
         </div>
       </div>
 

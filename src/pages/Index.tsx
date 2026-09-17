@@ -15,8 +15,8 @@ const sections = [
   { value: 'publications', title: 'Publications and Academic Work', Content: PublicationsSection },
   { value: 'in-the-news', title: 'In the News', Content: InTheNewsSection },
   { value: 'invited-talks', title: 'Invited Talks', Content: InvitedTalksSection },
-  { value: 'writing', title: 'Writing', Content: WritingSection },
   { value: 'teaching-assistance', title: 'Teaching Assistance', Content: TeachingAssistanceSection },
+  { value: 'writing', title: 'Writing', Content: WritingSection },
   { value: 'contact', title: 'Contact', Content: ContactSection },
 ];
 
