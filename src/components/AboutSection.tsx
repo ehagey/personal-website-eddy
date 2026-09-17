@@ -161,9 +161,7 @@ const AboutSection = () => {
 
           <p style={{
           marginBottom: '10px'
-        }}>Outside of research, I've practiced <InlineMediaLink label="judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> since I was young, earning my black belt and competing in national and regional championships. This has shaped me more than anything in my life.</p>
-          
-          <p style={{ marginBottom: '10px' }}>In my free time, I enjoy playing the guitar, working out, reading, and spending time with my family and friends. I also really enjoy cooking and sharing a meal with the people I care about.</p>
+        }}>Outside of research, I've practiced <InlineMediaLink label="judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> since I was young, earning my black belt and competing in national and regional championships. This has shaped me more than anything in my life. In my free time, I enjoy playing the guitar, working out, reading, and spending time with my family and friends. I also really enjoy cooking and sharing a meal with the people I care about.</p>
         </div>
       </div>
 
