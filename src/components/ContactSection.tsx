@@ -21,6 +21,14 @@ const ContactSection = () => {
       }}>
           eddy.hage1@gmail.com
         </a>
+        <p style={{ marginTop: '10px' }}>
+          <a href="https://orcid.org/0009-0004-3183-8364" target="_blank" rel="noopener noreferrer" style={{
+          color: 'var(--site-link)',
+          textDecoration: 'underline'
+        }}>
+            ORCID
+          </a>
+        </p>
         <p style={{ marginTop: '10px', fontSize: '14px', color: 'var(--site-text-muted)' }}>CV available upon request.</p>
       </div>
     </div>;
