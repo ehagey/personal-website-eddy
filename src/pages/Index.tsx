@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { X, ChevronRight } from 'lucide-react';
+
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -11,21 +10,19 @@ import TeachingAssistanceSection from '@/components/TeachingAssistanceSection';
 import ContactSection from '@/components/ContactSection';
 import AwardsSection from '@/components/AwardsSection';
 import RevealSection from '@/components/RevealSection';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const sections = [
-  { value: 'publications', tabLabel: 'Publications', title: 'Publications and Academic Work', Content: PublicationsSection },
-  { value: 'in-the-news', tabLabel: 'In the News', title: 'In the News', Content: InTheNewsSection },
-  { value: 'invited-talks', tabLabel: 'Invited Talks', title: 'Invited Talks', Content: InvitedTalksSection },
-  { value: 'teaching-assistance', tabLabel: 'Teaching', title: 'Teaching Assistance', Content: TeachingAssistanceSection },
-  { value: 'writing', tabLabel: 'Writing', title: 'Writing', Content: WritingSection },
-  { value: 'awards', tabLabel: 'Awards', title: 'Awards and Honors', Content: AwardsSection },
-  { value: 'contact', tabLabel: 'Contact', title: 'Contact', Content: ContactSection },
+  { value: 'publications', title: 'Publications and Academic Work', Content: PublicationsSection },
+  { value: 'in-the-news', title: 'In the News', Content: InTheNewsSection },
+  { value: 'invited-talks', title: 'Invited Talks', Content: InvitedTalksSection },
+  { value: 'teaching-assistance', title: 'Teaching Assistance', Content: TeachingAssistanceSection },
+  { value: 'writing', title: 'Writing', Content: WritingSection },
+  { value: 'awards', title: 'Awards and Honors', Content: AwardsSection },
+  { value: 'contact', title: 'Contact', Content: ContactSection },
 ];
 
 const Index = () => {
-  const [activeTab, setActiveTab] = useState('publications');
-
   return (
     <>
       <Header />
@@ -36,60 +33,26 @@ const Index = () => {
         </RevealSection>
 
         <div style={{ maxWidth: '600px', margin: '0 auto', padding: '5px 20px 20px 20px' }}>
-          <Tabs value={activeTab} onValueChange={setActiveTab}>
-            <div style={{ position: 'relative' }}>
-              <TabsList
-                className="bg-transparent p-0 h-auto justify-start rounded-none w-full overflow-x-auto no-scrollbar"
-                style={{ borderBottom: '1px solid var(--site-border)' }}
-              >
-                {sections.map(({ value, tabLabel }) => (
-                  <TabsTrigger
-                    key={value}
-                    value={value}
-                    onMouseDown={(e) => {
-                      if (value === activeTab) {
-                        e.preventDefault();
-                        setActiveTab('');
-                      }
-                    }}
-                    className="bg-transparent shadow-none rounded-none px-0 py-2 mr-5 last:mr-0 whitespace-nowrap border-b-2 border-transparent text-[var(--site-text-faint)] hover:text-[var(--site-text-muted)] data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-[var(--site-text)] data-[state=active]:text-[var(--site-text)]"
-                    style={{ fontSize: '14px', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '5px' }}
-                  >
-                    {tabLabel}
-                    {value === activeTab && <X size={12} />}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-              <div
-                aria-hidden="true"
-                className="flex sm:hidden"
-                style={{
-                  position: 'absolute',
-                  right: 0,
-                  top: 0,
-                  bottom: '1px',
-                  width: '28px',
-                  background: 'linear-gradient(to right, transparent, var(--site-bg))',
-                  pointerEvents: 'none',
-                  alignItems: 'center',
-                  justifyContent: 'flex-end',
-                }}
-              >
-                <ChevronRight size={14} color="var(--site-text-faint)" />
-              </div>
-            </div>
-
+          <Accordion type="multiple">
             {sections.map(({ value, title, Content }) => (
-              <TabsContent key={value} value={value} className="mt-5 focus-visible:ring-0 focus-visible:ring-offset-0">
-                <RevealSection>
-                  <h2 style={{ fontSize: '18px', fontWeight: 500, color: 'var(--site-text)', marginBottom: '15px' }}>
+              <RevealSection key={value}>
+                <AccordionItem value={value} id={value} className="border-[var(--site-border)]">
+                  <AccordionTrigger
+                    style={{
+                      fontSize: '16px',
+                      fontWeight: 500,
+                      color: 'var(--site-text)',
+                    }}
+                  >
                     {title}
-                  </h2>
-                  <Content />
-                </RevealSection>
-              </TabsContent>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <Content />
+                  </AccordionContent>
+                </AccordionItem>
+              </RevealSection>
             ))}
-          </Tabs>
+          </Accordion>
         </div>
 
         <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 20px 20px 20px' }}>

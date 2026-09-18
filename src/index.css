@@ -44,15 +44,6 @@ html {
   overflow-x: hidden;
 }
 
-.no-scrollbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
 .reveal-hidden {
   opacity: 0;
   transform: translateY(12px);
