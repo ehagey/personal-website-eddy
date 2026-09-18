@@ -8,6 +8,7 @@ import InvitedTalksSection from '@/components/InvitedTalksSection';
 import WritingSection from '@/components/WritingSection';
 import TeachingAssistanceSection from '@/components/TeachingAssistanceSection';
 import ContactSection from '@/components/ContactSection';
+import AwardsSection from '@/components/AwardsSection';
 import RevealSection from '@/components/RevealSection';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
@@ -17,6 +18,7 @@ const sections = [
   { value: 'invited-talks', title: 'Invited Talks', Content: InvitedTalksSection },
   { value: 'teaching-assistance', title: 'Teaching Assistance', Content: TeachingAssistanceSection },
   { value: 'writing', title: 'Writing', Content: WritingSection },
+  { value: 'awards', title: 'Awards and Honors', Content: AwardsSection },
   { value: 'contact', title: 'Contact', Content: ContactSection },
 ];
 
