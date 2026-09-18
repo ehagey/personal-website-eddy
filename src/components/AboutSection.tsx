@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { X } from 'lucide-react';
 import judoPhoto from '@/assets/judo-real.jpg';
 
 const MediaPreview = ({
@@ -164,9 +165,13 @@ const DailyRead = () => {
           color: 'var(--site-link)',
           textDecoration: 'underline',
           cursor: 'pointer',
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '5px',
         }}
       >
         Daily Read
+        {expanded && <X size={12} />}
       </span>
       {expanded && (
         <div

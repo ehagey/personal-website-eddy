@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { X } from 'lucide-react';
+import { X, ChevronRight } from 'lucide-react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -37,28 +37,47 @@ const Index = () => {
 
         <div style={{ maxWidth: '600px', margin: '0 auto', padding: '5px 20px 20px 20px' }}>
           <Tabs value={activeTab} onValueChange={setActiveTab}>
-            <TabsList
-              className="bg-transparent p-0 h-auto justify-start rounded-none w-full overflow-x-auto"
-              style={{ borderBottom: '1px solid var(--site-border)' }}
-            >
-              {sections.map(({ value, tabLabel }) => (
-                <TabsTrigger
-                  key={value}
-                  value={value}
-                  onMouseDown={(e) => {
-                    if (value === activeTab) {
-                      e.preventDefault();
-                      setActiveTab('');
-                    }
-                  }}
-                  className="bg-transparent shadow-none rounded-none px-0 py-2 mr-5 last:mr-0 whitespace-nowrap border-b-2 border-transparent text-[var(--site-text-faint)] hover:text-[var(--site-text-muted)] data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-[var(--site-text)] data-[state=active]:text-[var(--site-text)]"
-                  style={{ fontSize: '14px', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '5px' }}
-                >
-                  {tabLabel}
-                  {value === activeTab && <X size={12} />}
-                </TabsTrigger>
-              ))}
-            </TabsList>
+            <div style={{ position: 'relative' }}>
+              <TabsList
+                className="bg-transparent p-0 h-auto justify-start rounded-none w-full overflow-x-auto no-scrollbar"
+                style={{ borderBottom: '1px solid var(--site-border)' }}
+              >
+                {sections.map(({ value, tabLabel }) => (
+                  <TabsTrigger
+                    key={value}
+                    value={value}
+                    onMouseDown={(e) => {
+                      if (value === activeTab) {
+                        e.preventDefault();
+                        setActiveTab('');
+                      }
+                    }}
+                    className="bg-transparent shadow-none rounded-none px-0 py-2 mr-5 last:mr-0 whitespace-nowrap border-b-2 border-transparent text-[var(--site-text-faint)] hover:text-[var(--site-text-muted)] data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-[var(--site-text)] data-[state=active]:text-[var(--site-text)]"
+                    style={{ fontSize: '14px', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '5px' }}
+                  >
+                    {tabLabel}
+                    {value === activeTab && <X size={12} />}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+              <div
+                aria-hidden="true"
+                className="flex sm:hidden"
+                style={{
+                  position: 'absolute',
+                  right: 0,
+                  top: 0,
+                  bottom: '1px',
+                  width: '28px',
+                  background: 'linear-gradient(to right, transparent, var(--site-bg))',
+                  pointerEvents: 'none',
+                  alignItems: 'center',
+                  justifyContent: 'flex-end',
+                }}
+              >
+                <ChevronRight size={14} color="var(--site-text-faint)" />
+              </div>
+            </div>
 
             {sections.map(({ value, title, Content }) => (
               <TabsContent key={value} value={value} className="mt-5 focus-visible:ring-0 focus-visible:ring-offset-0">
