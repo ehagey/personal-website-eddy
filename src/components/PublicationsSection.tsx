@@ -1,5 +1,4 @@
 import AcademicCollaboratorsSection from '@/components/AcademicCollaboratorsSection';
-import EditingSection from '@/components/EditingSection';
 
 const PublicationsSection = () => {
   return <div>
@@ -203,9 +202,6 @@ const PublicationsSection = () => {
 
       <h3 style={{ fontSize: '18px', marginBottom: '15px', marginTop: '25px', fontWeight: 500, color: 'var(--site-text)' }}>Academic Collaborators</h3>
       <AcademicCollaboratorsSection />
-
-      <h3 style={{ fontSize: '18px', marginBottom: '15px', marginTop: '25px', fontWeight: 500, color: 'var(--site-text)' }}>Editing</h3>
-      <EditingSection />
     </div>;
 };
 export default PublicationsSection;
