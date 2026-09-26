@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import DependableBlogPost from "./pages/DependableBlogPost";
 import MentalModelsBlogPost from "./pages/MentalModelsBlogPost";
+import ProduceBlogPost from "./pages/ProduceBlogPost";
 
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             
+            <Route path="/blog/produce-more-than-you-consume" element={<ProduceBlogPost />} />
             <Route path="/blog/on-mental-models" element={<MentalModelsBlogPost />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

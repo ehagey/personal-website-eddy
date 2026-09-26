@@ -15,6 +15,24 @@ const WritingSection = () => {
           marginBottom: '8px'
         }}>
           <Link
+            to="/blog/produce-more-than-you-consume"
+            style={{
+              color: 'var(--site-link)',
+              textDecoration: 'underline'
+            }}
+          >
+            Produce More than You Consume
+          </Link>
+        </h3>
+      </div>
+      <div style={{ marginBottom: '12px' }}>
+        <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
+        }}>
+          <Link
             to="/blog/on-mental-models"
             style={{
               color: 'var(--site-link)',
