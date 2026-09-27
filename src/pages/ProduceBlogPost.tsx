@@ -15,7 +15,7 @@ const ProduceBlogPost = () => {
 
         <p style={{ marginBottom: '24px' }}>A stable life also leaves more time, energy, and patience for others. Responsibility that is close has visible effects, and seeing that difference is where much of life's meaning is found.</p>
 
-        <p style={{ marginBottom: '24px' }}>In the end, it comes down to asking whether something is truly ours to carry. The answer isn't always clear, but the question is worth asking. <strong>Much of what weighs on us belongs to someone else, and it can be set down without ceasing to care.</strong> What remains is attention for building a steady life and sharing it with the people nearby.</p>
+        <p style={{ marginBottom: '24px' }}>In the end, it comes down to asking whether something is truly ours to carry. The answer isn't always clear, but the question is worth asking. <strong>Much of what weighs on us belongs to someone else, and it can be set down without ceasing to care.</strong> What remains is attention for building a steady life and sharing it with our people around that we care about.</p>
       </div>
     } 
   />;
