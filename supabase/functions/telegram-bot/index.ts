@@ -60,14 +60,31 @@ async function callLLM(system: string, user: string): Promise<string> {
       messages: [{ role: "user", content: user }],
     }),
   });
+  const rawText = await res.text();
+  console.error("OpenRouter raw response:", rawText); // visible in the function's Logs tab
+
   if (!res.ok) {
-    throw new Error(`OpenRouter API error: ${res.status} ${await res.text()}`);
+    throw new Error(`OpenRouter API error: ${res.status} ${rawText}`);
   }
-  const data = await res.json();
+
+  let data: { content?: { type?: string; text?: string }[]; error?: unknown };
+  try {
+    data = JSON.parse(rawText);
+  } catch {
+    throw new Error(`OpenRouter returned non-JSON: ${rawText.slice(0, 300)}`);
+  }
+
+  if (data.error) {
+    throw new Error(`OpenRouter error: ${JSON.stringify(data.error)}`);
+  }
+
   // The model may emit a "thinking" block before the actual "text" block (extended
   // thinking), so find the text block rather than blindly taking content[0].
-  const textBlock = data.content?.find((b: { type?: string }) => b.type === "text");
-  return textBlock?.text?.trim() ?? "";
+  const textBlock = data.content?.find((b) => b.type === "text");
+  if (!textBlock?.text) {
+    throw new Error(`No text block in OpenRouter response: ${rawText.slice(0, 500)}`);
+  }
+  return textBlock.text.trim();
 }
 
 function extractSql(raw: string): string {
@@ -105,7 +122,8 @@ Rules:
 
   const sql = extractSql(sqlRaw);
   if (!isSafeSelect(sql)) {
-    return "I couldn't turn that into a safe query — try rephrasing it.";
+    // Temporary: show what the model actually produced, to debug bad output.
+    return `I couldn't turn that into a safe query. The model said:\n${sqlRaw.slice(0, 500)}`;
   }
 
   const { data, error } = await supabase.rpc("run_readonly_query", { query: sql });
@@ -257,7 +275,8 @@ Deno.serve(async (req) => {
       reply = await handleCommand(text);
     } catch (err) {
       console.error(err);
-      reply = "Something went wrong answering that — try again.";
+      // Temporary: surface the real error message for debugging.
+      reply = `Error: ${err instanceof Error ? err.message : String(err)}`;
     }
     await sendMessage(chatId, reply);
   } catch (err) {
