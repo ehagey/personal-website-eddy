@@ -18,6 +18,10 @@ jobs:
       - run: npm install
       
       - run: npm run build
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+          VITE_SUPABASE_PROJECT_ID: ${{ secrets.VITE_SUPABASE_PROJECT_ID }}
 
       # GitHub Pages has no server-side routing; serve the SPA for unknown paths (e.g. /blog/...)
       - run: cp dist/index.html dist/404.html
