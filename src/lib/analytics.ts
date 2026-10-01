@@ -34,7 +34,6 @@ export function trackPageView(path: string) {
       },
       body: JSON.stringify({
         path,
-        referrer: document.referrer,
         visitor_id: getVisitorId(),
       }),
       keepalive: true,

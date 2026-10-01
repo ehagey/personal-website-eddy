@@ -69,32 +69,37 @@ async function handleCommand(command: string): Promise<string> {
     if (!data?.length) return "No data yet.";
     return (
       "*Top IPs*\n" +
-      data.map((r) => `${r.ip} — ${r.visit_count} visits (${r.days_active} days)`).join("\n")
+      data
+        .map((r) => {
+          const loc = [r.city, r.region, r.country].filter(Boolean).join(", ");
+          return `${r.ip} — ${r.visit_count} visits (${r.days_active} days)${loc ? `\n  📍 ${loc}` : ""}`;
+        })
+        .join("\n")
     );
   }
 
-  if (command === "/pages") {
+  if (command === "/recent") {
     const { data, error } = await supabase
-      .from("top_pages")
+      .from("recent_visits")
       .select("*")
-      .order("views", { ascending: false })
-      .limit(10);
-    if (error) throw error;
-    if (!data?.length) return "No data yet.";
-    return "*Top pages*\n" + data.map((r) => `${r.path} — ${r.views} views (${r.unique_ips} IPs)`).join("\n");
-  }
-
-  if (command === "/referrers") {
-    const { data, error } = await supabase
-      .from("top_referrers")
-      .select("*")
-      .order("views", { ascending: false })
-      .limit(10);
+      .order("viewed_at", { ascending: false })
+      .limit(15);
     if (error) throw error;
     if (!data?.length) return "No data yet.";
     return (
-      "*Top referrers*\n" +
-      data.map((r) => `${r.referrer ?? "(direct)"} — ${r.views} views`).join("\n")
+      "*Last 15 visits*\n" +
+      data
+        .map((r) => {
+          const time = new Date(r.viewed_at).toLocaleString("en-US", {
+            month: "short",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+          });
+          const loc = [r.city, r.country].filter(Boolean).join(", ");
+          return `${time} — ${r.path} — ${r.ip}${loc ? ` (${loc})` : ""}`;
+        })
+        .join("\n")
     );
   }
 
@@ -102,9 +107,8 @@ async function handleCommand(command: string): Promise<string> {
     "Commands:\n" +
     "/today — today's views & unique visitors\n" +
     "/week — last 7 days\n" +
-    "/ips — repeat visits by IP\n" +
-    "/pages — top pages\n" +
-    "/referrers — top referrers"
+    "/ips — repeat visits by IP, with location\n" +
+    "/recent — last 15 individual visits (page, IP, time, location)"
   );
 }
 
