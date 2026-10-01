@@ -2,6 +2,9 @@
 -- aggregate views that are no longer wanted (top_pages, top_referrers) in favor
 -- of seeing every individual visit.
 
+DROP VIEW IF EXISTS public.top_pages;
+DROP VIEW IF EXISTS public.top_referrers;
+
 ALTER TABLE public.page_views DROP COLUMN IF EXISTS referrer;
 
 ALTER TABLE public.page_views
@@ -10,9 +13,6 @@ ALTER TABLE public.page_views
   ADD COLUMN IF NOT EXISTS city TEXT,
   ADD COLUMN IF NOT EXISTS latitude DOUBLE PRECISION,
   ADD COLUMN IF NOT EXISTS longitude DOUBLE PRECISION;
-
-DROP VIEW IF EXISTS public.top_pages;
-DROP VIEW IF EXISTS public.top_referrers;
 
 -- Every individual visit, newest first: IP, page, time, and location.
 CREATE OR REPLACE VIEW public.recent_visits AS
