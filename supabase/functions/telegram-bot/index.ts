@@ -25,6 +25,9 @@ const supabase = createClient(
 );
 
 const SCHEMA_DESCRIPTION = `
+Use these EXACT table/view and column names, character-for-character, including every
+underscore. Do not rename, merge, or remove underscores from any identifier below.
+
 Table public.page_views (one row per page visit):
   viewed_at    timestamptz  -- when the visit happened
   path         text         -- which page, e.g. /blog/on-mental-models
@@ -96,7 +99,10 @@ function extractSql(raw: string): string {
 }
 
 function isSafeSelect(sql: string): boolean {
-  if (!/^select\b/i.test(sql.trim())) return false;
+  // Accept plain SELECTs and WITH (CTE) queries that end in a SELECT. Postgres also
+  // allows data-modifying CTEs (e.g. "WITH t AS (DELETE ... RETURNING *) SELECT ..."),
+  // so the keyword blacklist below is what actually makes this safe, not the prefix.
+  if (!/^(select|with)\b/i.test(sql.trim())) return false;
   if (/\b(insert|update|delete|drop|alter|truncate|grant|revoke|create)\b/i.test(sql)) return false;
   if (sql.includes(";")) return false; // no stacked statements
   return true;
@@ -114,8 +120,9 @@ ${SCHEMA_DESCRIPTION}
 
 Rules:
 - Output ONLY the SQL query, nothing else. No explanation, no markdown fences.
-- SELECT statements only. Never write/modify data.
-- Always include a LIMIT (50 by default) unless the query is a single aggregate (COUNT, SUM, etc).
+- SELECT (or WITH ... SELECT) statements only. Never write/modify data.
+- Return every matching row — do not add a LIMIT unless the user's question explicitly
+  asks for a limited number of results (e.g. "top 5", "first 10").
 - Dates/times are UTC.`,
     question,
   );
@@ -131,9 +138,10 @@ Rules:
     return `That query didn't run: ${error.message}`;
   }
 
+  const resultsJson = JSON.stringify(data);
   const summary = await callLLM(
-    "You answer the user's original question in 1-4 short sentences, based only on the JSON query results given. Be direct and concrete with numbers. If the results are empty, say so plainly. Plain text only, no markdown.",
-    `Question: ${question}\n\nQuery results (JSON): ${JSON.stringify(data).slice(0, 4000)}`,
+    "You answer the user's original question based only on the JSON query results given. Be direct and concrete with numbers. List individual rows when the question asks for a list (e.g. all matching visits) rather than just a count. If the results are empty, say so plainly. If the results were truncated, mention that too. Plain text only, no markdown.",
+    `Question: ${question}\n\nQuery results (JSON${resultsJson.length > 20000 ? ", truncated" : ""}): ${resultsJson.slice(0, 20000)}`,
   );
 
   return summary || "No answer came back — try rephrasing the question.";
