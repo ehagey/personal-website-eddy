@@ -10,13 +10,14 @@
 //                               the bot will reply to anyone who messages it
 //   TELEGRAM_WEBHOOK_SECRET   - any random string you make up; must match the
 //                               secret_token used when registering the webhook
-//   ANTHROPIC_API_KEY         - for the free-text "/ask anything" capability
+//   OPENROUTER_API_KEY        - for the free-text "ask anything" capability (via OpenRouter)
 import { createClient } from "jsr:@supabase/supabase-js@2";
 
 const BOT_TOKEN = Deno.env.get("TELEGRAM_BOT_TOKEN")!;
 const ALLOWED_CHAT_ID = Deno.env.get("TELEGRAM_ALLOWED_CHAT_ID");
 const WEBHOOK_SECRET = Deno.env.get("TELEGRAM_WEBHOOK_SECRET");
-const ANTHROPIC_API_KEY = Deno.env.get("ANTHROPIC_API_KEY");
+const OPENROUTER_API_KEY = Deno.env.get("OPENROUTER_API_KEY");
+const OPENROUTER_MODEL = "openai/gpt-5.6-luna";
 
 const supabase = createClient(
   Deno.env.get("SUPABASE_URL")!,
@@ -41,23 +42,26 @@ View public.ip_repeat_counts: ip, visit_count, days_active, first_seen, last_see
 View public.recent_visits: viewed_at, ip, path, city, region, country, visitor_id
 `.trim();
 
-async function callClaude(system: string, user: string): Promise<string> {
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
+async function callLLM(system: string, user: string): Promise<string> {
+  // OpenRouter's Anthropic-compatible /v1/messages endpoint: same request/response
+  // shape as Anthropic's Messages API, routed to whatever model we ask for.
+  const res = await fetch("https://openrouter.ai/api/v1/messages", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-api-key": ANTHROPIC_API_KEY!,
-      "anthropic-version": "2023-06-01",
+      "Authorization": `Bearer ${OPENROUTER_API_KEY!}`,
+      "HTTP-Referer": "https://eddyhageyoussef.com",
+      "X-Title": "Eddy's site analytics bot",
     },
     body: JSON.stringify({
-      model: "claude-haiku-4-5-20251001",
+      model: OPENROUTER_MODEL,
       max_tokens: 1024,
       system,
       messages: [{ role: "user", content: user }],
     }),
   });
   if (!res.ok) {
-    throw new Error(`Claude API error: ${res.status} ${await res.text()}`);
+    throw new Error(`OpenRouter API error: ${res.status} ${await res.text()}`);
   }
   const data = await res.json();
   return data.content?.[0]?.text?.trim() ?? "";
@@ -79,11 +83,11 @@ function isSafeSelect(sql: string): boolean {
 }
 
 async function answerFreeformQuestion(question: string): Promise<string> {
-  if (!ANTHROPIC_API_KEY) {
-    return "Free-text questions aren't set up yet — add an ANTHROPIC_API_KEY secret to enable this.";
+  if (!OPENROUTER_API_KEY) {
+    return "Free-text questions aren't set up yet — add an OPENROUTER_API_KEY secret to enable this.";
   }
 
-  const sqlRaw = await callClaude(
+  const sqlRaw = await callLLM(
     `You write a single read-only PostgreSQL SELECT query to answer the user's question about website traffic data.
 
 ${SCHEMA_DESCRIPTION}
@@ -106,7 +110,7 @@ Rules:
     return `That query didn't run: ${error.message}`;
   }
 
-  const summary = await callClaude(
+  const summary = await callLLM(
     "You answer the user's original question in 1-4 short sentences, based only on the JSON query results given. Be direct and concrete with numbers. If the results are empty, say so plainly. Plain text only, no markdown.",
     `Question: ${question}\n\nQuery results (JSON): ${JSON.stringify(data).slice(0, 4000)}`,
   );
