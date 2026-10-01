@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import DependableBlogPost from "./pages/DependableBlogPost";
 import MentalModelsBlogPost from "./pages/MentalModelsBlogPost";
 import ProduceBlogPost from "./pages/ProduceBlogPost";
+import PageTracker from "./components/PageTracker";
 
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <PageTracker />
           <Routes>
             <Route path="/" element={<Index />} />
             
