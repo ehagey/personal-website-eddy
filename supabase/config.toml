@@ -1,1 +1,7 @@
 project_id = "qxxmvhntvnlotjpaqlzz"
+
+[functions.telegram-bot]
+# Telegram's webhook POSTs have no Authorization header, so JWT verification
+# must stay off for this function. Security instead comes from the
+# X-Telegram-Bot-Api-Secret-Token check inside the function itself.
+verify_jwt = false
