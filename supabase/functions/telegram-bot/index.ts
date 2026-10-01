@@ -1,6 +1,6 @@
 // Telegram bot that answers questions about site traffic by querying page_views.
-// Message the bot from your phone (/today, /week, /ips, /pages, /referrers) and it
-// replies with the numbers. Set up as a Telegram webhook pointing at this function.
+// Message the bot from your phone (/today, /week, /ips, /recent) and it replies with
+// the numbers. Set up as a Telegram webhook pointing at this function.
 //
 // Required secrets (Supabase dashboard -> Edge Functions -> Manage secrets):
 //   TELEGRAM_BOT_TOKEN        - from @BotFather when you create the bot
