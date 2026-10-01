@@ -64,7 +64,10 @@ async function callLLM(system: string, user: string): Promise<string> {
     throw new Error(`OpenRouter API error: ${res.status} ${await res.text()}`);
   }
   const data = await res.json();
-  return data.content?.[0]?.text?.trim() ?? "";
+  // The model may emit a "thinking" block before the actual "text" block (extended
+  // thinking), so find the text block rather than blindly taking content[0].
+  const textBlock = data.content?.find((b: { type?: string }) => b.type === "text");
+  return textBlock?.text?.trim() ?? "";
 }
 
 function extractSql(raw: string): string {
