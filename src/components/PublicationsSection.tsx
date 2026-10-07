@@ -186,7 +186,12 @@ const PublicationsSection = () => {
           marginBottom: '8px'
         }}>
             <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>6. </span>
-            The Impact of Generative AI on Competition for Web Data
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7577638" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>
+              Generative AI and Competition for Web Data
+            </a>
             <span style={{
               fontWeight: 'normal',
               color: 'var(--site-text-muted)'
@@ -196,7 +201,7 @@ const PublicationsSection = () => {
           fontSize: '13px',
           color: 'var(--site-text-faint)',
           marginBottom: '5px'
-        }}>Working Paper</p>
+        }}>Forthcoming in CPI TechREG Chronicle</p>
         </div>
       </div>
 
