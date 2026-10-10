@@ -15,7 +15,9 @@ const PublicationsSection = () => {
       marginBottom: '15px',
       fontWeight: 600,
       fontStyle: 'italic'
-    }}>Publications are listed in chronological order, from oldest to newest.</p>
+    }}>Publications are listed in chronological order, from newest to oldest.</p>
+
+      <h3 style={{ fontSize: '18px', marginBottom: '15px', fontWeight: 500, color: 'var(--site-text)' }}>Journal Articles and Working Papers</h3>
       <div style={{
       fontSize: '14px',
       lineHeight: '1.6',
@@ -33,11 +35,11 @@ const PublicationsSection = () => {
           marginBottom: '8px'
         }}>
             <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>1. </span>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353923" target="_blank" rel="noopener noreferrer" style={{
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7111078" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
           }}>
-              Generative AI for Data Scraping
+              Confirmation Bias in LLM Pricing Recommendations
             </a>
             <span style={{
               fontWeight: 'normal',
@@ -47,7 +49,7 @@ const PublicationsSection = () => {
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
-        }}>INFORMS Journal on Data Science, Minor Revision</p>
+        }}>Manufacturing & Service Operations Management, Major Revision</p>
         </div>
 
         <div style={{
@@ -79,11 +81,106 @@ const PublicationsSection = () => {
         }}>AI & Ethics, Major Revision</p>
         </div>
 
+        <div>
+          <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
+        }}>
+            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>3. </span>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353923" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>
+              Generative AI for Data Scraping
+            </a>
+            <span style={{
+              fontWeight: 'normal',
+              color: 'var(--site-text-muted)'
+            }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
+          </h3>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}>INFORMS Journal on Data Science, Minor Revision</p>
+        </div>
+      </div>
+
+      <h3 style={{ fontSize: '18px', marginBottom: '15px', marginTop: '25px', fontWeight: 500, color: 'var(--site-text)' }}>Practitioner Publications</h3>
+      <div style={{
+      fontSize: '14px',
+      lineHeight: '1.6',
+      color: 'var(--site-text-muted)'
+    }}>
         <div style={{
         marginBottom: '15px',
         paddingBottom: '15px',
         borderBottom: '1px solid var(--site-border)'
       }}>
+          <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
+        }}>
+            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>1. </span>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7577638" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>
+              Generative AI and Competition for Web Data
+            </a>
+            <span style={{
+              fontWeight: 'normal',
+              color: 'var(--site-text-muted)'
+            }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
+          </h3>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)',
+          marginBottom: '5px'
+        }}>Forthcoming in CPI TechREG Chronicle</p>
+        </div>
+
+        <div style={{
+        marginBottom: '15px',
+        paddingBottom: '15px',
+        borderBottom: '1px solid var(--site-border)'
+      }}>
+          <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
+        }}>
+            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>2. </span>
+            <a href="https://cmr.berkeley.edu/2026/08/69-1-three-winning-ai-strategies/" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>
+              Three Winning AI Strategies
+            </a>
+            <span style={{
+              fontWeight: 'normal',
+              color: 'var(--site-text-muted)'
+            }}>, Maxime C. Cohen, Eddy Hage-Youssef, Daniel M. McCarthy, and D. Daniel Sokol</span>
+          </h3>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}>California Management Review (August 15, 2026)</p>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}>A longer pre-print version of this paper is available <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6331258" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>on SSRN</a>.</p>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}><a href="https://www.dropbox.com/scl/fi/gl99iry9nvwhxtyp77d9i/three-bets-AI-slides.pptx?rlkey=66yqsamsx7sdayvypkm58ra8q&e=1&st=9hwhj0wa&dl=0" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>Slides</a> (prepared by Professor McCarthy)</p>
+        </div>
+
+        <div>
           <h3 style={{
           fontSize: '16px',
           fontWeight: '500',
@@ -110,98 +207,6 @@ const PublicationsSection = () => {
           fontSize: '13px',
           color: 'var(--site-text-faint)'
         }}>Also published in: <a href="https://www.hbrfrance.fr/innovation/que-se-passe-t-il-quand-l-ia-fixe-les-tarifs-61328" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR France</a>, <a href="https://hbrturkiye.com/dergi/maaslari-yapay-zeka-belirlediginde-neler-oluyor" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Turkey</a>, <a href="https://service.hbrtaiwan.com/store/article/24832" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Taiwan</a>, and <a href="https://www.hbrkorea.com/article/view/atype/ma/category_id/7_1/article_no/2412" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>HBR Korea</a></p>
-        </div>
-
-        <div style={{
-        marginBottom: '15px',
-        paddingBottom: '15px',
-        borderBottom: '1px solid var(--site-border)'
-      }}>
-          <h3 style={{
-          fontSize: '16px',
-          fontWeight: '500',
-          color: 'var(--site-text)',
-          marginBottom: '8px'
-        }}>
-            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>4. </span>
-            <a href="https://cmr.berkeley.edu/2026/08/69-1-three-winning-ai-strategies/" target="_blank" rel="noopener noreferrer" style={{
-            color: 'var(--site-link)',
-            textDecoration: 'underline'
-          }}>
-              Three Winning AI Strategies
-            </a>
-            <span style={{
-              fontWeight: 'normal',
-              color: 'var(--site-text-muted)'
-            }}>, Maxime C. Cohen, Eddy Hage-Youssef, Daniel M. McCarthy, and D. Daniel Sokol</span>
-          </h3>
-          <p style={{
-          fontSize: '13px',
-          color: 'var(--site-text-faint)'
-        }}>California Management Review (August 15, 2026)</p>
-          <p style={{
-          fontSize: '13px',
-          color: 'var(--site-text-faint)'
-        }}>A longer pre-print version of this paper is available <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6331258" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>on SSRN</a>.</p>
-          <p style={{
-          fontSize: '13px',
-          color: 'var(--site-text-faint)'
-        }}><a href="https://www.dropbox.com/scl/fi/gl99iry9nvwhxtyp77d9i/three-bets-AI-slides.pptx?rlkey=66yqsamsx7sdayvypkm58ra8q&e=1&st=9hwhj0wa&dl=0" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>Slides</a> (prepared by Professor McCarthy)</p>
-        </div>
-
-        <div style={{
-        marginBottom: '15px',
-        paddingBottom: '15px',
-        borderBottom: '1px solid var(--site-border)'
-      }}>
-          <h3 style={{
-          fontSize: '16px',
-          fontWeight: '500',
-          color: 'var(--site-text)',
-          marginBottom: '8px'
-        }}>
-            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>5. </span>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7111078" target="_blank" rel="noopener noreferrer" style={{
-            color: 'var(--site-link)',
-            textDecoration: 'underline'
-          }}>
-              Confirmation Bias in LLM Pricing Recommendations
-            </a>
-            <span style={{
-              fontWeight: 'normal',
-              color: 'var(--site-text-muted)'
-            }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
-          </h3>
-          <p style={{
-          fontSize: '13px',
-          color: 'var(--site-text-faint)'
-        }}>Manufacturing & Service Operations Management, Major Revision</p>
-        </div>
-
-        <div>
-          <h3 style={{
-          fontSize: '16px',
-          fontWeight: '500',
-          color: 'var(--site-text)',
-          marginBottom: '8px'
-        }}>
-            <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>6. </span>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7577638" target="_blank" rel="noopener noreferrer" style={{
-            color: 'var(--site-link)',
-            textDecoration: 'underline'
-          }}>
-              Generative AI and Competition for Web Data
-            </a>
-            <span style={{
-              fontWeight: 'normal',
-              color: 'var(--site-text-muted)'
-            }}>, Maxime C. Cohen and Eddy Hage-Youssef</span>
-          </h3>
-          <p style={{
-          fontSize: '13px',
-          color: 'var(--site-text-faint)',
-          marginBottom: '5px'
-        }}>Forthcoming in CPI TechREG Chronicle</p>
         </div>
       </div>
 
