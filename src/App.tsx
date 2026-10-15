@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import DependableBlogPost from "./pages/DependableBlogPost";
 import MentalModelsBlogPost from "./pages/MentalModelsBlogPost";
 import ProduceBlogPost from "./pages/ProduceBlogPost";
+import SmallLessonsBlogPost from "./pages/SmallLessonsBlogPost";
 import PageTracker from "./components/PageTracker";
 
 
@@ -27,6 +28,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             
+            <Route path="/blog/small-lessons" element={<SmallLessonsBlogPost />} />
             <Route path="/blog/produce-more-than-you-consume" element={<ProduceBlogPost />} />
             <Route path="/blog/on-mental-models" element={<MentalModelsBlogPost />} />
             
