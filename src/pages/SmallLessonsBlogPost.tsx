@@ -3,6 +3,7 @@ import BlogPost from '@/components/BlogPost';
 const lessons: { lead: string; rest: string }[] = [
   { lead: "Actions say more than words.", rest: "What you do matters more than what you say. If anything, words are free. People also copy what you do more than what you say, whether they're children, friends, or coworkers." },
   { lead: "Don't keep score with the people close to you.", rest: "Relationships work better when you give freely instead of counting who did more." },
+  { lead: "Give what you do your full effort.", rest: "If it isn't worth that, drop it. If it is, don't hold anything back." },
   { lead: "Keep your promises.", rest: "If you say you will call someone, call them." },
   { lead: "Be patient with other people's mistakes and shortcomings.", rest: "You might make them too, and you'd want the same patience." },
   { lead: "When someone you care about is hurting, show up.", rest: "You don't need to say much. Sometimes, there is nothing you can say at all, but still show up." },
