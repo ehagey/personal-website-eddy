@@ -249,6 +249,13 @@ const AboutSection = () => {
 
           <p style={{
           marginBottom: '10px'
+        }}>You can find my publications and citations on <a href="https://scholar.google.com/citations?user=p1FFzvkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>Google Scholar</a>.</p>
+
+          <p style={{
+          marginBottom: '10px'
         }}>I've practiced <InlineMediaLink label="judo" src={judoPhoto} alt="Eddy doing Judo" type="image" /> since I was young, earning my black belt and competing in national and regional championships. This has shaped me more than anything in my life. In my free time, I enjoy playing the guitar, working out, reading, and spending time with my family and friends.</p>
 
           <DailyRead />
