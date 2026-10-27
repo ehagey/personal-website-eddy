@@ -162,7 +162,7 @@ const PublicationsSection = () => {
           marginBottom: '8px'
         }}>
             <span style={{ color: 'var(--site-text-faint)', fontWeight: 'normal' }}>5. </span>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5404966" target="_blank" rel="noopener noreferrer" style={{
+            <a href="https://link.springer.com/article/10.1007/s43681-026-01472-x" target="_blank" rel="noopener noreferrer" style={{
             color: 'var(--site-link)',
             textDecoration: 'underline'
           }}>
@@ -176,7 +176,7 @@ const PublicationsSection = () => {
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
-        }}>Forthcoming in AI & Ethics, 2026</p>
+        }}>Published in AI & Ethics, 2026</p>
         </div>
 
         <div>
