@@ -176,7 +176,7 @@ const PublicationsSection = () => {
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
-        }}>Published in AI & Ethics, 2026</p>
+        }}>AI & Ethics, 2026</p>
         </div>
 
         <div>
