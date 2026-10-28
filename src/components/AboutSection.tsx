@@ -249,7 +249,21 @@ const AboutSection = () => {
 
           <p style={{
           marginBottom: '10px'
-        }}>My research is at the intersection of generative AI and economic decision-making. I'm interested in how large language models behave when they're deployed in high-stakes commercial settings, and what biases emerge when they do. Across this work, I combine empirical methods from statistics with AI system building, and I care about findings that are useful to both academics and the practitioners who deploy these systems.</p>
+        }}>My research interest is at the intersection of generative AI and economic decision-making. I'm interested in how large language models behave when they're deployed in high-stakes commercial settings, and what biases emerge when they do. Across this work, I combine empirical methods from statistics with AI system building, and I care about findings that are useful to both academics and the practitioners who deploy these systems.</p>
+
+          <p style={{
+          marginBottom: '10px'
+        }}>
+            <a href="https://scholar.google.com/citations?user=p1FFzvkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>Google Scholar</a>
+            {' · '}
+            <a href="https://orcid.org/0009-0004-3183-8364" target="_blank" rel="noopener noreferrer" style={{
+            color: 'var(--site-link)',
+            textDecoration: 'underline'
+          }}>ORCID</a>
+          </p>
 
           <p style={{
           marginBottom: '10px'
