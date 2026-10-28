@@ -33,8 +33,12 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
-    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=Owlv729ugdfrlPVfr82Lm_VGDhuON1MFbL1ltyqdYM0&cl=ffffff&w=a"></script>
-    <!-- Keep mapmyvisitors tracking active but hide the visitor map widget it injects -->
-    <style>#mapmyvisitors-widget { display: none !important; }</style>
+    <div style="max-width: 600px; margin: 0 auto; padding: 10px 20px 40px 20px;">
+      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=Owlv729ugdfrlPVfr82Lm_VGDhuON1MFbL1ltyqdYM0&cl=ffffff&w=a"></script>
+    </div>
+    <style>
+      #mapmyvisitors-widget { border-radius: 8px; overflow: hidden; }
+      .mapmyvisitors-map-container, .mapmyvisitors-map { border-radius: 8px; }
+    </style>
   </body>
 </html>
