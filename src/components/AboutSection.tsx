@@ -249,7 +249,7 @@ const AboutSection = () => {
 
           <p style={{
           marginBottom: '10px'
-        }}>My research is at the intersection of generative AI and economic decision-making. I'm interested in how large language models behave when they're deployed in high-stakes commercial settings (e.g., setting prices and wages), and what biases emerge when they do. Across this work, I combine empirical methods from statistics with AI system building, and I care about findings that are useful to both academics and the practitioners who deploy these systems.</p>
+        }}>My research is at the intersection of generative AI and economic decision-making. I'm interested in how large language models behave when they're deployed in high-stakes commercial settings, and what biases emerge when they do. Across this work, I combine empirical methods from statistics with AI system building, and I care about findings that are useful to both academics and the practitioners who deploy these systems.</p>
 
           <p style={{
           marginBottom: '10px'
