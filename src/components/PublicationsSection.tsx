@@ -106,7 +106,7 @@ const PublicationsSection = () => {
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
-        }}>California Management Review (August 15, 2026)</p>
+        }}>California Management Review, 2026</p>
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
