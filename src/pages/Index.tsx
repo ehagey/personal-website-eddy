@@ -12,7 +12,6 @@ import RevealSection from '@/components/RevealSection';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const sections = [
-  { value: 'publications', title: 'Publications and Academic Work', Content: PublicationsSection },
   { value: 'in-the-news', title: 'In the News', Content: InTheNewsSection },
   { value: 'invited-talks', title: 'Invited Talks', Content: InvitedTalksSection },
   { value: 'teaching-assistance', title: 'Teaching Assistance', Content: TeachingAssistanceSection },
@@ -30,7 +29,27 @@ const Index = () => {
           <AboutSection />
         </RevealSection>
 
-        <div style={{ maxWidth: '600px', margin: '0 auto', padding: '5px 20px 20px 20px' }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto', padding: '5px 20px 0 20px' }}>
+          <RevealSection>
+            <div id="publications" className="border-b border-[var(--site-border)]">
+              <h2
+                className="py-4"
+                style={{
+                  fontSize: '16px',
+                  fontWeight: 500,
+                  color: 'var(--site-text)',
+                }}
+              >
+                Publications and Academic Work
+              </h2>
+              <div className="pb-4">
+                <PublicationsSection />
+              </div>
+            </div>
+          </RevealSection>
+        </div>
+
+        <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 20px 20px 20px' }}>
           <Accordion type="multiple">
             {sections.map(({ value, title, Content }) => (
               <RevealSection key={value}>
