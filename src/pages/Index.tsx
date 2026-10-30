@@ -2,6 +2,7 @@
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
+import ResearchSection from '@/components/ResearchSection';
 import PublicationsSection from '@/components/PublicationsSection';
 import InTheNewsSection from '@/components/InTheNewsSection';
 import InvitedTalksSection from '@/components/InvitedTalksSection';
@@ -12,6 +13,7 @@ import RevealSection from '@/components/RevealSection';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const sections = [
+  { value: 'research', title: 'Research', Content: ResearchSection },
   { value: 'publications', title: 'Publications and Academic Work', Content: PublicationsSection },
   { value: 'in-the-news', title: 'In the News', Content: InTheNewsSection },
   { value: 'invited-talks', title: 'Invited Talks', Content: InvitedTalksSection },
