@@ -14,9 +14,14 @@ const Header = () => {
     }}>
       <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 20px' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '56px' }}>
-          <Link to="/" style={{ fontSize: '18px', fontWeight: 600, color: 'var(--site-text)', textDecoration: 'none' }}>
-            Eddy Hage-Youssef
-          </Link>
+          <div style={{ display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', columnGap: '12px' }}>
+            <Link to="/" style={{ fontSize: '18px', fontWeight: 600, color: 'var(--site-text)', textDecoration: 'none' }}>
+              Eddy Hage-Youssef
+            </Link>
+            <a href="mailto:eddy.hage1@gmail.com" style={{ fontSize: '13px', color: 'var(--site-text-muted)', textDecoration: 'underline' }}>
+              eddy.hage1@gmail.com
+            </a>
+          </div>
 
           <button
             onClick={toggleTheme}

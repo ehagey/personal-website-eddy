@@ -7,7 +7,6 @@ import InTheNewsSection from '@/components/InTheNewsSection';
 import InvitedTalksSection from '@/components/InvitedTalksSection';
 import WritingSection from '@/components/WritingSection';
 import TeachingAssistanceSection from '@/components/TeachingAssistanceSection';
-import ContactSection from '@/components/ContactSection';
 import AwardsSection from '@/components/AwardsSection';
 import RevealSection from '@/components/RevealSection';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -19,7 +18,6 @@ const sections = [
   { value: 'teaching-assistance', title: 'Teaching Assistance', Content: TeachingAssistanceSection },
   { value: 'writing', title: 'Writing', Content: WritingSection },
   { value: 'awards', title: 'Awards and Honors', Content: AwardsSection },
-  { value: 'contact', title: 'Contact', Content: ContactSection },
 ];
 
 const Index = () => {
@@ -57,7 +55,7 @@ const Index = () => {
 
         <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 20px 20px 20px' }}>
           <p style={{ fontSize: '11px', color: 'var(--site-text-faint)', textAlign: 'left' }}>
-            Last updated: October 28, 2026
+            Last updated: October 30, 2026
           </p>
         </div>
       </main>
