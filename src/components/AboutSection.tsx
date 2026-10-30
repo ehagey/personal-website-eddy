@@ -215,6 +215,11 @@ const AboutSection = () => {
             color: 'var(--site-text)'
           }}>About Me</h2>
         </div>
+        <p style={{
+          fontSize: '14px',
+          color: 'var(--site-text)',
+          marginBottom: '15px'
+        }}>Undergraduate researcher at McGill University · Generative AI and economic decision-making</p>
         <div style={{
         fontSize: '14px',
         lineHeight: '1.6',

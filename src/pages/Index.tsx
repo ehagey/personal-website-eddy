@@ -24,6 +24,7 @@ const Index = () => {
     <>
       <Header />
       <main>
+        <h1 className="sr-only">Eddy Hage-Youssef</h1>
         <HeroSection />
         <RevealSection>
           <AboutSection />
