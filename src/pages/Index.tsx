@@ -2,7 +2,6 @@
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
-import ResearchTab from '@/components/ResearchTab';
 import PublicationsSection from '@/components/PublicationsSection';
 import InTheNewsSection from '@/components/InTheNewsSection';
 import InvitedTalksSection from '@/components/InvitedTalksSection';
@@ -25,7 +24,6 @@ const Index = () => {
   return (
     <>
       <Header />
-      <ResearchTab />
       <main>
         <HeroSection />
         <RevealSection>
