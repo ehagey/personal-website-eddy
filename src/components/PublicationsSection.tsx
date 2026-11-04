@@ -106,7 +106,7 @@ const PublicationsSection = () => {
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
-        }}>California Management Review, 2026</p>
+        }}>California Management Review, 69(1):153-162, 2026</p>
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
@@ -115,6 +115,10 @@ const PublicationsSection = () => {
           fontSize: '13px',
           color: 'var(--site-text-faint)'
         }}><a href="https://www.dropbox.com/scl/fi/gl99iry9nvwhxtyp77d9i/three-bets-AI-slides.pptx?rlkey=66yqsamsx7sdayvypkm58ra8q&e=1&st=9hwhj0wa&dl=0" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>Slides</a> (prepared by Professor McCarthy)</p>
+          <p style={{
+          fontSize: '13px',
+          color: 'var(--site-text-faint)'
+        }}><a href="https://www.youtube.com/watch?v=TjnNG37TVRk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>Video</a> (presented by Professor McCarthy)</p>
         </div>
 
         <div style={{

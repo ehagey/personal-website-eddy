@@ -19,7 +19,7 @@ ORCID: https://orcid.org/0009-0004-3183-8364
 
 - [When AI Sets Wages: Biases and Labor Discrimination in Generative Pricing](https://link.springer.com/article/10.1007/s43681-026-01472-x): AI & Ethics, 2026 (with Maxime C. Cohen and Warut Khern-am-nuai).
 - [What Happens When AI Sets Wages](https://hbr.org/2025/10/what-happens-when-ai-sets-wages): Harvard Business Review, 104(2):40-42, 2026.
-- [Three Winning AI Strategies](https://cmr.berkeley.edu/2026/08/69-1-three-winning-ai-strategies/): California Management Review, 2026.
+- [Three Winning AI Strategies](https://cmr.berkeley.edu/2026/08/69-1-three-winning-ai-strategies/): California Management Review, 69(1):153-162, 2026.
 - [Confirmation Bias in LLM Pricing Recommendations](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7111078): Manufacturing & Service Operations Management, major revision.
 - [Generative AI and Competition for Web Data](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7577638): forthcoming in CPI TechREG Chronicle.
 - [Generative AI for Data Scraping](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353923): INFORMS Journal on Data Science, minor revision.
