@@ -106,7 +106,7 @@ const PublicationsSection = () => {
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
-        }}>California Management Review, 69(1):153-162, 2026 (<a href="https://doi.org/10.1177/00081256261477028" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>printed version</a>)</p>
+        }}>California Management Review, 69(1):153-162, 2026 (<a href="https://cmr.berkeley.edu/browse/issues/69_1/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>printed version</a>)</p>
           <p style={{
           fontSize: '13px',
           color: 'var(--site-text-faint)'
