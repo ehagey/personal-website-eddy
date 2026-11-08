@@ -15,6 +15,24 @@ const WritingSection = () => {
           marginBottom: '8px'
         }}>
           <Link
+            to="/blog/on-balance"
+            style={{
+              color: 'var(--site-link)',
+              textDecoration: 'underline'
+            }}
+          >
+            On Balance
+          </Link>
+        </h3>
+      </div>
+      <div style={{ marginBottom: '12px' }}>
+        <h3 style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--site-text)',
+          marginBottom: '8px'
+        }}>
+          <Link
             to="/blog/small-lessons"
             style={{
               color: 'var(--site-link)',

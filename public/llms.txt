@@ -11,6 +11,7 @@ ORCID: https://orcid.org/0009-0004-3183-8364
 ## Pages
 
 - [/](/): Home. About, Publications and Academic Work, In the News, Invited Talks, Teaching Assistance, Writing, and Awards and Honors.
+- [/blog/on-balance](/blog/on-balance): Blog post, "On Balance".
 - [/blog/small-lessons](/blog/small-lessons): Blog post, "Small Lessons".
 - [/blog/produce-more-than-you-consume](/blog/produce-more-than-you-consume): Blog post, "Produce More than You Consume".
 - [/blog/on-mental-models](/blog/on-mental-models): Blog post, "On Mental Models".

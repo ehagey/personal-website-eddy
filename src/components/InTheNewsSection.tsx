@@ -6,6 +6,19 @@ const InTheNewsSection = () => {
     borderBottom: '1px solid var(--site-border)'
   }}>
       <h3 style={{ fontSize: '16px', fontWeight: '500', color: 'var(--site-text)', marginBottom: '8px' }}>
+        <a href="https://politicsrights.com/new-politics-of-pricing-ai-sets-price/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>
+          The New Politics of Pricing: When AI Sets Your Price
+        </a>
+      </h3>
+      <p style={{ fontSize: '13px', color: 'var(--site-text-faint)' }}>Politics and Rights Review, October 13, 2026.</p>
+    </div>
+
+    <div style={{
+    marginBottom: '15px',
+    paddingBottom: '15px',
+    borderBottom: '1px solid var(--site-border)'
+  }}>
+      <h3 style={{ fontSize: '16px', fontWeight: '500', color: 'var(--site-text)', marginBottom: '8px' }}>
         <a href="https://finance.yahoo.com/technology/ai/articles/strategic-fit-not-market-share-172600753.html" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--site-link)', textDecoration: 'underline' }}>
           Strategic Fit—Not Market Share—Separates Winners in AI, Study Shows
         </a>
